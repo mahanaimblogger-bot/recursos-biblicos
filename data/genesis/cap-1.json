@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "data": {
+    "recursos": [
+      {
+        "tipo": "estudio",
+        "titulo": "En el Principio: La Creación",
+        "recurso_url": "",
+        "contenido_html": "<h1 class=\"titulo-entrada\">En el Principio: La Creación</h1><div class=\"cita-versiculo\"><h3>Génesis 1:1</h3><p>\"En el principio creó Dios los cielos y la tierra.\"</p></div><div class=\"caja-contexto\"><h3>📌 Contexto Histórico</h3><p>El libro del Génesis fue escrito por <strong>Moisés</strong> aproximadamente en el siglo XV a.C.</p></div><div class=\"caja-linguistica\"><h4>🔬 Análisis Lingüístico</h4><span class=\"palabra-original\">בָּרָא</span> (bará)<p>Verbo que significa <strong>crear algo completamente nuevo</strong> de la nada.</p></div><div class=\"destacado-dramatico\">\"La creación no fue un accidente cósmico, sino un acto deliberado de Dios.\"</div><div class=\"caja-meditar\"><h3>Reflexión</h3><p>El mismo Dios que dijo \"sea la luz\" es quien te dice hoy \"no temas\".</p></div>"
+      },
+      {
+        "tipo": "video",
+        "titulo": "Video Resumen: Los 7 Días",
+        "recurso_url": "dQw4w9WgXcQ",
+        "contenido_html": "<h1 class=\"titulo-entrada\">Video: Los 7 Días</h1><p>Recorrido visual de cada día de la creación.</p><div class=\"contenedor-video\"><img class=\"miniatura\" src=\"https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg\" alt=\"Video\"><button class=\"btn-play\"></button></div>"
+      },
+      {
+        "tipo": "sermon",
+        "titulo": "Sermón: Dios Creador y Sustentador",
+        "recurso_url": "",
+        "contenido_html": "<h1 class=\"titulo-entrada\">Dios Creador y Sustentador</h1><div class=\"destacado-dramatico\">\"Si Dios es el Creador de todo, nada en tu vida escapa a su soberanía.\"</div>"
+      },
+      {
+        "tipo": "audio",
+        "titulo": "Meditación: La Luz Original",
+        "recurso_url": "",
+        "contenido_html": "<h1 class=\"titulo-entrada\">Meditación: La Luz Original</h1><div class=\"caja-meditar\"><h3>Para Reflexionar</h3><p>La luz fue el primer regalo de Dios a la creación. Antes del sol, antes de las estrellas — la luz.</p></div>"
+      }
+    ]
+  }
+}
