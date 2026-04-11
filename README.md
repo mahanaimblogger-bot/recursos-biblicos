@@ -1,142 +1,147 @@
-Mahanaim
-📖 Centro de Recursos Bíblicos
-Proyecto Mahanaim - "Campamento de Dios"
-GitHub Pages JSON HTML5
 
-📑 Tabla de Contenidos
-¿Qué es este proyecto?
-Estructura del Repositorio
-¿Cómo funciona la navegación?
-Guía Paso a Paso: Agregar Contenido
-Gestión de Iconos y Tipos de Recursos
-Cheat Sheet: Clases CSS para el Contenido
-Solución de Problemas Comunes
-Cómo deshacer cambios (Revertir)
-🤔 ¿Qué es este proyecto?
-Es una Aplicación de Página Única (SPA) creada en un solo archivo HTML (recursos-biblicos.html) que se conecta a archivos JSON para mostrar estudios bíblicos, sermones, videos y audios.
+```markdown
+<div align="center">
+  <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjiOoSuMMmUakxLDOSNtXiJtzYe8BhR8Yy9g6mE6bTsEJNFru_n7E6fri7_VB-zarxqQmLZOUo3g4llrx7ZIqz-6uj8T58YgxDzZ4ZLqfME_Y4zXisuLhDEhgIDKKe3e3eaDQ5avWmncc0cx5cMfsxwiXu3bgsPrCvBGLOMynNacdX1YOTGPNJG7TOmIx0=s576" alt="Mahanaim" width="300" style="border-radius: 12px; border: 3px solid #d4ac0d;">
+  
+  # 📖 Centro de Recursos Bíblicos
+  ### *Proyecto Mahanaim - "Campamento de Dios"*
+  
+  [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Activado-3C8DA0?style=for-the-badge&logo=github)](https://mahanaimblogger-bot.github.io/recursos-biblicos/)
+  [![JSON](https://img.shields.io/badge/Formato-JSON-F7DF1E?style=for-the-badge&logo=json)]()
+  [![HTML5](https://img.shields.io/badge/Tecnologia-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)]()
+</div>
 
-No necesita base de datos ni lenguajes de programación del lado del servidor. Solo lee los archivos JSON alojados en este repositorio de GitHub Pages.
+---
 
-🗂️ Estructura del Repositorio
-Tu repositorio DEBE mantener esta estructura exacta para que la app funcione:
+## 📑 Tabla de Contenidos
+1. [¿Qué es este proyecto?](#-qué-es-este-proyecto)
+2. [Estructura del Repositorio](#-estructura-del-repositorio)
+3. [Guía Paso a Paso](#-guía-paso-a-paso)
+4. [Gestión de Iconos](#-gestión-de-iconos-y-tipos-de-recursos)
+5. [Cheat Sheet de CSS](#-cheat-sheet-clases-css-para-el-contenido)
+6. [Solución de Problemas](#-solución-de-problemas-comunes)
+7. [Cómo deshacer cambios](#-cómo-deshacer-cambios-revertir)
 
-recursos-biblicos/├── recursos-biblicos.html      ← La aplicación principal (NO renombrar)├── index.json                  ← Lista general de los 66 libros├── data/│   ├── index.json              ← (Alternativa de ubicación para la lista general)│   ├── genesis/                ← Carpeta del libro (usa el "slug")│   │   ├── capitulos.json      ← Lista de capítulos de Génesis│   │   ├── cap-1.json          ← Recursos del Capítulo 1│   │   ├── cap-2.json          ← Recursos del Capítulo 2│   │   └── cap-3.json          ← Recursos del Capítulo 3│   ├── exodo/                  ← Carpeta de Éxodo│   │   ├── capitulos.json│   │   └── cap-1.json│   └── romanos/                ← Carpeta de Romanos│       └── ...
-⚠️ REGLA DE ORO: El nombre de la carpeta (genesis, exodo) debe coincidir exactamente con el campo "slug" en el index.json. El nombre de los archivos de capítulo debe ser siempre cap-X.json (donde X es el número del capítulo).
+---
 
-⚙️ ¿Cómo funciona la navegación?
-El flujo de lectura de la app es el siguiente:
+## 🤔 ¿Qué es este proyecto?
+Es una **Aplicación de Página Única (SPA)** creada en un solo archivo HTML (`recursos-biblicos.html`) que se conecta a archivos JSON para mostrar estudios bíblicos, sermones, videos y audios. No necesita base de datos ni lenguajes de programación del lado del servidor. Solo lee los archivos JSON alojados en GitHub Pages.
 
-index.json: La app lee este archivo para armar la grilla de Libros (Génesis, Éxodo, etc.).
-capitulos.json: Cuando el usuario hace clic en un libro, la app busca data/{slug}/capitulos.json para mostrar la lista de capítulos y sus iconos.
-cap-X.json: Cuando el usuario hace clic en un capítulo, la app busca data/{slug}/cap-X.json para mostrar las tarjetas de recursos (Estudio, Video, Audio).
-contenido_html: Al hacer clic en un recurso, la app inyecta el HTML que esté dentro de ese campo JSON directamente en la pantalla.
-🛠️ Guía Paso a Paso: Agregar Contenido
-1. Agregar un capítulo nuevo a un libro existente
-Supongamos que querés agregar el Capítulo 4 de Génesis.
+---
 
-Paso A: Creá el archivo data/genesis/cap-4.json con la estructura básica (ver sección de abajo).
-Paso B: Abrí data/genesis/capitulos.json y agregá el capítulo al array:
-json
+## 🗂️ Estructura del Repositorio
+Tu repo **DEBE** mantener esta estructura exacta:
 
-{"capitulo": "4", "total": 2, "tipos": ["estudio", "video"]}
-Paso C: Abrí index.json y sumá los recursos nuevos al "total" de Génesis.
-2. Agregar un libro nuevo completo (Ej. Levítico)
-Paso A: Creá la carpeta data/levitico/.
-Paso B: Dentro de esa carpeta, creá el archivo capitulos.json.
-Paso C: Creá los archivos cap-1.json, cap-2.json, etc., con sus recursos.
-Paso D: En index.json, cambiá el "total": 0 de Levítico por la cantidad de recursos totales que subiste.
-3. Estructura de un recurso (Ejemplo de cap-4.json)
-Cada recurso dentro del array "recursos" lleva estos campos:
+*   📄 `recursos-biblicos.html` ← La aplicación principal (NO renombrar)
+*   📄 `index.json` ← Lista general de los 66 libros
+*   📁 `data/`
+    *   📄 `index.json` ← (Alternativa de ubicación para la lista general)
+    *   📁 `genesis/` ← Carpeta del libro (usa el "slug")
+        *   📄 `capitulos.json` ← Lista de capítulos de Génesis
+        *   📄 `cap-1.json` ← Recursos del Capítulo 1
+        *   📄 `cap-2.json` ← Recursos del Capítulo 2
 
-Campo
-¿Para qué sirve?
-Ejemplo
-tipo	Define el icono y cómo se muestra	"estudio", "video", "audio"
-titulo	El nombre que aparece en la tarjeta	"La caída del hombre"
-recurso_url	URL del video/audio/imagen (Vacio si es estudio)	"https://..." o "dQw4w9WgXcQ" (ID YT)
-contenido_html	El artículo/estudio en formato HTML	"<h1>Titulo</h1><p>Texto...</p>"
+> ⚠️ **REGLA DE ORO:** El nombre de la carpeta (`genesis`, `exodo`) debe coincidir exactamente con el campo `"slug"` en el `index.json`. El nombre de los archivos de capítulo debe ser siempre `cap-X.json`.
 
-Comportamiento del campo recurso_url según el tipo:
+---
 
-Si es estudio: Se ignora. Muestra el contenido_html.
-Si es video: Va el ID del video de YouTube (ej: dQw4w9WgXcQ).
-Si es audio / sermon: Va la URL completa del archivo .mp3.
-Si es imagen: Va la **URL completa de la imagen .jpg/.png`.
-🎨 Gestión de Iconos y Tipos de Recursos
-Los iconos NO se configuran en los JSON, se configuran en el código JavaScript del HTML (recursos-biblicos.html).
+## 🛠️ Guía Paso a Paso
 
-Buscá estas dos variables al principio del bloque <script>:
+### 1. Agregar un capítulo nuevo a un libro existente
+Supongamos que querés agregar el **Capítulo 4 de Génesis**.
+*   **Paso A:** Creá el archivo `data/genesis/cap-4.json` con la estructura básica.
+*   **Paso B:** Abrí `data/genesis/capitulos.json` y agregá el capítulo al array: 
+    > `{"capitulo": "4", "total": 2, "tipos": ["estudio", "video"]}`
+*   **Paso C:** Abrí `index.json` y sumá los recursos nuevos al `"total"` de Génesis.
 
-javascript
+### 2. Agregar un libro nuevo completo (Ej. Levítico)
+*   **Paso A:** Creá la carpeta `data/levitico/`.
+*   **Paso B:** Dentro de esa carpeta, creá el archivo `capitulos.json`.
+*   **Paso C:** Creá los archivos `cap-1.json`, `cap-2.json`, etc., con sus recursos.
+*   **Paso D:** En `index.json`, cambiá el `"total": 0` de Levítico por la cantidad de recursos totales que subiste.
 
-var icons={estudio:'📖',sermon:'🛐',video:'🎬',audio:'🎧',imagen:'🖼️',diapositiva:'📊',pdf:'📄'};
-var labels={estudio:'Estudio Bíblico',sermon:'Sermón / Predica',video:'Video Resumen',audio:'Audio / Podcast',imagen:'Imágenes / Mapas',diapositiva:'Diapositivas',pdf:'PDF / Documento'};
-➕ Para AGREGAR un nuevo icono (Ej. Mapa):
-Agregá la entrada en AMBOS objetos respetando la coma al final:
+### 3. Estructura de un recurso (Ejemplo de cap-4.json)
+Cada recurso dentro del array `"recursos"` lleva estos campos:
 
-javascript
+*   **`tipo`**: Define el icono y cómo se muestra (ej: `"estudio"`, `"video"`, `"audio"`).
+*   **`titulo`**: El nombre que aparece en la tarjeta (ej: `"La caída del hombre"`).
+*   **`recurso_url`**: URL del video/audio/imagen. Va vacío `""` si es un estudio escrito.
+*   **`contenido_html`**: El artículo/estudio en formato HTML.
 
-var icons={ ..., mapa:'🗺️' };
-var labels={ ..., mapa:'Mapa Arqueológico' };
-Una vez hecho esto, ya podés usar "tipo": "mapa" en tus archivos JSON.
+**Comportamiento del campo `recurso_url` según el tipo:**
+*   Si es **estudio**: Se ignora. Muestra el `contenido_html`.
+*   Si es **video**: Va el **ID del video de YouTube** (ej: `dQw4w9WgXcQ`).
+*   Si es **audio / sermon**: Va la **URL completa del archivo .mp3**.
+*   Si es **imagen**: Va la **URL completa de la imagen .jpg/.png**.
 
-❌ Para ELIMINAR un icono:
-Borralo de ambos objetos en el HTML.
-(Ojo: Si lo borras del HTML pero lo dejás en un JSON, se mostrará el ícono genérico 📄).
+---
 
-🔄 Cómo cambiar los iconos que se ven en un capítulo:
-Editá el archivo capitulos.json de ese libro. El campo "tipos" controla qué etiquetas se muestran debajo de cada capítulo:
+## 🎨 Gestión de Iconos y Tipos de Recursos
 
-json
+Los iconos **NO** se configuran en los JSON, se configuran en el código JavaScript del HTML (`recursos-biblicos.html`). Buscá estas dos variables al principio del bloque `<script>`:
 
-{"capitulo": "1", "total": 4, "tipos": ["estudio", "video", "sermon", "audio"]}
-Cambiá ese array para mostrar solo los que quieras.
+*   **Para AGREGAR un icono (Ej. Mapa):** Agregá la entrada en AMBOS objetos respetando la coma al final: `mapa:'🗺️'` en icons y `mapa:'Mapa Arqueológico'` en labels.
+*   **Para ELIMINAR un icono:** Borralo de ambos objetos en el HTML.
+*   **Para cambiar los iconos de un capítulo:** Editá el archivo `capitulos.json` de ese libro y cambiá el array `"tipos"` (ej: `["estudio", "video", "mapa"]`).
 
-🎨 Cheat Sheet: Clases CSS para el Contenido
-Como el contenido se escribe en formato HTML dentro del JSON, tenés que usar estas clases específicas de la app para que el texto se vea bonito. ¡Guárdalas de referencia!
+---
 
-Títulos y Textos:
+## 💡 Cheat Sheet: Clases CSS para el Contenido
 
-<h1 class="titulo-entrada">Título Principal</h1>
-<h2 class="subtitulo">Subtítulo</h2>
-Usá <div class="contenedor-blog"> para envolver párrafos largos (<p>, <ul>, <ol>).
-Cajas Especiales (¡Usalas, se ven increíbles!):
+Como el contenido se escribe en HTML dentro del JSON, usá estas clases de la app para que se vea bonito:
 
-<div class="cita-versiculo"><h3>Génesis 1:1</h3><p>"En el principio..."</p></div> (Caja dorada para versículos)
-<div class="caja-contexto"><h3>📌 Contexto Histórico</h3><p>Texto...</p></div> (Caja azul)
-<div class="caja-linguistica"><h4>🔬 Análisis Lingüístico</h4><span class="palabra-original">בָּרָא</span><p>Texto...</p></div> (Caja marrón para palabras originales)
-<div class="caja-arqueologica"><h4>🏛️ Arqueología</h4><p>Texto...</p></div> (Caja marrón claro)
-<div class="caja-profetica"><h4>🔮 Profecía</h4><p>Texto...</p></div> (Caja morada)
-<div class="caja-meditar"><h3>Reflexión</h3><p>Texto...</p></div> (Caja dorada con emoji de oración)
-Destacados y Multimedia:
+*   **Títulos:** Usá `class="titulo-entrada"` para el título principal y `class="subtitulo"` para los subtítulos.
+*   **Versículos:** Usá `class="cita-versiculo"` (Caja dorada para versículos).
+*   **Contexto:** Usá `class="caja-contexto"` (Caja azul para contexto histórico).
+*   **Lingüística:** Usá `class="caja-linguistica"` (Caja marrón para palabras originales).
+*   **Arqueología:** Usá `class="caja-arqueologica"` (Caja marrón claro).
+*   **Profecía:** Usá `class="caja-profetica"` (Caja morada).
+*   **Meditar:** Usá `class="caja-meditar"` (Caja dorada con emoji de oración).
+*   **Impacto:** Usá `class="destacado-dramatico"` (Fondo azul oscuro con texto blanco) o `class="caja-fuego"` (Fondo rojo tipo fuego).
+*   **Separador:** Usá `class="separador"` con un `✦ ✦ ✦` adentro.
 
-<div class="destacado-dramatico">"Frase con fuerte impacto"</div> (Fondo azul oscuro con texto blanco grande)
-<div class="caja-fuego"><strong>Título de Fuego</strong><p>"Cita de impacto"</p></div> (Fondo rojo oscuro tipo fuego)
-<div class="separador">✦ ✦ ✦</div> (Separador decorativo centrado)
-🐛 Solución de Problemas Comunes
-Problema
-Causa
-Solución
-Hice clic en un libro y da error o no carga	Falta el archivo capitulos.json o la carpeta tiene otro nombre.	Verificá que el slug en index.json coincida exactamente con el nombre de la carpeta en data/.
-Agregué recursos pero no se ven en la página	Caché del navegador. GitHub guardó la versión vieja.	Presioná Ctrl + Shift + R (o Cmd + Shift + R en Mac) para forzar la recarga.
-Se ve bien en mi PC pero en el celular se desarma	Error de sintaxis en el JSON (una coma de más).	Pegá tu JSON en jsonlint.com para verificar que no tenga errores.
-El video de YouTube no se reproduce	Pusiste la URL completa en vez del ID.	En recurso_url solo va el ID (ej: dQw4w9WgXcQ), no https://youtube.com/watch?v=...
-La tarjeta del capítulo no muestra los iconos nuevos	No actualizaste el array tipos en capitulos.json.	Agregá el tipo nuevo al array ["estudio", "video", "mapa"].
+> ⚠️ **IMPORTANTE PARA JSON:** Siempre escapá las comillas dobles dentro del `contenido_html` usando una barra invertida `\"` (por ejemplo: `<h2 class=\"subtitulo\">`).
 
-⏪ Cómo deshacer cambios (Revertir)
+---
+
+## 🐛 Solución de Problemas Comunes
+
+| Problema | Causa | Solución |
+| :--- | :--- | :--- |
+| Hice clic en un libro y da error | Falta el archivo `capitulos.json` o la carpeta tiene otro nombre. | Verificá que el `slug` en `index.json` coincida exactamente con el nombre de la carpeta en `data/`. |
+| Agregué recursos pero no se ven | **Caché del navegador.** | Presioná `Ctrl + Shift + R` (o `Cmd + Shift + R` en Mac) para forzar la recarga. |
+| Se ve bien en mi PC pero en el celular se desarma | Error de sintaxis en el JSON (una coma de más). | Pegá tu JSON en [jsonlint.com](https://jsonlint.com/) para verificar que no tenga errores. |
+| El video de YouTube no se reproduce | Pusiste la URL completa en vez del ID. | En `recurso_url` solo va el ID (ej: `dQw4w9WgXcQ`), no `https://youtube.com/watch?v=...` |
+| La tarjeta del capítulo no muestra los iconos nuevos | No actualizaste el array `tipos` en `capitulos.json`. | Agregá el tipo nuevo al array `["estudio", "video", "mapa"]`. |
+
+---
+
+## ⏪ Cómo deshacer cambios (Revertir)
+
 Si editaste un JSON y lo rompiste, es muy fácil volver atrás:
 
-Entrá al archivo en GitHub.
-Hacé clic en el botón "History" (relojito 🕐).
-Elegí la versión anterior (el commit verde que funcionaba).
-A la derecha del archivo, clic en los tres puntos (⋯) → "View file".
-Clic en "Raw", copiá todo el texto.
-Volvé al archivo actual, clic en el lápiz ✏️, pegá el texto y hacé commit.
-📌 Notas Finales
-Siempre actualiza los totales: Cada vez que agregues un recurso, suma 1 al "total" en capitulos.json y también en index.json. Si los números no coinciden, no rompe la app, pero muestra información incorrecta al usuario.
-Respaldos: Antes de hacer cambios masivos en un JSON, conviene copiar su contenido en un bloc de notas por si algo sale mal.
-HTML en JSON: Recuerda escapar las comillas dobles dentro del contenido_html usando una barra invertida \" (por ejemplo: <h2 class=\"subtitulo\">).
+1. Entrá al archivo en GitHub.
+2. Hacé clic en el botón **"History"** (relojito 🕐).
+3. Elegí la versión anterior (el commit verde que funcionaba).
+4. A la derecha del archivo, clic en los **tres puntos (⋯)** → **"View file"**.
+5. Clic en **"Raw"**, copiá todo el texto.
+6. Volvé al archivo actual, clic en el **lápiz ✏️**, pegá el texto y hacé commit.
 
-Hecho con ❤️ para la comunidad de Mahanaim
+---
 
+## 📌 Notas Finales
+
+*   **Siempre actualiza los totales:** Cada vez que agregues un recurso, suma 1 al `"total"` en `capitulos.json` y también en `index.json`.
+*   **Respaldos:** Antes de hacer cambios masivos en un JSON, conviene copiar su contenido en un bloc de notas por si algo sale mal.
+
+<div align="center">
+  <sub>Hecho con ❤️ para la comunidad de Mahanaim</sub>
+</div>
 ```
+
+---
+
+### ¿Por qué esta versión sí se va a ver bien?
+1. **No tiene bloques de código largos** (eliminé los triples backticks que se borran al copiar).
+2. **Usa tablas y negritas** para mostrar los ejemplos, lo cual es a prueba de errores al copiar y pegar.
+3. **Mantengo el HTML del encabezado intacto** al principio (eso es lo que dibuja el logo, los badges y lo centra).
