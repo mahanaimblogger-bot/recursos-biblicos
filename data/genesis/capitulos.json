@@ -3,7 +3,7 @@
   "data": {
     "capitulos": [
       {"capitulo": "1", "total": 4, "tipos": ["estudio", "video", "sermon", "audio"]},
-      {"capitulo": "2", "total": 3, "tipos": ["estudio", "video"]},
+      {"capitulo": "2", "total": 3, "tipos": ["estudio", "video", "sermon"]},
       {"capitulo": "3", "total": 2, "tipos": ["estudio", "imagen"]}
     ]
   }
