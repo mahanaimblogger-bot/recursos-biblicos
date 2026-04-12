@@ -51,21 +51,103 @@ a:hover{color:#d4ac0d}
 .bsa-section-head{display:flex;align-items:center;gap:10px;margin-bottom:22px;padding-bottom:12px;border-bottom:2px solid #d4ac0d}
 .bsa-section-head span{font-size:1.5em}
 .bsa-section-head h2{color:#1a5276;font-size:22px;margin:0}
-.bsa-books-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
+
+/* =================================================================
+   DISEÑO DE TÍTULOS (Etiqueta Flotante) Y ROLLOS ULTRA REALISTAS
+================================================================= */
+.bsa-books-grid{display:flex;flex-direction:column;gap:50px}
+.bsa-scroll-section{}
+.bsa-section-divider{
+  text-align:center;margin-bottom:30px;display:flex;align-items:center;justify-content:center;gap:15px
+}
+.bsa-section-divider::before,.bsa-section-divider::after{
+  content:'';flex:1;height:1px;background:linear-gradient(to right, transparent, rgba(212,172,13,0.5))
+}
+.bsa-section-divider::after{background:linear-gradient(to left, transparent, rgba(212,172,13,0.5))}
+/* La etiqueta del título */
+.bsa-section-divider h3{
+  color:#1a3a5c;
+  font-family:Georgia,serif;
+  font-size:1.2em;
+  margin:0;
+  white-space:nowrap;
+  background:linear-gradient(180deg, #fdfcf5, #e8dcc4);
+  padding: 8px 25px;
+  border-radius: 6px;
+  border: 1px solid #c9a227;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.8);
+  position: relative;
+  z-index: 2;
+}
+.bsa-scrolls-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:45px 20px}
+
+/* Contenedor del papel del pergamino */
 .bsa-book-card{
-  background:#fff;border:2px solid #e8e8e8;border-radius:10px;padding:20px 16px;
-  text-align:center;cursor:pointer;transition:all .25s;position:relative;overflow:hidden
+  position:relative;
+  background:linear-gradient(180deg, #fdfcf5 0%, #f0e6cf 30%, #fdfcf5 100%);
+  border:none;
+  border-radius:2px;
+  padding:40px 10px 34px;
+  text-align:center;cursor:pointer;
+  transition:all 0.4s cubic-bezier(.25,.8,.25,1);
+  /* Sombra de curvatura exagerada */
+  box-shadow:
+    inset 0 18px 25px -18px rgba(0,0,0,0.6),
+    inset 0 -18px 25px -18px rgba(0,0,0,0.6),
+    0 10px 25px rgba(0,0,0,0.2);
+  overflow:visible !important;
 }
-.bsa-book-card::before{
-  content:'';position:absolute;top:0;left:0;right:0;height:4px;
-  background:linear-gradient(90deg,#1a3a5c,#d4ac0d);transform:scaleX(0);
-  transition:transform .3s;transform-origin:left
+
+/* El Palo de Madera con Vetas */
+.bsa-roll{
+  position:absolute;
+  left:-12px; right:-12px; height:26px;
+  background: 
+    repeating-linear-gradient(90deg, transparent 0px, transparent 3px, rgba(90,69,16,0.15) 4px, transparent 5px),
+    radial-gradient(ellipse at 50% 40%, #f7e98e 0%, #d4ac0d 30%, #8b6914 70%, #5a4510 100%);
+  border-radius:13px;
+  z-index:4;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.5), inset 0 -3px 5px rgba(0,0,0,0.3);
 }
-.bsa-book-card:hover{border-color:#d4ac0d;box-shadow:0 6px 20px rgba(26,58,92,.12);transform:translateY(-3px)}
-.bsa-book-card:hover::before{transform:scaleX(1)}
-.bsa-book-name{font-size:1.15em;font-weight:bold;color:#1a3a5c;margin-bottom:8px}
-.bsa-book-count{font-size:13px;color:#757575}
-.bsa-book-count strong{color:#d4ac0d;font-size:18px}
+.bsa-roll-top{ top:-13px; box-shadow: 0 8px 15px rgba(0,0,0,0.6), inset 0 -3px 5px rgba(0,0,0,0.3); }
+.bsa-roll-bottom{ bottom:-13px; }
+
+/* Los Extremos (Polleras) con Efecto Esférico Real */
+.bsa-roll::before, .bsa-roll::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 38px;
+  /* Esfera con luz en la parte superior izquierda */
+  background: radial-gradient(circle at 35% 30%, #d4ac0d 0%, #8b6914 40%, #3d2e08 100%);
+  border-radius: 50%;
+  z-index: 5;
+  box-shadow: inset 0 -3px 6px rgba(0,0,0,0.6), 0 2px 5px rgba(0,0,0,0.4);
+}
+.bsa-roll::before { left: -5px; }
+.bsa-roll::after { right: -5px; }
+
+/* Efecto Hover (Desenrollarse pesado) */
+.bsa-book-card:hover{
+  transform:translateY(-14px) scale(1.02);
+  box-shadow:
+    inset 0 20px 30px -18px rgba(0,0,0,0.7),
+    inset 0 -20px 30px -18px rgba(0,0,0,0.7),
+    0 25px 50px rgba(0,0,0,0.3);
+  background:linear-gradient(180deg, #fffff8 0%, #f5edd6 30%, #fffff8 100%)
+}
+.bsa-book-name{font-size:1em;font-weight:bold;color:#1a3a5c;margin-bottom:2px;position:relative;z-index:3;font-family:Georgia,serif;line-height:1.2}
+.bsa-hebrew-name{
+  font-size:0.95em; color:#5d4037; position:relative; z-index:3; margin-bottom:8px;
+  direction: rtl; font-family:'Times New Roman', serif; unicode-bidi:bidi-override;
+  border-bottom:1px solid rgba(139, 105, 20, 0.3); display:inline-block; padding:0 5px 2px;
+}
+.bsa-book-count{font-size:11px;color:#5d4037;position:relative;z-index:3}
+.bsa-book-count strong{color:#8b6914;font-size:15px}
+/* ================================================================= */
+
 .bsa-ch-card{
   display:flex;align-items:center;gap:18px;background:#fff;border:2px solid #e8e8e8;
   border-radius:10px;padding:16px 20px;margin-bottom:14px;cursor:pointer;transition:all .25s
@@ -172,8 +254,9 @@ h2.subtitulo{border-bottom:1px solid #d4ac0d;color:#1a5276;margin-top:40px;margi
 @media(max-width:600px){
   .bsa-app-header{padding:25px 18px}
   .bsa-app-header h1{font-size:22px}
-  .bsa-books-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
-  .bsa-book-card{padding:16px 12px}
+  .bsa-scrolls-row{grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:35px 15px}
+  .bsa-book-card{padding:35px 8px 28px}
+  .bsa-hebrew-name{font-size:0.85em}
   .bsa-resources-grid{grid-template-columns:1fr;gap:14px}
   .bsa-res-card{padding:22px 16px}
   .bsa-ch-card{padding:14px 16px;gap:14px}
@@ -204,7 +287,7 @@ h2.subtitulo{border-bottom:1px solid #d4ac0d;color:#1a5276;margin-top:40px;margi
     </div>
     <div id="bsa-breadcrumb"></div>
     <div id="bsa-view-books" class="bsa-view">
-      <div class="bsa-section-head"><span>📚</span><h2>Selecciona un Libro</h2></div>
+      <div class="bsa-section-head"><span>📚</span><h2>Archivos Sagrados</h2></div>
       <div id="bsa-books-grid" class="bsa-books-grid"></div>
     </div>
     <div id="bsa-view-chapters" class="bsa-view" style="display:none">
@@ -238,16 +321,8 @@ h2.subtitulo{border-bottom:1px solid #d4ac0d;color:#1a5276;margin-top:40px;margi
 (function(){
 'use strict';
 
-/*
-============================================================
-  CONFIGURACIÓN — CAMBIA SOLO ESTO
-============================================================
-  Pone tu URL de GitHub Pages aquí.
-  Sin barra al final.
-============================================================ */
 var GITHUB_BASE = 'https://mahanaimblogger-bot.github.io/recursos-biblicos';
 
-/* =========================================================== */
 var $=function(id){return document.getElementById(id)};
 var views=['bsa-view-books','bsa-view-chapters','bsa-view-resources','bsa-view-content','bsa-view-error'];
 var state={libro:null,libroSlug:null,capitulo:null,recursos:[]};
@@ -255,23 +330,30 @@ var state={libro:null,libroSlug:null,capitulo:null,recursos:[]};
 var icons={estudio:'📖',sermon:'🛐',video:'🎬',audio:'🎧',imagen:'🖼️',diapositiva:'📊',pdf:'📄'};
 var labels={estudio:'Estudio Bíblico',sermon:'Sermón / Predica',video:'Video Resumen',audio:'Audio / Podcast',imagen:'Imágenes / Mapas',diapositiva:'Diapositivas',pdf:'PDF / Documento'};
 
-/* ===========================================================
-  FETCH DESDE GITHUB
-  Las rutas son:
-    GITHUB_BASE/data/index.json                    → lista de libros
-    GITHUB_BASE/data/{slug}/capitulos.json         → capítulos de un libro
-    GITHUB_BASE/data/{slug}/cap-{num}.json         → recursos de un capítulo
-============================================================ */
+var nombresHebreos = {
+  "Génesis": "בראשית", "Éxodo": "שמות", "Levítico": "ויקרא", "Números": "במדבר", "Deuteronomio": "דברים",
+  "Josué": "יהושע", "Jueces": "שופטים", "Rut": "רות", "1 Samuel": "שמואל א", "2 Samuel": "שמואל ב",
+  "1 Reyes": "מלכים א", "2 Reyes": "מלכים ב", "1 Crónicas": "דברי הימים א", "2 Crónicas": "דברי הימים ב",
+  "Esdras": "עזרא", "Nehemías": "נחמיה", "Ester": "אסתר", "Job": "איוב", "Salmos": "תהילים",
+  "Proverbios": "משלי", "Eclesiastés": "קהלת", "Cantares": "שיר השירים", "Isaías": "ישעיהו",
+  "Jeremías": "ירמיהו", "Lamentaciones": "איכה", "Ezequiel": "יחזקאל", "Daniel": "דניאל",
+  "Oseas": "הושע", "Joel": "יואל", "Amós": "עמוס", "Abdías": "עובדיה", "Jonás": "יונה",
+  "Miqueas": "מיכה", "Nahúm": "נחום", "Habacuc": "חבקוק", "Sofonías": "צפניה", "Hageo": "חגי",
+  "Zacarías": "זכריה", "Malaquías": "מלאכי", "Mateo": "מתתיהו", "Marcos": "מרקוס", "Lucas": "לוקס",
+  "Juan": "יוחנן", "Hechos": "מעשי השליחים", "Romanos": "רומים", "1 Corintios": "קורינתים א",
+  "2 Corintios": "קורינתים ב", "Gálatas": "גלטיא", "Efesios": "אפסים", "Filipenses": "פיליפים",
+  "Colosenses": "קולוסיאים", "1 Tesalonicenses": "תסלוניקים א", "2 Tesalonicenses": "תסלוניקים ב",
+  "1 Timoteo": "טימותיאוס א", "2 Timoteo": "טימותיאוס ב", "Tito": "טיטוס", "Filemón": "פילמון",
+  "Hebreos": "עברים", "Santiago": "יעקב", "1 Pedro": "כיפא א", "2 Pedro": "כיפא ב",
+  "1 Juan": "יוחנן א", "2 Juan": "יוחנן ב", "3 Juan": "יוחנן ג", "Judas": "יהודה", "Apocalipsis": "חזון יוחנן"
+};
+
 function api(p){
   var base=GITHUB_BASE.replace(/\/+$/,'');
   var url;
-  if(!p){
-    url=base+'/data/index.json';
-  } else if(p.capitulo){
-    url=base+'/data/'+p.slug+'/cap-'+p.capitulo+'.json';
-  } else {
-    url=base+'/data/'+p.slug+'/capitulos.json';
-  }
+  if(!p){url=base+'/data/index.json';} 
+  else if(p.capitulo){url=base+'/data/'+p.slug+'/cap-'+p.capitulo+'.json';} 
+  else {url=base+'/data/'+p.slug+'/capitulos.json';}
   return fetch(url).then(function(r){
     if(!r.ok) throw new Error('No se encontró: '+url);
     return r.json();
@@ -281,9 +363,6 @@ function api(p){
   });
 }
 
-/* ===========================================================
-  HELPERS
-============================================================ */
 function hideAll(){views.forEach(function(id){$(id).style.display='none'})}
 function show(id){hideAll();var el=$(id);el.style.display='block';el.style.animation='none';el.offsetHeight;el.style.animation=''}
 function setCrumb(items){
@@ -304,9 +383,6 @@ function showError(msg){
   show('bsa-view-error');
 }
 
-/* ===========================================================
-  NAVEGACIÓN
-============================================================ */
 window.BSA={};
 
 BSA.go=function(step){
@@ -317,14 +393,55 @@ BSA.go=function(step){
 BSA.showBooks=function(){
   state.libro=null;state.libroSlug=null;
   setCrumb([{label:'Recursos Bíblicos'}]);
-  $('bsa-books-grid').innerHTML='<div class="bsa-loading"><div class="bsa-spinner"></div><p>Cargando libros...</p></div>';
+  $('bsa-books-grid').innerHTML='<div class="bsa-loading"><div class="bsa-spinner"></div><p>Cargando biblioteca...</p></div>';
   show('bsa-view-books');
+  
+  var secciones={
+    "Pentateuco":["Génesis","Éxodo","Levítico","Números","Deuteronomio"],
+    "Libros Históricos":["Josué","Jueces","Rut","1 Samuel","2 Samuel","1 Reyes","2 Reyes","1 Crónicas","2 Crónicas","Esdras","Nehemías","Ester"],
+    "Libros Poéticos y Sapienciales":["Job","Salmos","Proverbios","Eclesiastés","Cantares"],
+    "Profetas Mayores":["Isaías","Jeremías","Lamentaciones","Ezequiel","Daniel"],
+    "Profetas Menores":["Oseas","Joel","Amós","Abdías","Jonás","Miqueas","Nahúm","Habacuc","Sofonías","Hageo","Zacarías","Malaquías"],
+    "Evangelios":["Mateo","Marcos","Lucas","Juan"],
+    "Historia de la Iglesia Primitiva":["Hechos"],
+    "Epístolas Paulinas":["Romanos","1 Corintios","2 Corintios","Gálatas","Efesios","Filipenses","Colosenses","1 Tesalonicenses","2 Tesalonicenses","1 Timoteo","2 Timoteo","Tito","Filemón"],
+    "Epístolas Generales":["Hebreos","Santiago","1 Pedro","2 Pedro","1 Juan","2 Juan","3 Juan","Judas"],
+    "Literatura Apocalíptica":["Apocalipsis"]
+  };
+
+  var mapa={};
+  for(var sec in secciones){secciones[sec].forEach(function(libro){ mapa[libro]=sec; });}
+
   api().then(function(r){
+    var libros=r.data.libros;
+    var agrupados={};
+    libros.forEach(function(b){
+      var nombreSec=mapa[b.libro] || "Otros Libros";
+      if(!agrupados[nombreSec]) agrupados[nombreSec]=[];
+      agrupados[nombreSec].push(b);
+    });
+
     var h='';
-    r.data.libros.forEach(function(b){
-      h+='<div class="bsa-book-card" onclick="BSA.showChapters(\''+esc(b.libro)+'\',\''+esc(b.slug)+'\')">'+
-        '<div class="bsa-book-name">'+esc(b.libro)+'</div>'+
-        '<div class="bsa-book-count"><strong>'+b.total+'</strong> recursos</div></div>';
+    var ordenSecciones=Object.keys(secciones);
+    if(agrupados["Otros Libros"]) ordenSecciones.push("Otros Libros");
+
+    ordenSecciones.forEach(function(sec){
+      if(!agrupados[sec]) return; 
+      var librosGrupo=agrupados[sec];
+      h+='<div class="bsa-scroll-section">';
+      h+='<div class="bsa-section-divider"><h3>'+sec+'</h3></div>';
+      h+='<div class="bsa-scrolls-row">';
+      
+      librosGrupo.forEach(function(b){
+        var hebreo = nombresHebreos[b.libro] || '';
+        h+='<div class="bsa-book-card" onclick="BSA.showChapters(\''+esc(b.libro)+'\',\''+esc(b.slug)+'\')">'+
+          '<div class="bsa-roll bsa-roll-top"></div>'+
+          '<div class="bsa-roll bsa-roll-bottom"></div>'+
+          '<div class="bsa-book-name">'+esc(b.libro)+'</div>'+
+          (hebreo ? '<div class="bsa-hebrew-name">'+hebreo+'</div>' : '')+
+          '<div class="bsa-book-count"><strong>'+b.total+'</strong> recursos</div></div>';
+      });
+      h+='</div></div>';
     });
     $('bsa-books-grid').innerHTML=h;
   }).catch(function(e){showError(e.message);});
@@ -424,7 +541,7 @@ BSA.openResource=function(idx){
       html='<div class="bsa-img-wrap"><img src="'+item.recurso_url+'" alt="'+esc(titulo)+'" /></div>';
       if(item.contenido_html) html+='<div class="bsa-contenedor" style="margin-top:30px">'+item.contenido_html+'</div>';
     }else if(tipo==='diapositiva'&&item.recurso_url){
-      html='<div class="bsa-media-box"><iframe src="'+item.recurso_url+'" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>';
+      html+='<div class="bsa-media-box"><iframe src="'+item.recurso_url+'" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>';
       if(item.contenido_html) html+='<div class="bsa-contenedor" style="margin-top:30px">'+item.contenido_html+'</div>';
     }else{
       html='<div class="bsa-contenedor"><div class="contenedor-blog">'+(item.contenido_html||'<p>Contenido no disponible.</p>')+'</div></div>';
@@ -434,9 +551,6 @@ BSA.openResource=function(idx){
   },150);
 };
 
-/* ===========================================================
-  INICIALIZAR CONTENIDO (videos, tooltips, scroll)
-============================================================ */
 function initContentFeatures(){
   var cont=$('bsa-final-content');
   cont.querySelectorAll('.contenedor-video').forEach(function(el){
@@ -458,15 +572,9 @@ function initContentFeatures(){
   });
 }
 
-/* ===========================================================
-  BOTONES
-============================================================ */
  $('bsa-back-chapters').addEventListener('click',function(){BSA.showBooks();});
  $('bsa-error-btn').addEventListener('click',function(){BSA.go(1);});
 
-/* ===========================================================
-  ARRANQUE
-============================================================ */
 BSA.showBooks();
 
 })();
