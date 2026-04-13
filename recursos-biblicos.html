@@ -351,9 +351,15 @@ var nombresHebreos = {
 function api(p){
   var base=GITHUB_BASE.replace(/\/+$/,'');
   var url;
-  if(!p){url=base+'/data/index.json';} 
-  else if(p.capitulo){url=base+'/data/'+p.slug+'/cap-'+p.capitulo+'.json';} 
-  else {url=base+'/data/'+p.slug+'/capitulos.json';}
+  if(!p){
+  url = base+'/data/index.json?v=' + Date.now();
+} 
+else if(p.capitulo){
+  url = base+'/data/'+p.slug+'/cap-'+p.capitulo+'.json?v=' + Date.now();
+} 
+else {
+  url = base+'/data/'+p.slug+'/capitulos.json?v=' + Date.now();
+}
   return fetch(url).then(function(r){
     if(!r.ok) throw new Error('No se encontró: '+url);
     return r.json();
