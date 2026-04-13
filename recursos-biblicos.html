@@ -522,7 +522,23 @@ BSA.openResource=function(idx){
   show('bsa-view-content');
   window.scrollTo({top:0,behavior:'smooth'});
 
-  setTimeout(function(){
+ setTimeout(function(){
+  if(item.archivo_html){
+    fetch(GITHUB_BASE + item.archivo_html)
+      .then(function(r){
+        if(!r.ok) throw new Error('No se pudo cargar el HTML');
+        return r.text();
+      })
+      .then(function(html){
+        $('bsa-final-content').innerHTML =
+          '<div class="bsa-contenedor">' + html + '</div>';
+        initContentFeatures();
+      })
+      .catch(function(e){
+        showError(e.message);
+      });
+    return;
+  }
     var html='';
     if(tipo==='sermon'){
       html='<div class="bsa-sermon-box"><h3>🛐 '+esc(titulo)+'</h3>';
