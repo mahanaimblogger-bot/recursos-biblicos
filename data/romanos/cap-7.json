@@ -1,6 +1,12 @@
 {
-  "titulo": "El grito del prisionero",
-  "capitulo": 7,
-  "recurso_url": "estudios/romanos/romanos7.html",
-  "contenido_html": ""
+  "success": true,
+  "data": {
+    "recursos": [
+      {
+        "tipo": "estudio",
+        "titulo": "El grito del prisionero",
+        "archivo_html": "/data/romanos/romanos7.html"
+      }
+    ]
+  }
 }
