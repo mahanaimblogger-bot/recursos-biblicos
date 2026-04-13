@@ -1,5 +1,3 @@
-Aquí tienes tu **README actualizado, corregido y optimizado** con TODO lo que acabas de implementar (incluyendo aclaración clave: ahora los estudios se cargan desde `data/`, no desde `estudios/`, y cómo funciona realmente el sistema):
-
 ---
 
 ```md
