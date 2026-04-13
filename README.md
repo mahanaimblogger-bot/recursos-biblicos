@@ -28,11 +28,11 @@
 
 ## 🤔 ¿Qué es este proyecto?
 
-Es una SPA (Single Page Application) en HTML que carga contenido dinámicamente desde archivos JSON y HTML alojados en GitHub Pages.
+SPA en HTML que carga contenido desde JSON y archivos HTML externos en GitHub Pages.
 
 ✔ Sin backend  
 ✔ Sin base de datos  
-✔ Todo funciona con JSON + HTML  
+✔ Sistema escalable  
 
 ---
 
@@ -45,73 +45,22 @@ data/
     capitulos.json  
     cap-7.json  
     cap-8.json  
+
+estudios/  
+  romanos/  
     romanos7.html  
 
 ---
 
 ## 🛠️ Guía Paso a Paso
 
-### 1. Crear un capítulo
+### 1. Crear un estudio (HTML)
 
-Archivo:
+Ubicación:
 
-data/romanos/cap-7.json
-
-Ejemplo:
-
-{
-  "success": true,
-  "data": {
-    "recursos": [
-      {
-        "tipo": "estudio",
-        "titulo": "El grito del prisionero",
-        "archivo_html": "/data/romanos/romanos7.html"
-      }
-    ]
-  }
-}
-
----
-
-### 2. Registrar el capítulo
-
-Archivo:
-
-data/romanos/capitulos.json
+estudios/romanos/romanos7.html
 
 Ejemplo:
-
-{
-  "capitulo": "7",
-  "total": 1,
-  "tipos": ["estudio"]
-}
-
----
-
-## 🔥 Estudios externos (HTML)
-
-### 💡 CLAVE DEL SISTEMA
-
-Los estudios NO van dentro del JSON.  
-Se cargan desde archivos .html externos.
-
----
-
-### 📄 Dónde van los estudios
-
-SIEMPRE dentro de:
-
-data/[libro]/
-
-Ejemplo:
-
-data/romanos/romanos7.html
-
----
-
-### 📌 Ejemplo de estudio
 
 <!DOCTYPE html>
 <html lang="es">
@@ -129,47 +78,101 @@ data/romanos/romanos7.html
 
 ---
 
-### 🔗 Cómo conectarlo
+### 2. Crear el JSON del capítulo
+
+Archivo:
+
+data/romanos/cap-7.json
+
+Ejemplo:
 
 {
-  "tipo": "estudio",
-  "titulo": "Romanos 7",
-  "archivo_html": "/data/romanos/romanos7.html"
+  "success": true,
+  "data": {
+    "recursos": [
+      {
+        "tipo": "estudio",
+        "titulo": "El grito del prisionero",
+        "archivo_html": "/estudios/romanos/romanos7.html"
+      }
+    ]
+  }
 }
 
 ---
 
-### ⚠️ REGLAS IMPORTANTES
+### 3. Registrar el capítulo
 
-✔ La ruta debe empezar con /data/  
-✔ El archivo debe existir en GitHub  
-✔ NO usar contenido_html si usas archivo_html  
-✔ El HTML puede ser completo  
+Archivo:
+
+data/romanos/capitulos.json
+
+Ejemplo:
+
+{
+  "capitulo": "7",
+  "total": 1,
+  "tipos": ["estudio"]
+}
+
+---
+
+## 🔥 Estudios externos (HTML)
+
+### 💡 CLAVE
+
+Los estudios NO van dentro del JSON.  
+Se cargan desde la carpeta:
+
+estudios/
+
+---
+
+### 📄 Regla de rutas
+
+SIEMPRE usar:
+
+/estudios/libro/archivo.html
+
+Ejemplo:
+
+/estudios/romanos/romanos7.html
+
+---
+
+### ⚠️ IMPORTANTE
+
+✔ NO usar contenido_html  
+✔ archivo_html es obligatorio para estudios  
+✔ El HTML puede ser completo (head, style, etc.)  
+✔ Debe existir físicamente en GitHub  
 
 ---
 
 ### 🚀 Ventajas
 
-✔ Estudios largos sin romper JSON  
-✔ HTML limpio y editable  
+✔ Estudios largos sin errores  
+✔ HTML limpio  
+✔ Separación total entre datos y contenido  
 ✔ Escalable  
-✔ Más profesional  
 
 ---
 
 ## 🚀 Anti-cache automático
 
-El sistema incluye:
+El sistema usa:
 
 ?v=' + Date.now()
 
-Esto evita que el navegador use versiones viejas.
+✔ Evita cache  
+✔ Siempre carga lo último  
+✔ No necesitas Ctrl + F5  
 
 ---
 
 ## 🎨 Gestión de Iconos
 
-Se configuran en el HTML principal:
+En el HTML principal:
 
 var icons = {
   estudio:'📖',
@@ -182,20 +185,20 @@ var icons = {
 ## 🐛 Solución de Problemas
 
 No aparece capítulo → Revisar capitulos.json  
-No carga estudio → Verificar ruta /data/...  
-Funciona HTML pero no app → Revisar archivo_html  
-Cambios no se ven → Cache (ya solucionado)  
-Error raro → Validar JSON  
+No carga estudio → Revisar ruta /estudios/...  
+Funciona HTML directo pero no app → JSON mal configurado  
+No se actualiza → GitHub tarda unos segundos  
+Error JSON → Validar formato  
 
 ---
 
 ## 📌 Notas Finales
 
 ✔ JSON = índice  
-✔ HTML = contenido  
-✔ Todo dentro de /data/  
+✔ HTML = contenido real  
+✔ Estudios van en /estudios/  
 ✔ No mezclar contenido_html con archivo_html  
 
 ---
 
-🔥 Sistema limpio, escalable y listo para crecer
+🔥 Sistema profesional, limpio y listo para escalar
