@@ -10,38 +10,87 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
-  font-family:Roboto,Arial,sans-serif;color:#757575;font-size:15px;line-height:1.6;
-  background-image:url('https://blogger.googleusercontent.com/img/a/AVvXsEh8_05dG7sOWU0iLgSFju4bHHCBSfEwjnGYu9TqTqYqGmj1eL8je-oh1lSVwMle4GW1fxTOgY59unrm2t-vgIyT0lA8uZLwiqKzuZ6DUc_rlWkHok-Ayw5Ov-f5vQ1Q_qHv1pJ68lzXCxf-mhhUIlaOc-WKivI-rp9bTwQlsW7BUic6578UGPWupnRwn_s=s1600');
-  background-repeat:repeat;background-position:top left;min-height:100vh;overflow-x:hidden
+  font-family:Georgia,'Times New Roman',serif;color:#3e2723;font-size:15px;line-height:1.6;
+  background-color:#fdfbf7;min-height:100vh;overflow-x:hidden
 }
-a{color:#1a5276;text-decoration:none}
-a:hover{color:#d4ac0d}
+a{color:#5d4037;text-decoration:none}
+a:hover{color:#bf360c}
+
+/* ===== NAV BAR (estilo blog) ===== */
 .bsa-top-header{max-width:922px;margin:0 auto}
-.bsa-top-header img{width:100%;height:auto;display:block;border-bottom:3px solid #d4ac0d}
+.bsa-top-header img{width:100%;height:auto;display:block;border-bottom:3px solid #8d6e63}
 .bsa-nav-bar{
-  background:linear-gradient(135deg,#1a3a5c 0%,#2d5a3d 100%);
+  background-color:#5d4037;
   padding:10px 20px;display:flex;align-items:center;justify-content:space-between;
-  box-shadow:0 2px 8px rgba(0,0,0,.15)
+  box-shadow:0 2px 8px rgba(0,0,0,.2)
 }
-.bsa-nav-bar a{color:#fff;font-size:14px;font-weight:500;display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:6px;transition:all .2s}
-.bsa-nav-bar a:hover{background:rgba(255,255,255,.12);color:#d4ac0d}
-.bsa-nav-bar .bsa-brand{font-family:Georgia,serif;font-size:16px;color:#d4ac0d;font-weight:700}
-.bsa-page-wrap{max-width:922px;margin:0 auto;padding:24px 16px 60px}
+.bsa-nav-bar a{color:#efebe9;font-size:14px;font-weight:500;display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:4px;transition:all .2s;font-family:Georgia,serif}
+.bsa-nav-bar a:hover{background:rgba(255,255,255,.12);color:#d7ccc8}
+.bsa-nav-bar .bsa-brand{font-family:Georgia,serif;font-size:18px;color:#d4ac0d;font-weight:700}
+
+/* ===== CONTENEDOR GENERAL ===== */
+.bsa-page-wrap{max-width:922px;margin:0 auto;padding:20px 16px 60px}
+
+/* ===== BANNER PRINCIPAL (estilo blog) ===== */
 .bsa-app-header{
-  background:linear-gradient(135deg,#1a3a5c,#2d4a6c);border-radius:12px;padding:35px 30px;
-  margin-bottom:30px;text-align:center;box-shadow:0 8px 30px rgba(26,58,92,.3);
-  border:2px solid rgba(212,172,13,.25)
+  text-align:center;margin-bottom:25px;
 }
-.bsa-app-header .bsa-emoji{font-size:2.8em;margin-bottom:10px}
-.bsa-app-header h1{color:#fff;font-size:28px;margin:0 0 10px;font-family:Georgia,serif}
-.bsa-app-header p{color:rgba(255,255,255,.7);font-size:15px;margin:0 auto;max-width:600px}
-#bsa-breadcrumb{margin-bottom:20px;font-size:14px;min-height:22px;background:rgba(255,255,255,.85);padding:10px 16px;border-radius:8px}
-#bsa-breadcrumb a{color:#1a5276;text-decoration:none;border-bottom:1px dotted #d4ac0d;transition:color .2s}
-#bsa-breadcrumb a:hover{color:#d4ac0d}
-#bsa-breadcrumb .bsa-sep{color:#999;margin:0 8px}
-#bsa-breadcrumb .bsa-current{color:#757575}
+.bsa-app-header img.bsa-banner-img{
+  max-width:100%;height:auto;border-radius:8px;
+  border:4px solid #5d4037;box-shadow:0 4px 10px rgba(0,0,0,.2);margin-bottom:12px
+}
+.bsa-app-header h1{
+  color:#1b5e20;font-size:32px;text-transform:uppercase;letter-spacing:2px;margin:10px 0;
+  font-family:Georgia,serif
+}
+.bsa-app-header p{
+  color:#5d4037;font-style:italic;text-align:center;font-size:15px;margin:0
+}
+
+/* ===== BREADCRUMB (estilo blog) ===== */
+#bsa-breadcrumb{margin-bottom:20px;font-size:14px;min-height:22px;background:#fff;padding:10px 16px;border-radius:4px;border:1px solid #d4c4a8}
+#bsa-breadcrumb a{color:#5d4037;text-decoration:none;border-bottom:1px dotted #8d6e63;transition:color .2s}
+#bsa-breadcrumb a:hover{color:#bf360c}
+#bsa-breadcrumb .bsa-sep{color:#9e9e9e;margin:0 8px}
+#bsa-breadcrumb .bsa-current{color:#8d6e63}
+
+/* ===== SECCIONES BÍBLICAS (estilo blog) ===== */
+.bsa-seccion-biblica{
+  margin-bottom:25px;padding:15px;background-color:#fff;
+  border-radius:8px;border-left:6px solid #8d6e63;
+  box-shadow:0 2px 5px rgba(0,0,0,.05)
+}
+.bsa-seccion-titulo{
+  color:#bf360c;font-size:20px;font-weight:bold;
+  border-bottom:1px solid #eee;padding-bottom:5px;margin-bottom:12px;
+  font-family:Georgia,serif
+}
+.bsa-lista-libros{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-start}
+.bsa-btn-libro{
+  background-color:#efebe9;color:#3e2723;padding:8px 16px;
+  text-decoration:none;border-radius:4px;border:1px solid #d7ccc8;
+  font-size:14px;transition:all .3s ease;display:inline-block;
+  font-family:Georgia,serif;cursor:pointer
+}
+.bsa-btn-libro:hover{background-color:#8d6e63;color:#fff;transform:translateY(-2px)}
+.bsa-btn-libro.disabled{
+  background-color:#f5f5f5;color:#9e9e9e;pointer-events:none;
+  border:1px solid #e0e0e0;font-style:italic;cursor:default
+}
+.bsa-btn-libro.disabled:hover{transform:none;background-color:#f5f5f5;color:#9e9e9e}
+
+/* ===== FOOTER (estilo blog) ===== */
+.bsa-footer{text-align:center;padding:20px;font-size:13px;color:#8d6e63;border-top:1px solid #d4c4a8;margin-top:40px;font-family:Georgia,serif}
+.bsa-footer a{color:#5d4037}
+.bsa-footer a:hover{color:#bf360c}
+
+/* ===== ANIMACIONES ===== */
 .bsa-view{animation:bsaF .35s ease}
 @keyframes bsaF{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+
+/* =================================================================
+   VISTAS INTERNAS (sin cambios - diseño original de pergaminos)
+================================================================= */
 .bsa-btn-back{
   display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.85);border:1px solid #ccc;
   color:#1a5276;padding:8px 18px;border-radius:6px;font-size:14px;cursor:pointer;
@@ -52,9 +101,6 @@ a:hover{color:#d4ac0d}
 .bsa-section-head span{font-size:1.5em}
 .bsa-section-head h2{color:#1a5276;font-size:22px;margin:0}
 
-/* =================================================================
-   DISEÑO DE TÍTULOS (Etiqueta Flotante) Y ROLLOS ULTRA REALISTAS
-================================================================= */
 .bsa-books-grid{display:flex;flex-direction:column;gap:50px}
 .bsa-scroll-section{}
 .bsa-section-divider{
@@ -64,89 +110,50 @@ a:hover{color:#d4ac0d}
   content:'';flex:1;height:1px;background:linear-gradient(to right, transparent, rgba(212,172,13,0.5))
 }
 .bsa-section-divider::after{background:linear-gradient(to left, transparent, rgba(212,172,13,0.5))}
-/* La etiqueta del título */
 .bsa-section-divider h3{
-  color:#1a3a5c;
-  font-family:Georgia,serif;
-  font-size:1.2em;
-  margin:0;
-  white-space:nowrap;
-  background:linear-gradient(180deg, #fdfcf5, #e8dcc4);
-  padding: 8px 25px;
-  border-radius: 6px;
-  border: 1px solid #c9a227;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.8);
-  position: relative;
-  z-index: 2;
+  color:#1a3a5c;font-family:Georgia,serif;font-size:1.2em;margin:0;white-space:nowrap;
+  background:linear-gradient(180deg, #fdfcf5, #e8dcc4);padding:8px 25px;border-radius:6px;
+  border:1px solid #c9a227;box-shadow:0 4px 12px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.8);
+  position:relative;z-index:2
 }
 .bsa-scrolls-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:45px 20px}
 
-/* Contenedor del papel del pergamino */
 .bsa-book-card{
   position:relative;
   background:linear-gradient(180deg, #fdfcf5 0%, #f0e6cf 30%, #fdfcf5 100%);
-  border:none;
-  border-radius:2px;
-  padding:40px 10px 34px;
-  text-align:center;cursor:pointer;
+  border:none;border-radius:2px;padding:40px 10px 34px;text-align:center;cursor:pointer;
   transition:all 0.4s cubic-bezier(.25,.8,.25,1);
-  /* Sombra de curvatura exagerada */
-  box-shadow:
-    inset 0 18px 25px -18px rgba(0,0,0,0.6),
-    inset 0 -18px 25px -18px rgba(0,0,0,0.6),
-    0 10px 25px rgba(0,0,0,0.2);
-  overflow:visible !important;
+  box-shadow:inset 0 18px 25px -18px rgba(0,0,0,0.6),inset 0 -18px 25px -18px rgba(0,0,0,0.6),0 10px 25px rgba(0,0,0,0.2);
+  overflow:visible !important
 }
-
-/* El Palo de Madera con Vetas */
 .bsa-roll{
-  position:absolute;
-  left:-12px; right:-12px; height:26px;
-  background: 
-    repeating-linear-gradient(90deg, transparent 0px, transparent 3px, rgba(90,69,16,0.15) 4px, transparent 5px),
+  position:absolute;left:-12px;right:-12px;height:26px;
+  background:repeating-linear-gradient(90deg, transparent 0px, transparent 3px, rgba(90,69,16,0.15) 4px, transparent 5px),
     radial-gradient(ellipse at 50% 40%, #f7e98e 0%, #d4ac0d 30%, #8b6914 70%, #5a4510 100%);
-  border-radius:13px;
-  z-index:4;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.5), inset 0 -3px 5px rgba(0,0,0,0.3);
+  border-radius:13px;z-index:4;box-shadow:0 6px 12px rgba(0,0,0,0.5), inset 0 -3px 5px rgba(0,0,0,0.3)
 }
-.bsa-roll-top{ top:-13px; box-shadow: 0 8px 15px rgba(0,0,0,0.6), inset 0 -3px 5px rgba(0,0,0,0.3); }
-.bsa-roll-bottom{ bottom:-13px; }
-
-/* Los Extremos (Polleras) con Efecto Esférico Real */
-.bsa-roll::before, .bsa-roll::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 38px;
-  /* Esfera con luz en la parte superior izquierda */
-  background: radial-gradient(circle at 35% 30%, #d4ac0d 0%, #8b6914 40%, #3d2e08 100%);
-  border-radius: 50%;
-  z-index: 5;
-  box-shadow: inset 0 -3px 6px rgba(0,0,0,0.6), 0 2px 5px rgba(0,0,0,0.4);
+.bsa-roll-top{top:-13px;box-shadow:0 8px 15px rgba(0,0,0,0.6), inset 0 -3px 5px rgba(0,0,0,0.3)}
+.bsa-roll-bottom{bottom:-13px}
+.bsa-roll::before,.bsa-roll::after{
+  content:'';position:absolute;top:50%;transform:translateY(-50%);width:20px;height:38px;
+  background:radial-gradient(circle at 35% 30%, #d4ac0d 0%, #8b6914 40%, #3d2e08 100%);
+  border-radius:50%;z-index:5;box-shadow:inset 0 -3px 6px rgba(0,0,0,0.6), 0 2px 5px rgba(0,0,0,0.4)
 }
-.bsa-roll::before { left: -5px; }
-.bsa-roll::after { right: -5px; }
-
-/* Efecto Hover (Desenrollarse pesado) */
+.bsa-roll::before{left:-5px}
+.bsa-roll::after{right:-5px}
 .bsa-book-card:hover{
   transform:translateY(-14px) scale(1.02);
-  box-shadow:
-    inset 0 20px 30px -18px rgba(0,0,0,0.7),
-    inset 0 -20px 30px -18px rgba(0,0,0,0.7),
-    0 25px 50px rgba(0,0,0,0.3);
+  box-shadow:inset 0 20px 30px -18px rgba(0,0,0,0.7),inset 0 -20px 30px -18px rgba(0,0,0,0.7),0 25px 50px rgba(0,0,0,0.3);
   background:linear-gradient(180deg, #fffff8 0%, #f5edd6 30%, #fffff8 100%)
 }
 .bsa-book-name{font-size:1em;font-weight:bold;color:#1a3a5c;margin-bottom:2px;position:relative;z-index:3;font-family:Georgia,serif;line-height:1.2}
 .bsa-hebrew-name{
-  font-size:0.95em; color:#5d4037; position:relative; z-index:3; margin-bottom:8px;
-  direction: rtl; font-family:'Times New Roman', serif; unicode-bidi:bidi-override;
-  border-bottom:1px solid rgba(139, 105, 20, 0.3); display:inline-block; padding:0 5px 2px;
+  font-size:0.95em;color:#5d4037;position:relative;z-index:3;margin-bottom:8px;
+  direction:rtl;font-family:'Times New Roman',serif;unicode-bidi:bidi-override;
+  border-bottom:1px solid rgba(139,105,20,0.3);display:inline-block;padding:0 5px 2px
 }
 .bsa-book-count{font-size:11px;color:#5d4037;position:relative;z-index:3}
 .bsa-book-count strong{color:#8b6914;font-size:15px}
-/* ================================================================= */
 
 .bsa-ch-card{
   display:flex;align-items:center;gap:18px;background:#fff;border:2px solid #e8e8e8;
@@ -159,10 +166,11 @@ a:hover{color:#d4ac0d}
   color:#d4ac0d;font-size:20px;font-weight:bold
 }
 .bsa-ch-info{flex:1;min-width:0}
-.bsa-ch-title{font-size:1.05em;color:#1a3a5c;font-weight:bold;margin:0}
+.bsa-ch-title{font-size:1.05em;color:#1a5276;font-weight:bold;margin:0}
 .bsa-ch-meta{font-size:12px;color:#757575;margin:4px 0 0}
 .bsa-ch-tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
-.bsa-ch-tags span{font-size:11px;background:#e8ecf1;color:#1a3a5c;padding:2px 8px;border-radius:10px}
+.bsa-ch-tags span{font-size:11px;background:#e8ecf1;color:#1a5a5c;padding:2px 8px;border-radius:10px}
+
 .bsa-resources-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
 .bsa-res-card{
   background:#fff;border:2px solid #e8e8e8;border-radius:14px;padding:30px 20px;
@@ -171,14 +179,16 @@ a:hover{color:#d4ac0d}
 }
 .bsa-res-card:hover{border-color:#d4ac0d;box-shadow:0 10px 30px rgba(26,58,92,.15);transform:translateY(-5px)}
 .bsa-res-icon{font-size:3.5em;margin-bottom:5px}
-.bsa-res-title{font-size:1.1em;color:#1a3a5c;font-weight:bold;margin:0;line-height:1.3}
+.bsa-res-title{font-size:1.1em;color:#1a5276;font-weight:bold;margin:0;line-height:1.3}
 .bsa-res-type{font-size:11px;color:#fff;background:#1a3a5c;padding:4px 12px;border-radius:20px;text-transform:uppercase;letter-spacing:1px;margin-top:5px}
+
 .bsa-contenedor{color:#333;font-family:Georgia,serif;font-size:17px;line-height:1.8;text-align:justify;background:#fff;padding:30px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,.05)}
 .bsa-sermon-box{background:linear-gradient(135deg,#1a3a5c,#2d4a6c);border-radius:12px;padding:30px;margin-bottom:25px;text-align:center}
 .bsa-sermon-box h3{color:#d4ac0d;margin:0 0 20px;font-family:Georgia,serif}
 .bsa-sermon-box audio{width:100%;border-radius:8px;outline:none;margin-top:10px}
 .bsa-media-box{border:2px solid #d4ac0d;border-radius:12px;overflow:hidden;box-shadow:0 8px 25px rgba(0,0,0,.2);margin-bottom:25px}
 .bsa-media-box iframe{width:100%;height:500px;border:none;display:block}
+
 .contenedor-blog{color:#333;font-family:Georgia,serif;font-size:17px;line-height:1.8;text-align:justify}
 h1.titulo-entrada{border-bottom:2px solid #d4ac0d;color:#1a5276;font-size:30px;padding-bottom:10px;text-align:center;margin-top:20px}
 h2.subtitulo{border-bottom:1px solid #d4ac0d;color:#1a5276;margin-top:40px;margin-bottom:15px}
@@ -191,7 +201,7 @@ h2.subtitulo{border-bottom:1px solid #d4ac0d;color:#1a5276;margin-top:40px;margi
 .caja-contexto ul{list-style:none;padding:0}
 .caja-linguistica{background:linear-gradient(135deg,#fdf6e3,#f5ecd7);border-left:5px solid #b8860b;border-radius:0 8px 8px 0;margin:20px 0;padding:18px 20px}
 .caja-linguistica h4{color:#8b6914;margin:0 0 10px}
-.caja-linguistica .palabra-original{font-size:1.15em;color:#1a3a5c;font-weight:bold;background:rgba(184,134,11,.12);padding:3px 10px;border-radius:4px;display:inline-block;margin:5px 0;direction:rtl}
+.caja-linguistica .palabra-original{font-size:1.15em;color:#1a5a5c;font-weight:bold;background:rgba(184,134,11,.12);padding:3px 10px;border-radius:4px;display:inline-block;margin:5px 0;direction:rtl}
 .caja-arqueologica{background:linear-gradient(135deg,#faf5ef,#f0e8db);border-left:5px solid #a0522d;border-radius:0 8px 8px 0;margin:20px 0;padding:18px 20px}
 .caja-arqueologica h4{color:#a0522d;margin:0 0 10px}
 .caja-profetica{background:linear-gradient(135deg,#f8f0ff,#f0e6fa);border-left:5px solid #6b3fa0;border-radius:0 8px 8px 0;margin:20px 0;padding:18px 20px}
@@ -233,13 +243,14 @@ h2.subtitulo{border-bottom:1px solid #d4ac0d;color:#1a5276;margin-top:40px;margi
 .apendice-titulo{text-align:center;border-bottom:3px solid #c9a227;color:#1a5276;padding-bottom:12px;margin-bottom:15px;font-size:1.4em}
 .apendice-subtitulo{border-bottom:1px solid #d4ac0d;color:#1a5276;margin-top:40px;margin-bottom:20px;padding-bottom:8px;font-size:1.15em}
 .apendice-nota{background:linear-gradient(135deg,#fffdf5,#fefcf0);border-left:4px solid #c9a227;border-radius:0 6px 6px 0;margin:18px 0;padding:16px 20px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
-.apendice-nota h4{color:#1a3a5c;margin:0 0 8px;font-size:1.02em;border-bottom:1px dotted rgba(26,82,118,.2);padding-bottom:6px}
+.apendice-nota h4{color:#1a5a5c;margin:0 0 8px;font-size:1.02em;border-bottom:1px dotted rgba(26,82,118,.2);padding-bottom:6px}
 .apendice-nota p{margin:6px 0;font-size:.95em;line-height:1.7;color:#3a3a3a}
-.apendice-nota .palabra-original{font-size:1.1em;color:#1a3a5c;font-weight:bold;background:rgba(201,162,39,.12);padding:2px 8px;border-radius:3px;display:inline-block;margin:4px 0;direction:rtl}
+.apendice-nota .palabra-original{font-size:1.1em;color:#1a5a5c;font-weight:bold;background:rgba(201,162,39,.12);padding:2px 8px;border-radius:3px;display:inline-block;margin:4px 0;direction:rtl}
 .contenedor-blog ul{list-style-type:square;margin-left:20px}
 .contenedor-blog ol{margin-left:20px}
 .bsa-img-wrap{text-align:center;margin:20px 0}
 .bsa-img-wrap img{max-width:100%;border:3px solid #d4ac0d;border-radius:8px;box-shadow:0 8px 20px rgba(0,0,0,.3)}
+
 .bsa-error-box{text-align:center;padding:50px 20px}
 .bsa-error-box .bsa-emoji{font-size:3em;margin-bottom:15px}
 .bsa-error-box h3{color:#1a5276;margin-bottom:10px}
@@ -247,13 +258,13 @@ h2.subtitulo{border-bottom:1px solid #d4ac0d;color:#1a5276;margin-top:40px;margi
 .bsa-btn-primary{background:linear-gradient(135deg,#1a3a5c,#2d5a3d);color:#d4ac0d;border:2px solid #d4ac0d;padding:10px 24px;border-radius:8px;font-size:15px;font-weight:bold;cursor:pointer;transition:all .2s;font-family:Roboto,Arial,sans-serif}
 .bsa-btn-primary:hover{opacity:.85}
 .bsa-loading{text-align:center;padding:60px 20px;color:#757575}
-.bsa-loading .bsa-spinner{width:40px;height:40px;border:4px solid #e8e8e8;border-top-color:#1a3a5c;border-radius:50%;margin:0 auto 16px;animation:bsaSpin .8s linear infinite}
+.bsa-loading .bsa-spinner{width:40px;height:40px;border:4px solid #e8e8e8;border-top-color:#5d4037;border-radius:50%;margin:0 auto 16px;animation:bsaSpin .8s linear infinite}
 @keyframes bsaSpin{to{transform:rotate(360deg)}}
-.bsa-footer{text-align:center;padding:20px;font-size:13px;color:#999;border-top:1px solid rgba(0,0,0,.08);margin-top:40px}
-.bsa-footer a{color:#1a5276}
+
 @media(max-width:600px){
-  .bsa-app-header{padding:25px 18px}
-  .bsa-app-header h1{font-size:22px}
+  .bsa-app-header h1{font-size:22px;letter-spacing:1px}
+  .bsa-seccion-titulo{font-size:17px}
+  .bsa-btn-libro{padding:7px 12px;font-size:13px}
   .bsa-scrolls-row{grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:35px 15px}
   .bsa-book-card{padding:35px 8px 28px}
   .bsa-hebrew-name{font-size:0.85em}
@@ -275,36 +286,48 @@ h2.subtitulo{border-bottom:1px solid #d4ac0d;color:#1a5276;margin-top:40px;margi
   <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjiOoSuMMmUakxLDOSNtXiJtzYe8BhR8Yy9g6mE6bTsEJNFru_n7E6fri7_VB-zarxqQmLZOUo3g4llrx7ZIqz-6uj8T58YgxDzZ4ZLqfME_Y4zXisuLhDEhgIDKKe3e3eaDQ5avWmncc0cx5cMfsxwiXu3bgsPrCvBGLOMynNacdX1YOTGPNJG7TOmIx0=s576" alt="Mahanaim - Campamento de Dios">
 </div>
 <nav class="bsa-nav-bar">
-  <a href="https://mahanaimcampamentodivino.blogspot.com">← Volver al Blog</a>
+  <a href="https://mahanaimcampamentodivino.blogspot.com">← Volver al Inicio</a>
   <span class="bsa-brand">Mahanaim</span>
 </nav>
 <div class="bsa-page-wrap">
   <div id="bsa-app">
-    <div class="bsa-app-header">
-      <div class="bsa-emoji">📖</div>
+
+    <!-- BANNER PRINCIPAL (solo visible en vista de libros) -->
+    <div class="bsa-app-header" id="bsa-app-header">
+      <img class="bsa-banner-img" src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?q=80&w=1470&auto=format&fit=crop" alt="Biblioteca Antigua y Escrituras">
       <h1>Centro de Recursos Bíblicos</h1>
       <p>Estudios, sermones, videos y materiales para enseñar</p>
     </div>
+
     <div id="bsa-breadcrumb"></div>
+
+    <!-- VISTA: LIBROS (estilo blog) -->
     <div id="bsa-view-books" class="bsa-view">
-      <div class="bsa-section-head"><span>📚</span><h2>Archivos Sagrados</h2></div>
-      <div id="bsa-books-grid" class="bsa-books-grid"></div>
+      <div id="bsa-books-grid"></div>
     </div>
+
+    <!-- VISTA: CAPÍTULOS (diseño original) -->
     <div id="bsa-view-chapters" class="bsa-view" style="display:none">
       <button class="bsa-btn-back" id="bsa-back-chapters">← Volver a libros</button>
       <div class="bsa-section-head"><span>📑</span><h2 id="bsa-chapters-title"></h2></div>
       <div id="bsa-chapters-list"></div>
     </div>
+
+    <!-- VISTA: RECURSOS (diseño original) -->
     <div id="bsa-view-resources" class="bsa-view" style="display:none">
       <button class="bsa-btn-back" id="bsa-back-chapters2">← Volver a capítulos</button>
       <h2 id="bsa-res-title" style="color:#1a5276;font-size:24px;margin-bottom:10px;text-align:center;border-bottom:2px solid #d4ac0d;padding-bottom:15px"></h2>
       <p style="text-align:center;color:#757575;margin-bottom:25px">Elige qué recurso querés ver:</p>
       <div id="bsa-resources-grid" class="bsa-resources-grid"></div>
     </div>
+
+    <!-- VISTA: CONTENIDO (diseño original) -->
     <div id="bsa-view-content" class="bsa-view" style="display:none">
       <button class="bsa-btn-back" id="bsa-back-resources">← Volver a recursos</button>
       <div id="bsa-final-content"></div>
     </div>
+
+    <!-- VISTA: ERROR -->
     <div id="bsa-view-error" class="bsa-view" style="display:none">
       <div class="bsa-error-box">
         <div class="bsa-emoji">⚠️</div>
@@ -313,6 +336,7 @@ h2.subtitulo{border-bottom:1px solid #d4ac0d;color:#1a5276;margin-top:40px;margi
         <button class="bsa-btn-primary" id="bsa-error-btn">Volver</button>
       </div>
     </div>
+
   </div>
   <footer class="bsa-footer">© Mahanaim "Campamento de Dios" — <a href="https://mahanaimcampamentodivino.blogspot.com">Inicio del Blog</a></footer>
 </div>
@@ -329,6 +353,20 @@ var state={libro:null,libroSlug:null,capitulo:null,recursos:[]};
 
 var icons={estudio:'📖',sermon:'🛐',video:'🎬',audio:'🎧',imagen:'🖼️',diapositiva:'📊',pdf:'📄'};
 var labels={estudio:'Estudio Bíblico',sermon:'Sermón / Predica',video:'Video Resumen',audio:'Audio / Podcast',imagen:'Imágenes / Mapas',diapositiva:'Diapositivas',pdf:'PDF / Documento'};
+
+/* Todos los libros de la Biblia organizados por sección (10 secciones) */
+var secciones={
+  "Pentateuco":["Génesis","Éxodo","Levítico","Números","Deuteronomio"],
+  "Libros Históricos":["Josué","Jueces","Rut","1 Samuel","2 Samuel","1 Reyes","2 Reyes","1 Crónicas","2 Crónicas","Esdras","Nehemías","Ester"],
+  "Libros Poéticos y Sapienciales":["Job","Salmos","Proverbios","Eclesiastés","Cantares"],
+  "Profetas Mayores":["Isaías","Jeremías","Lamentaciones","Ezequiel","Daniel"],
+  "Profetas Menores":["Oseas","Joel","Amós","Abdías","Jonás","Miqueas","Nahúm","Habacuc","Sofonías","Hageo","Zacarías","Malaquías"],
+  "Evangelios":["Mateo","Marcos","Lucas","Juan"],
+  "Historia de la Iglesia Primitiva":["Hechos"],
+  "Epístolas Paulinas":["Romanos","1 Corintios","2 Corintios","Gálatas","Efesios","Filipenses","Colosenses","1 Tesalonicenses","2 Tesalonicenses","1 Timoteo","2 Timoteo","Tito","Filemón"],
+  "Epístolas Generales":["Hebreos","Santiago","1 Pedro","2 Pedro","1 Juan","2 Juan","3 Juan","Judas"],
+  "Literatura Apocalíptica":["Apocalipsis"]
+};
 
 var nombresHebreos = {
   "Génesis": "בראשית", "Éxodo": "שמות", "Levítico": "ויקרא", "Números": "במדבר", "Deuteronomio": "דברים",
@@ -352,14 +390,12 @@ function api(p){
   var base=GITHUB_BASE.replace(/\/+$/,'');
   var url;
   if(!p){
-  url = base+'/data/index.json?v=' + Date.now();
-} 
-else if(p.capitulo){
-  url = base+'/data/'+p.slug+'/cap-'+p.capitulo+'.json?v=' + Date.now();
-} 
-else {
-  url = base+'/data/'+p.slug+'/capitulos.json?v=' + Date.now();
-}
+    url=base+'/data/index.json?v='+Date.now();
+  }else if(p.capitulo){
+    url=base+'/data/'+p.slug+'/cap-'+p.capitulo+'.json?v='+Date.now();
+  }else{
+    url=base+'/data/'+p.slug+'/capitulos.json?v='+Date.now();
+  }
   return fetch(url).then(function(r){
     if(!r.ok) throw new Error('No se encontró: '+url);
     return r.json();
@@ -370,7 +406,12 @@ else {
 }
 
 function hideAll(){views.forEach(function(id){$(id).style.display='none'})}
-function show(id){hideAll();var el=$(id);el.style.display='block';el.style.animation='none';el.offsetHeight;el.style.animation=''}
+function show(id){
+  hideAll();
+  var el=$(id);el.style.display='block';el.style.animation='none';el.offsetHeight;el.style.animation='';
+  /* Mostrar/ocultar banner según la vista */
+  $('bsa-app-header').style.display=(id==='bsa-view-books')?'block':'none';
+}
 function setCrumb(items){
   var h='';
   items.forEach(function(it,i){
@@ -401,52 +442,32 @@ BSA.showBooks=function(){
   setCrumb([{label:'Recursos Bíblicos'}]);
   $('bsa-books-grid').innerHTML='<div class="bsa-loading"><div class="bsa-spinner"></div><p>Cargando biblioteca...</p></div>';
   show('bsa-view-books');
-  
-  var secciones={
-    "Pentateuco":["Génesis","Éxodo","Levítico","Números","Deuteronomio"],
-    "Libros Históricos":["Josué","Jueces","Rut","1 Samuel","2 Samuel","1 Reyes","2 Reyes","1 Crónicas","2 Crónicas","Esdras","Nehemías","Ester"],
-    "Libros Poéticos y Sapienciales":["Job","Salmos","Proverbios","Eclesiastés","Cantares"],
-    "Profetas Mayores":["Isaías","Jeremías","Lamentaciones","Ezequiel","Daniel"],
-    "Profetas Menores":["Oseas","Joel","Amós","Abdías","Jonás","Miqueas","Nahúm","Habacuc","Sofonías","Hageo","Zacarías","Malaquías"],
-    "Evangelios":["Mateo","Marcos","Lucas","Juan"],
-    "Historia de la Iglesia Primitiva":["Hechos"],
-    "Epístolas Paulinas":["Romanos","1 Corintios","2 Corintios","Gálatas","Efesios","Filipenses","Colosenses","1 Tesalonicenses","2 Tesalonicenses","1 Timoteo","2 Timoteo","Tito","Filemón"],
-    "Epístolas Generales":["Hebreos","Santiago","1 Pedro","2 Pedro","1 Juan","2 Juan","3 Juan","Judas"],
-    "Literatura Apocalíptica":["Apocalipsis"]
-  };
-
-  var mapa={};
-  for(var sec in secciones){secciones[sec].forEach(function(libro){ mapa[libro]=sec; });}
 
   api().then(function(r){
-    var libros=r.data.libros;
-    var agrupados={};
-    libros.forEach(function(b){
-      var nombreSec=mapa[b.libro] || "Otros Libros";
-      if(!agrupados[nombreSec]) agrupados[nombreSec]=[];
-      agrupados[nombreSec].push(b);
-    });
+    /* Crear mapa de libros disponibles desde la API */
+    var disponibles={};
+    r.data.libros.forEach(function(b){disponibles[b.libro]=b;});
 
     var h='';
     var ordenSecciones=Object.keys(secciones);
-    if(agrupados["Otros Libros"]) ordenSecciones.push("Otros Libros");
 
     ordenSecciones.forEach(function(sec){
-      if(!agrupados[sec]) return; 
-      var librosGrupo=agrupados[sec];
-      h+='<div class="bsa-scroll-section">';
-      h+='<div class="bsa-section-divider"><h3>'+sec+'</h3></div>';
-      h+='<div class="bsa-scrolls-row">';
-      
-      librosGrupo.forEach(function(b){
-        var hebreo = nombresHebreos[b.libro] || '';
-        h+='<div class="bsa-book-card" onclick="BSA.showChapters(\''+esc(b.libro)+'\',\''+esc(b.slug)+'\')">'+
-          '<div class="bsa-roll bsa-roll-top"></div>'+
-          '<div class="bsa-roll bsa-roll-bottom"></div>'+
-          '<div class="bsa-book-name">'+esc(b.libro)+'</div>'+
-          (hebreo ? '<div class="bsa-hebrew-name">'+hebreo+'</div>' : '')+
-          '<div class="bsa-book-count"><strong>'+b.total+'</strong> recursos</div></div>';
+      var librosGrupo=secciones[sec];
+      h+='<div class="bsa-seccion-biblica">';
+      h+='<div class="bsa-seccion-titulo">'+sec+'</div>';
+      h+='<div class="bsa-lista-libros">';
+
+      librosGrupo.forEach(function(nombreLibro){
+        var libroData=disponibles[nombreLibro];
+        if(libroData){
+          /* Libro disponible: botón activo con enlace */
+          h+='<a class="bsa-btn-libro" href="javascript:void(0)" onclick="BSA.showChapters(\''+esc(nombreLibro)+'\',\''+esc(libroData.slug)+'\')">'+esc(nombreLibro)+'</a>';
+        }else{
+          /* Libro pendiente: botón deshabilitado */
+          h+='<a class="bsa-btn-libro disabled" href="#">'+esc(nombreLibro)+'</a>';
+        }
       });
+
       h+='</div></div>';
     });
     $('bsa-books-grid').innerHTML=h;
@@ -528,23 +549,20 @@ BSA.openResource=function(idx){
   show('bsa-view-content');
   window.scrollTo({top:0,behavior:'smooth'});
 
- setTimeout(function(){
-  if(item.archivo_html){
-    fetch(GITHUB_BASE + item.archivo_html)
-      .then(function(r){
-        if(!r.ok) throw new Error('No se pudo cargar el HTML');
-        return r.text();
-      })
-      .then(function(html){
-        $('bsa-final-content').innerHTML =
-          '<div class="bsa-contenedor">' + html + '</div>';
-        initContentFeatures();
-      })
-      .catch(function(e){
-        showError(e.message);
-      });
-    return;
-  }
+  setTimeout(function(){
+    if(item.archivo_html){
+      fetch(GITHUB_BASE+item.archivo_html)
+        .then(function(r){
+          if(!r.ok) throw new Error('No se pudo cargar el HTML');
+          return r.text();
+        })
+        .then(function(html){
+          $('bsa-final-content').innerHTML='<div class="bsa-contenedor">'+html+'</div>';
+          initContentFeatures();
+        })
+        .catch(function(e){showError(e.message);});
+      return;
+    }
     var html='';
     if(tipo==='sermon'){
       html='<div class="bsa-sermon-box"><h3>🛐 '+esc(titulo)+'</h3>';
