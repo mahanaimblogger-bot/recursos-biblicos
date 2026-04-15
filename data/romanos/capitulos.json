@@ -2,7 +2,7 @@
   "success": true,
   "data": {
     "capitulos": [
-      {"capitulo": "7", "total": 1, "tipos": ["estudio"]},
+      {"capitulo": "7", "total": 2, "tipos": ["estudio", "imagen"]},
       {"capitulo": "8", "total": 2, "tipos": ["estudio", "imagen"]}
     ]
   }
