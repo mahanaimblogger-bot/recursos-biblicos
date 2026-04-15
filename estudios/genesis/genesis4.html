@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La primera ofrenda rechazada y la semilla de la serpiente · Génesis 4</title>
+  <style>
+    /* ============================================
+       ESTILOS BASE DEL BLOG
+       ============================================ */
+    .contenedor-blog {
+        color: #333333;
+        font-family: Georgia, serif;
+        font-size: 17px;
+        line-height: 1.8;
+        text-align: justify;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* TÍTULOS */
+    h1.titulo-entrada {
+        border-bottom: 2px solid rgb(212, 172, 13);
+        color: #1a5276;
+        font-size: 30px;
+        padding-bottom: 10px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    h2.subtitulo {
+        border-bottom: 1px solid rgb(212, 172, 13);
+        color: #1a5276;
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+
+    /* VERSÍCULO EN CAJA */
+    .cita-versiculo {
+        background-color: #fef9e7;
+        border-left: 5px solid rgb(212, 172, 13);
+        border-radius: 4px;
+        margin: 25px 0px;
+        padding: 20px;
+    }
+    .cita-versiculo h3 {
+        color: #b7950b;
+        margin-top: 0px;
+        font-size: 1.1em;
+    }
+    .cita-versiculo p {
+        font-size: 18px;
+        font-style: italic;
+        margin-bottom: 0px;
+    }
+
+    /* ============================================
+       CAJA DE CONTEXTO
+       ============================================ */
+    .caja-contexto {
+        background: linear-gradient(135deg, #f0f5fa 0%, #e5ecf5 100%);
+        border: 2px solid #4682b4;
+        border-radius: 10px;
+        margin: 25px 0;
+        padding: 25px;
+        font-size: 0.95em;
+    }
+    .caja-contexto h3 {
+        color: #1a3a5c;
+        margin: 0 0 15px 0;
+        font-size: 1.2em;
+        text-align: center;
+        border-bottom: 1px solid #4682b4;
+        padding-bottom: 10px;
+    }
+    .caja-contexto strong { color: #1a3a5c; }
+    .caja-contexto ul { list-style: none; margin: 0; padding: 0; }
+    .caja-contexto li { margin-bottom: 8px; padding-left: 0; }
+    .caja-contexto li::before { content: ""; display: none; }
+
+    /* ============================================
+       CAJAS DE NOTAS ESPECIALES
+       ============================================ */
+    .caja-linguistica { background: linear-gradient(135deg, #fdf6e3, #f5ecd7); border-left: 5px solid #b8860b; border-radius: 0 8px 8px 0; margin: 20px 0; padding: 18px 20px; }
+    .caja-linguistica h4 { color: #8b6914; margin: 0 0 10px 0; font-size: 1.05em; }
+    .caja-linguistica p { margin: 5px 0; font-size: .97em; }
+    .caja-linguistica .palabra-original { font-size: 1.15em; color: #1a3a5c; font-weight: bold; background: rgba(184,134,11,.12); padding: 3px 10px; border-radius: 4px; display: inline-block; margin: 5px 0; direction: rtl; }
+
+    .caja-arqueologica { background: linear-gradient(135deg, #faf5ef, #f0e8db); border-left: 5px solid #a0522d; border-radius: 0 8px 8px 0; margin: 20px 0; padding: 18px 20px; }
+    .caja-arqueologica h4 { color: #a0522d; margin: 0 0 10px 0; font-size: 1.05em; }
+    .caja-arqueologica p { margin: 5px 0; font-size: .97em; }
+
+    .caja-geografica { background: linear-gradient(135deg, #f0faf5, #e0f5ec); border-left: 5px solid #2e8b57; border-radius: 0 8px 8px 0; margin: 20px 0; padding: 18px 20px; }
+    .caja-geografica h4 { color: #2e8b57; margin: 0 0 10px 0; font-size: 1.05em; }
+    .caja-geografica p { margin: 5px 0; font-size: .97em; }
+
+    .caja-profetica { background: linear-gradient(135deg, #f8f0ff, #f0e6fa); border-left: 5px solid #6b3fa0; border-radius: 0 8px 8px 0; margin: 20px 0; padding: 18px 20px; }
+    .caja-profetica h4 { color: #6b3fa0; margin: 0 0 10px 0; font-size: 1.05em; }
+    .caja-profetica p { margin: 5px 0; font-size: .97em; }
+
+    .caja-historica { background: linear-gradient(135deg, #f0f5fa, #e5ecf5); border-left: 5px solid #4682b4; border-radius: 0 8px 8px 0; margin: 20px 0; padding: 18px 20px; }
+    .caja-historica h4 { color: #4682b4; margin: 0 0 10px 0; font-size: 1.05em; }
+    .caja-historica p { margin: 5px 0; font-size: .97em; }
+
+    .caja-simbolismo { background: linear-gradient(135deg, #fefce8, #fef3c7); border-left: 5px solid #8b6914; border-radius: 0 8px 8px 0; margin: 20px 0; padding: 18px 20px; }
+    .caja-simbolismo h4 { color: #8b6914; margin: 0 0 10px 0; font-size: 1.05em; }
+    .caja-simbolismo p { margin: 5px 0; font-size: .97em; }
+
+    /* ============================================
+       CAJAS DE APLICACIÓN Y DOCTRINAS
+       ============================================ */
+    .caja-aplicacion {
+        background: linear-gradient(135deg, #e8f8f5, #d1f2eb);
+        border: 2px solid #1abc9c;
+        border-radius: 8px;
+        margin: 30px 0;
+        padding: 25px;
+        position: relative;
+    }
+    .caja-aplicacion::before {
+        content: "\2696";
+        font-size: 2em;
+        position: absolute;
+        top: -15px;
+        left: 25px;
+        background: #e8f8f5;
+        padding: 0 10px;
+    }
+    .caja-aplicacion h3 {
+        color: #117a65;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .caja-aplicacion ul {
+        margin-left: 15px;
+        list-style-type: none;
+        padding: 0;
+    }
+    .caja-aplicacion li {
+        margin-bottom: 14px;
+        line-height: 1.7;
+        padding-left: 20px;
+        position: relative;
+    }
+    .caja-aplicacion li::before {
+        content: "\2713";
+        color: #1abc9c;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+    }
+
+    .caja-doctrinas {
+        background: linear-gradient(135deg, #f4ecf7, #e8daef);
+        border: 2px solid #8e44ad;
+        border-radius: 8px;
+        margin: 30px 0;
+        padding: 25px;
+        position: relative;
+    }
+    .caja-doctrinas::before {
+        content: "\2720";
+        font-size: 2em;
+        position: absolute;
+        top: -15px;
+        left: 25px;
+        background: #f4ecf7;
+        padding: 0 10px;
+    }
+    .caja-doctrinas h3 {
+        color: #6c3483;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .caja-doctrinas ul {
+        margin-left: 15px;
+        list-style-type: none;
+        padding: 0;
+    }
+    .caja-doctrinas li {
+        margin-bottom: 14px;
+        line-height: 1.7;
+        padding-left: 20px;
+        position: relative;
+    }
+    .caja-doctrinas li::before {
+        content: "\25C6";
+        color: #8e44ad;
+        position: absolute;
+        left: 0;
+    }
+    .caja-doctrinas strong { color: #4a235a; }
+
+    /* ============================================
+       ELEMENTOS ADICIONALES
+       ============================================ */
+    .destacado-dramatico {
+        background: linear-gradient(135deg, #1a3a5c, #2d4a6c);
+        color: #fff;
+        padding: 25px 30px;
+        border-radius: 8px;
+        margin: 30px 0;
+        text-align: center;
+        font-size: 1.1em;
+        font-weight: bold;
+        line-height: 1.7;
+        border: 2px solid #d4ac0d;
+        box-shadow: 0 5px 20px rgba(0,0,0,.3);
+    }
+
+    .caja-meditar {
+        background: linear-gradient(135deg, #fef9e7, #fdebd0);
+        border: 2px solid #d4ac0d;
+        border-radius: 8px;
+        margin: 30px 0;
+        padding: 25px;
+        position: relative;
+    }
+    .caja-meditar::before {
+        content: "\1F64F";
+        font-size: 2em;
+        position: absolute;
+        top: -15px;
+        left: 25px;
+        background: #fef9e7;
+        padding: 0 10px;
+    }
+    .caja-meditar h3 { color: #b7950b; margin-top: 10px; margin-bottom: 15px; font-size: 1.2em; text-align: center; }
+    .caja-meditar ul { margin-left: 15px; }
+    .caja-meditar li { margin-bottom: 12px; line-height: 1.7; }
+
+    .separador { text-align: center; margin: 35px 0; color: #d4ac0d; font-size: 1.5em; letter-spacing: 8px; }
+    ul { list-style-type: square; margin-left: 20px; }
+
+    /* ============================================
+       ÍNDICE DE NAVEGACIÓN
+       ============================================ */
+    .indice-nav {
+        background: linear-gradient(135deg, #1a3a5c 0%, #2d4a6c 100%);
+        color: #ffffff;
+        padding: 25px 30px;
+        margin-bottom: 40px;
+        border-radius: 12px;
+        box-shadow: 0 10px 40px rgba(26, 58, 92, 0.3);
+    }
+    .indice-nav h3 {
+        color: #d4ac0d;
+        margin-top: 0;
+        margin-bottom: 18px;
+        font-size: 1.3em;
+        font-family: Georgia, serif;
+        text-align: center;
+        border-bottom: 1px solid rgba(212, 172, 13, 0.4);
+        padding-bottom: 12px;
+    }
+    .indice-nav .punto-principal {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .indice-nav .punto-principal > li {
+        margin-bottom: 4px;
+    }
+    .indice-nav .punto-principal > li > a {
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+        padding: 9px 0 5px 0;
+        border-bottom: 1px dotted rgba(255,255,255,0.3);
+        transition: all 0.3s ease;
+        font-size: 0.95em;
+    }
+    .indice-nav .punto-principal > li > a:hover {
+        color: #d4ac0d;
+        padding-left: 10px;
+    }
+    .indice-nav .ref-etiqueta {
+        color: #d4ac0d;
+        font-weight: bold;
+        margin-right: 6px;
+        font-size: 0.9em;
+    }
+    .indice-nav .sub-notas {
+        margin: 2px 0 8px 0;
+        padding: 0;
+        list-style: none;
+    }
+    .indice-nav .sub-notas li { margin: 0; }
+    .indice-nav .sub-notas a {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        display: block;
+        padding: 3px 0 3px 18px;
+        font-size: 0.82em;
+        border-bottom: none;
+        transition: all 0.3s ease;
+        line-height: 1.4;
+    }
+    .indice-nav .sub-notas a:hover {
+        color: #d4ac0d;
+        padding-left: 24px;
+    }
+    .indice-nav .sub-notas .emoji-tipo { margin-right: 5px; font-size: 0.95em; }
+
+    .volver-indice {
+        display: inline-block;
+        text-align: right;
+        color: #1a3a5c;
+        text-decoration: none;
+        font-size: 0.9em;
+        margin-top: 35px;
+        margin-bottom: 25px;
+        font-weight: 600;
+        font-family: Georgia, serif;
+        border-top: 1px dotted #d4ac0d;
+        padding-top: 12px;
+        transition: all 0.3s ease;
+        width: 100%;
+    }
+    .volver-indice:hover { color: #d4ac0d; }
+
+    /* TOOLTIPS */
+    .biblia-ref { position: relative; color: #1a3a5c; font-weight: bold; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; transition: color .2s; }
+    .biblia-ref:hover { color: #c9a227; }
+    .biblia-ref .tooltip-text { visibility: hidden; opacity: 0; position: absolute; left: 50%; bottom: calc(100% + 10px); transform: translateX(-50%); width: 320px; max-width: 90vw; background: linear-gradient(135deg, #1a3a5c, #2d4a6c); color: #fff; padding: 15px 18px; border-radius: 8px; font-size: .9em; font-weight: normal; line-height: 1.5; text-align: left; font-style: italic; box-shadow: 0 8px 25px rgba(0,0,0,.3); z-index: 1000; transition: opacity .3s, visibility .3s; border: 2px solid #c9a227; }
+    .biblia-ref .tooltip-text::after { content: ''; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); border: 10px solid transparent; border-top-color: #2d4a6c; }
+    .biblia-ref .tooltip-cita { display: block; color: #c9a227; font-weight: bold; font-style: normal; margin-bottom: 8px; font-size: .85em; text-align: center; border-bottom: 1px solid #4a6a8c; padding-bottom: 8px; }
+    .biblia-ref:hover .tooltip-text { visibility: visible; opacity: 1; }
+
+    @media (max-width: 768px) {
+        .contenedor-blog { padding: 15px; }
+        h1.titulo-entrada { font-size: 24px; }
+        .destacado-dramatico { padding: 18px 15px; font-size: 1em; }
+        .biblia-ref .tooltip-text { position: fixed; bottom: 20px; left: 15px; right: 15px; width: auto; transform: none; max-width: none; max-height: 50vh; overflow-y: auto; }
+        .biblia-ref .tooltip-text::after { display: none; }
+        .indice-nav { padding: 20px 20px; }
+        .indice-nav .punto-principal > li > a { font-size: 0.88em; }
+        .indice-nav .sub-notas a { font-size: 0.78em; padding-left: 12px; }
+        .indice-nav .sub-notas a:hover { padding-left: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="contenedor-blog">
+
+    <!-- IMAGEN DE PORTADA omitida (SIN IMAGEN) -->
+
+    <h1 class="titulo-entrada">La primera ofrenda rechazada y la semilla de la serpiente</h1>
+
+    <div class="cita-versiculo">
+        <h3>Génesis 4:7</h3>
+        <p>“Si bien hicieres, ¿no serás enaltecido? y si no hicieres bien, el pecado está a la puerta; con todo esto, a ti será su deseo, y tú te enseñorearás de él.”</p>
+    </div>
+
+    <!-- VIDEO omitido (SIN VIDEO) -->
+
+    <div class="caja-contexto" id="contexto">
+        <h3>Contexto del Pasaje</h3>
+        <ul>
+            <li><strong>Autor:</strong> Moisés (atribución tradicional), c. 1446–1406 a.C., durante la peregrinación en el desierto o en las llanuras de Moab.</li>
+            <li><strong>Género literario:</strong> Narrativa histórica primigenia con alta carga teológica y tipológica.</li>
+            <li><strong>Época histórica:</strong> Edad post-edénica temprana; el mundo antediluviano se organiza en ciudades y oficios. No hay revelación escrita previa, solo la tradición oral de la caída.</li>
+            <li><strong>Contexto inmediato:</strong> Génesis 3 termina con la expulsión del Edén y querubines guardianes. El capítulo 4 muestra la primera generación fuera del paraíso, evidenciando la rapidez con que el pecado se enseñorea de la humanidad caída. El capítulo 5 trazará la genealogía de Set hasta Noé.</li>
+            <li><strong>Destinatarios originales:</strong> Israel en el éxodo, necesitado de entender el origen del mal, la violencia, la necesidad de un sacrificio aceptable y la promesa de una simiente redentora (Gn 3:15).</li>
+            <li><strong>Trasfondo doctrinal:</strong> Estudio desde una perspectiva reformada de pactos, premilenial postribulacionista.</li>
+        </ul>
+    </div>
+
+    <div class="indice-nav" id="indice">
+        <h3>ÍNDICE DE CONTENIDOS</h3>
+        <ul class="punto-principal">
+            <li><a href="#contexto"><span class="ref-etiqueta">Gn 4</span> Contexto del pasaje</a></li>
+            <li>
+                <a href="#bloque1"><span class="ref-etiqueta">Gn 4:1‑7</span> Dos ofrendas, dos corazones: El misterio del rechazo divino</a>
+                <ul class="sub-notas">
+                    <li><a href="#nota-linguistica1"><span class="emoji-tipo">📜</span> El hebreo detrás de “pecado” y “deseo”</a></li>
+                    <li><a href="#nota-arqueologica1"><span class="emoji-tipo">🏛️</span> Agricultura y pastoreo en el Cercano Oriente</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#bloque2"><span class="ref-etiqueta">Gn 4:8‑16</span> La sangre que clama desde la tierra: El primer homicidio y la justicia de Dios</a>
+                <ul class="sub-notas">
+                    <li><a href="#nota-geografica1"><span class="emoji-tipo">🗺️</span> La tierra de Nod: ¿un lugar real o simbólico?</a></li>
+                    <li><a href="#nota-profetica1"><span class="emoji-tipo">✝️</span> La señal de Caín y la gracia común</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#bloque3"><span class="ref-etiqueta">Gn 4:17‑24</span> La ciudad del hombre: Civilización sin Dios y el canto de la espada</a>
+                <ul class="sub-notas">
+                    <li><a href="#nota-simbolismo1"><span class="emoji-tipo">🔢</span> Lamec y la venganza “setenta veces siete”</a></li>
+                    <li><a href="#nota-historica1"><span class="emoji-tipo">⏳</span> Tubal-Caín y los orígenes de la metalurgia</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#bloque4"><span class="ref-etiqueta">Gn 4:25‑26</span> Set: El reemplazo divino y el comienzo de la adoración pública</a>
+                <ul class="sub-notas">
+                    <li><a href="#nota-linguistica2"><span class="emoji-tipo">📜</span> “Invocar el nombre de Jehová” en hebreo</a></li>
+                </ul>
+            </li>
+            <li><a href="#resumen-cristo">Cristo en la sangre que habla mejor que Abel</a></li>
+            <li><a href="#meditar">Para meditar</a></li>
+            <li style="margin-top: 12px; border-top: 1px solid rgba(212, 172, 13, 0.3); padding-top: 10px;">
+                <a href="#apendice" style="color: #d4ac0d; font-size: 1em;">APÉNDICE INFORMATIVO: El mundo de Génesis 4</a>
+                <ul class="sub-notas">
+                    <li><a href="#apendice-arqueologia"><span class="emoji-tipo">🏛️</span> I. Arqueología de las primeras ciudades</a></li>
+                    <li><a href="#apendice-hebreo"><span class="emoji-tipo">📜</span> II. Tesoros del hebreo en el capítulo 4</a></li>
+                    <li><a href="#apendice-ecos"><span class="emoji-tipo">🔗</span> III. Ecos intertextuales: Caín, Abel y Lamec en el NT</a></li>
+                    <li><a href="#apendice-geografia"><span class="emoji-tipo">🗺️</span> IV. Geografía de Nod y el este del Edén</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- BLOQUE 1: Caín y Abel (4:1-7) -->
+    <h2 class="subtitulo" id="bloque1">Dos ofrendas, dos corazones: El misterio del rechazo divino</h2>
+
+    <p><strong>Génesis 4:1-5 (RVR1960)</strong> “Conoció Adán a su mujer Eva, la cual concibió y dio a luz a Caín, y dijo: Por voluntad de Jehová he adquirido varón. Después dio a luz a su hermano Abel. Y fue Abel pastor de ovejas, y Caín fue labrador de la tierra. Y aconteció andando el tiempo, que Caín trajo del fruto de la tierra una ofrenda a Jehová. Y Abel trajo también de los primogénitos de sus ovejas, de lo más gordo de ellas. Y miró Jehová con agrado a Abel y a su ofrenda; pero no miró con agrado a Caín y a la ofrenda suya. Y se ensañó Caín en gran manera, y decayó su semblante.”</p>
+
+    <p>El capítulo se abre con una explosión de vida después de la sentencia de muerte en Génesis 3. Eva da a luz a Caín, cuyo nombre en hebreo <em>Qayin</em> (קַיִן) está ligado al verbo <em>qaná</em> (קָנָה), “adquirir, poseer”. La expresión “por voluntad de Jehová” (lit. “he adquirido varón de parte de Jehová”) muestra una fe incipiente, quizá pensando que este hijo era el cumplimiento inmediato de la promesa de <span class="biblia-ref">Génesis 3:15<span class="tooltip-text"><span class="tooltip-cita">Génesis 3:15</span>Y pondré enemistad entre ti y la mujer, y entre tu simiente y la simiente suya; ésta te herirá en la cabeza, y tú le herirás en el calcañar.</span></span>. Pero la historia pronto revelará que Caín pertenece a la simiente de la serpiente. Abel (hebreo <em>Hével</em>, הֶבֶל), cuyo nombre significa “soplo, vanidad”, anticipa la brevedad de su vida y la fragilidad de la existencia caída.</p>
+
+    <p>Aquí hay algo que pasa desapercibido: el texto no dice explícitamente por qué Dios rechazó la ofrenda de Caín. No era el tipo de ofrenda (vegetal versus animal), pues más tarde la ley mosaica incluiría ofrendas de grano aceptables (<span class="biblia-ref">Levítico 2<span class="tooltip-text"><span class="tooltip-cita">Levítico 2:1</span>Cuando alguna persona ofreciere oblación a Jehová, su ofrenda será flor de harina, sobre la cual echará aceite, y pondrá sobre ella incienso.</span></span>). El problema es el corazón. La frase “miró Jehová con agrado a Abel <em>y a su ofrenda</em>” indica que Dios aceptó primero a la persona y luego su dádiva. De Caín se dice lo contrario. <span class="biblia-ref">Hebreos 11:4<span class="tooltip-text"><span class="tooltip-cita">Hebreos 11:4</span>Por la fe Abel ofreció a Dios más excelente sacrificio que Caín, por lo cual alcanzó testimonio de que era justo, dando Dios testimonio de sus ofrendas; y difunto, aún habla por ella.</span></span> aclara el misterio: “Por la fe Abel ofreció…”. Caín trajo “del fruto de la tierra” sin especificar calidad o primicias; Abel trajo “de los primogénitos… de lo más gordo”. La fe de Abel se manifestó en dar lo primero y lo mejor, reconociendo que todo pertenece a Dios. Caín ofreció un acto religioso externo, sin la disposición interior de un corazón redimido.</p>
+
+    <p><strong>Génesis 4:6-7</strong> “Entonces Jehová dijo a Caín: ¿Por qué te has ensañado, y por qué ha decaído tu semblante? Si bien hicieres, ¿no serás enaltecido? y si no hicieres bien, el pecado está a la puerta; con todo esto, a ti será su deseo, y tú te enseñorearás de él.”</p>
+
+    <p>Dios, en su gracia, interpela a Caín antes del desastre. Es una llamada al arrepentimiento. La palabra hebrea para “pecado” aquí es <em>jattá't</em> (חַטָּאת), que puede significar tanto el acto pecaminoso como la “ofrenda por el pecado”. El lenguaje es vívido: el pecado está “agazapado” (del verbo <em>raváts</em>, רבץ, como una bestia al acecho) a la puerta. Pero la promesa es soberana: “tú te enseñorearás de él”. La soberanía humana responsable coexiste con la gracia divina que habilita. La teología reformada ve aquí el eco de la gracia irresistible: Dios extiende una advertencia sincera y una promesa de victoria sobre el pecado, pero Caín, en su depravación total, rechazará la oferta.</p>
+
+    <div class="caja-linguistica" id="nota-linguistica1">
+        <h4>📜 Nota Lingüística</h4>
+        <p><span class="palabra-original">תְּשׁוּקָה (teshuqá)</span> <strong>(teshuqá)</strong>: Esta palabra aparece solo tres veces en el AT: <span class="biblia-ref">Gn 3:16<span class="tooltip-text"><span class="tooltip-cita">Génesis 3:16</span>A la mujer dijo: Multiplicaré en gran manera los dolores en tus preñeces; con dolor darás a luz los hijos; y tu deseo será para tu marido, y él se enseñoreará de ti.</span></span> (el deseo de la mujer hacia su marido), <span class="biblia-ref">Gn 4:7<span class="tooltip-text"><span class="tooltip-cita">Génesis 4:7</span>Si bien hicieres, ¿no serás enaltecido? y si no hicieres bien, el pecado está a la puerta; con todo esto, a ti será su deseo, y tú te enseñorearás de él.</span></span> (el deseo del pecado hacia Caín) y <span class="biblia-ref">Cnt 7:10<span class="tooltip-text"><span class="tooltip-cita">Cantares 7:10</span>Yo soy de mi amado, y conmigo tiene su contentamiento.</span></span> (el deseo del amado hacia la amada). Implica un anhelo intenso por dominar o poseer. Aquí, el pecado personificado ansía dominar a Caín, pero Dios le ordena ejercer dominio. La misma palabra une la maldición de Eva con la tentación de Caín: el deseo torcido lleva a la ruina si no se somete a Dios.</p>
+    </div>
+
+    <div class="caja-arqueologica" id="nota-arqueologica1">
+        <h4>🏛️ Nota Arqueológica</h4>
+        <p>En el Antiguo Cercano Oriente, la distinción entre pastores nómadas y agricultores sedentarios estaba cargada de tensión cultural. Textos sumerios como el “Debate entre el grano y la oveja” (c. 2000 a.C.) presentan disputas sobre cuál modo de vida es superior. Sin embargo, Génesis no valora un oficio sobre otro, sino la actitud del corazón. La arqueología confirma que ya en el Neolítico precerámico existían asentamientos agrícolas y pastoreo de ovejas en el Levante, lo que encaja con el relato bíblico de una humanidad primigenia con oficios diferenciados.</p>
+    </div>
+    <a class="volver-indice" href="#indice">↑ Volver al índice</a>
+    <div class="separador">✦ ✦ ✦</div>
+
+    <!-- BLOQUE 2: Asesinato y juicio (4:8-16) -->
+    <h2 class="subtitulo" id="bloque2">La sangre que clama desde la tierra: El primer homicidio y la justicia de Dios</h2>
+
+    <p><strong>Génesis 4:8-10</strong> “Y dijo Caín a su hermano Abel: Salgamos al campo. Y aconteció que estando ellos en el campo, Caín se levantó contra su hermano Abel, y lo mató. Y Jehová dijo a Caín: ¿Dónde está Abel tu hermano? Y él respondió: No sé. ¿Soy yo acaso guarda de mi hermano? Y él le dijo: ¿Qué has hecho? La voz de la sangre de tu hermano clama a mí desde la tierra.”</p>
+
+    <p>El texto hebreo omite las palabras de Caín en el versículo 8 (la Septuaginta y el Pentateuco Samaritano añaden “Salgamos al campo”). El silencio en el Texto Masorético es ensordecedor: Caín planea el crimen en su corazón sin necesidad de palabras. El campo (<em>sadéh</em>, שָׂדֶה) se convierte en el primer escenario de violencia humana. La respuesta cínica “¿Soy yo acaso guarda de mi hermano?” revela la profundidad del pecado: niega la responsabilidad relacional y se burla de la omnisciencia divina. Pero Dios oye “la voz de la sangre” (en hebreo plural <em>deméi ajija</em>, דְּמֵי אָחִיךָ, lit. “las sangres de tu hermano”, implicando cada gota derramada). La sangre clama (<em>tsoakím</em>, צֹעֲקִים) con un grito de justicia, como el de los oprimidos en Egipto (<span class="biblia-ref">Éxodo 3:7<span class="tooltip-text"><span class="tooltip-cita">Éxodo 3:7</span>Dijo luego Jehová: Bien he visto la aflicción de mi pueblo que está en Egipto, y he oído su clamor a causa de sus exactores; pues he conocido sus angustias.</span></span>). La tierra, que debía dar fruto, ahora absorbe sangre inocente.</p>
+
+    <p><strong>Génesis 4:11-15</strong> “Ahora, pues, maldito seas tú de la tierra, que abrió su boca para recibir de tu mano la sangre de tu hermano. Cuando labres la tierra, no te volverá a dar su fuerza; errante y extranjero serás en la tierra. Y dijo Caín a Jehová: Grande es mi castigo para ser soportado. He aquí me echas hoy de la tierra, y de tu presencia me esconderé, y seré errante y extranjero en la tierra; y sucederá que cualquiera que me hallare, me matará. Y le respondió Jehová: Ciertamente cualquiera que matare a Caín, siete veces será castigado. Entonces Jehová puso señal en Caín, para que no lo matase cualquiera que le hallara.”</p>
+
+    <p>La maldición es específica: la tierra, que ya estaba maldita por Adán (<span class="biblia-ref">Gn 3:17<span class="tooltip-text"><span class="tooltip-cita">Génesis 3:17</span>Y al hombre dijo: Por cuanto obedeciste a la voz de tu mujer, y comiste del árbol de que te mandé diciendo: No comerás de él; maldita será la tierra por tu causa; con dolor comerás de ella todos los días de tu vida.</span></span>), ahora se vuelve hostil a Caín de manera particular. Caín, labrador, queda desarraigado. La frase “errante y extranjero” (hebreo <em>na' vanád</em>, נָע וָנָד) sugiere un vagabundeo perpetuo, sin hogar fijo. La queja de Caín revela que entiende el peso de la separación de la presencia divina (lit. “de tu rostro me esconderé”), pero no hay arrepentimiento por el homicidio, solo lamento por las consecuencias. La señal puesta en Caín (<em>'ot</em>, אוֹת) ha sido objeto de especulación. No era una marca racial (error usado para justificar esclavitud), sino una señal protectora de la gracia común de Dios. La justicia divina prohíbe la venganza personal; Dios se reserva la retribución.</p>
+
+    <div class="caja-geografica" id="nota-geografica1">
+        <h4>🗺️ Nota Geográfica</h4>
+        <p>La “tierra de Nod” (v.16) significa literalmente “tierra del vagabundeo” (<em>Nod</em>, נוֹד, de la misma raíz que <em>nad</em>, “errante”). Al este del Edén (posiblemente la región mesopotámica o allende los montes Zagros) se convierte en el dominio de los desterrados. Aunque no se ha identificado arqueológicamente un lugar llamado Nod, el nombre refleja la condición existencial de Caín: vive en el exilio perpetuo, fuera de la presencia especial de Dios que había en el Edén. Es un símbolo geográfico-teológico de la alienación humana.</p>
+    </div>
+
+    <div class="caja-profetica" id="nota-profetica1">
+        <h4>✝️ Cristo en este Pasaje</h4>
+        <p>La sangre de Abel clama por venganza; la sangre de Cristo clama por misericordia y perdón. <span class="biblia-ref">Hebreos 12:24<span class="tooltip-text"><span class="tooltip-cita">Hebreos 12:24</span>a Jesús el Mediador del nuevo pacto, y a la sangre rociada que habla mejor que la de Abel.</span></span> contrasta explícitamente: “la sangre rociada que habla mejor que la de Abel”. La sangre de Abel pedía justicia contra el homicida; la sangre de Jesús intercede por los pecadores arrepentidos. Caín, el primer asesino, es el prototipo del mundo que odia a los justos (<span class="biblia-ref">1 Juan 3:12<span class="tooltip-text"><span class="tooltip-cita">1 Juan 3:12</span>No como Caín, que era del maligno y mató a su hermano. ¿Y por qué causa le mató? Porque sus obras eran malas, y las de su hermano justas.</span></span>). La gracia que protegió a Caín con una señal anticipa la gracia común que Dios derrama sobre toda la humanidad caída hasta el día del juicio.</p>
+    </div>
+    <a class="volver-indice" href="#indice">↑ Volver al índice</a>
+    <div class="separador">✦ ✦ ✦</div>
+
+    <!-- BLOQUE 3: Descendencia de Caín (4:17-24) -->
+    <h2 class="subtitulo" id="bloque3">La ciudad del hombre: Civilización sin Dios y el canto de la espada</h2>
+
+    <p><strong>Génesis 4:17-22</strong> “Y conoció Caín a su mujer, la cual concibió y dio a luz a Enoc; y edificó una ciudad, y llamó el nombre de la ciudad del nombre de su hijo, Enoc. Y a Enoc le nació Irad, e Irad engendró a Mehujael, y Mehujael engendró a Metusael, y Metusael engendró a Lamec. Y tomó para sí Lamec dos mujeres; el nombre de la una fue Ada, y el nombre de la otra, Zila. Y Ada dio a luz a Jabal, el cual fue padre de los que habitan en tiendas y crían ganados. Y el nombre de su hermano fue Jubal, el cual fue padre de todos los que tocan arpa y flauta. Y Zila también dio a luz a Tubal-caín, artífice de toda obra de bronce y de hierro; y la hermana de Tubal-caín fue Naama.”</p>
+
+    <p>La línea de Caín construye la primera civilización humana. Edifica una ciudad (<em>'ir</em>, עִיר), símbolo de organización social autónoma, buscando seguridad y permanencia en oposición a la maldición de ser errante. Pero esta ciudad no está consagrada a Dios; es la “ciudad del hombre”. La genealogía cainita revela avances culturales impresionantes: Jabal inicia el pastoreo nómada organizado, Jubal la música, y Tubal-Caín la metalurgia. Esto muestra que la imagen de Dios en el hombre caído aún produce creatividad y dominio sobre la creación (mandato cultural de <span class="biblia-ref">Gn 1:28<span class="tooltip-text"><span class="tooltip-cita">Génesis 1:28</span>Y los bendijo Dios, y les dijo: Fructificad y multiplicaos; llenad la tierra, y sojuzgadla, y señoread en los peces del mar, en las aves de los cielos, y en todas las bestias que se mueven sobre la tierra.</span></span>). Sin embargo, estos logros se desarrollan en un contexto de rebelión moral, culminando en Lamec.</p>
+
+    <p><strong>Génesis 4:23-24</strong> “Y dijo Lamec a sus mujeres: Ada y Zila, oíd mi voz; Mujeres de Lamec, escuchad mi dicho: Que un varón mataré por mi herida, Y un joven por mi golpe. Si siete veces será vengado Caín, Lamec en verdad setenta veces siete lo será.”</p>
+
+    <p>Lamec es el primer polígamo registrado, distorsionando el diseño creacional de <span class="biblia-ref">Génesis 2:24<span class="tooltip-text"><span class="tooltip-cita">Génesis 2:24</span>Por tanto, dejará el hombre a su padre y a su madre, y se unirá a su mujer, y serán una sola carne.</span></span>. Su “canto de la espada” es una pieza de poesía hebrea primitiva, paralelística (varón // joven; herida // golpe). No es una confesión, sino una jactancia de venganza desproporcionada. Toma la protección divina sobre Caín (siete veces) y la multiplica por su propia mano: “setenta veces siete”. La gracia de Dios es tergiversada en licencia para la violencia autónoma. Aquí la simiente de la serpiente alcanza su clímax de arrogancia: el hombre que se endiosa y se arma para imponer su propia justicia.</p>
+
+    <div class="caja-simbolismo" id="nota-simbolismo1">
+        <h4>🔢 Simbolismo</h4>
+        <p>El número siete en la Biblia denota plenitud o perfección divina. Caín sería vengado “siete veces” como señal de la justicia completa de Dios. Lamec, en su soberbia, reclama una venganza “setenta veces siete” (hebreo <em>shiv'im veshiv'á</em>), que sugiere una venganza infinita, humana y descontrolada. Cristo invierte este patrón en <span class="biblia-ref">Mateo 18:22<span class="tooltip-text"><span class="tooltip-cita">Mateo 18:22</span>Jesús le dijo: No te digo hasta siete, sino aun hasta setenta veces siete.</span></span>, ordenando perdonar “setenta veces siete”. La gracia del reino restaura lo que el pecado de Lamec corrompió: la venganza ilimitada se transforma en perdón ilimitado.</p>
+    </div>
+
+    <div class="caja-historica" id="nota-historica1">
+        <h4>⏳ Contexto Histórico</h4>
+        <p>La mención de Tubal-Caín como forjador de “bronce y de hierro” ha intrigado a los eruditos. La Edad del Bronce en el Cercano Oriente comenzó alrededor del 3300 a.C., y el uso del hierro se generalizó hacia el 1200 a.C. Algunos críticos ven un anacronismo. Sin embargo, el texto bíblico no pretende ser un manual de historia de la metalurgia, sino mostrar que los descendientes de Caín desarrollaron tecnología avanzada tempranamente. Descubrimientos arqueológicos en Anatolia (Çatalhöyük, c. 6000 a.C.) muestran trabajo en cobre nativo, y objetos de hierro meteórico se conocían en el tercer milenio a.C. El conocimiento pudo perderse y redescubrirse, o el texto usa términos familiares a la audiencia mosaica para describir oficios antiguos. La precisión técnica no es el foco; lo es la condición moral de los innovadores.</p>
+    </div>
+    <a class="volver-indice" href="#indice">↑ Volver al índice</a>
+    <div class="separador">✦ ✦ ✦</div>
+
+    <!-- BLOQUE 4: Set y Enós (4:25-26) -->
+    <h2 class="subtitulo" id="bloque4">Set: El reemplazo divino y el comienzo de la adoración pública</h2>
+
+    <p><strong>Génesis 4:25-26</strong> “Y conoció de nuevo Adán a su mujer, la cual dio a luz un hijo, y llamó su nombre Set: Porque Dios (dijo ella) me ha sustituido otro hijo en lugar de Abel, a quien mató Caín. Y a Set también le nació un hijo, y llamó su nombre Enós. Entonces los hombres comenzaron a invocar el nombre de Jehová.”</p>
+
+    <p>Después de la oscura genealogía de Caín, el texto regresa a Adán y Eva. El nacimiento de Set (<em>Shet</em>, שֵׁת, de <em>shyt</em>, “poner, colocar”) es presentado como un acto soberano de Dios: “Dios me ha sustituido (<em>shat</em>) otro hijo”. Eva reconoce que Set es el reemplazo divino de Abel, el heredero de la promesa de la simiente. La línea de Set contrasta con la de Caín: mientras Caín edificó una ciudad, Set engendra a Enós, y en sus días “los hombres comenzaron a invocar el nombre de Jehová”. La frase hebrea <em>hujál likró beshém Adonái</em> (הוּחַל לִקְרֹא בְּשֵׁם יְהוָה) puede significar “comenzaron a invocar” o “comenzaron a llamarse por el nombre de Jehová” (es decir, identificarse como pueblo del pacto). Es el inicio del culto público, la adoración colectiva al Dios verdadero, en contraste con la cultura humanista y violenta de la línea de Caín. Aquí nace la iglesia del Antiguo Testamento, el remanente fiel que preservará la revelación hasta Noé y más allá.</p>
+
+    <div class="caja-linguistica" id="nota-linguistica2">
+        <h4>📜 Nota Lingüística</h4>
+        <p><span class="palabra-original">הוּחַל לִקְרֹא בְּשֵׁם יְהוָה</span> <strong>(hujál likró beshém Adonái)</strong>: La palabra <em>hujál</em> (forma pasiva de <em>jalál</em>, “profanar, comenzar”) es un hápax legómenon en esta forma. Puede leerse como “fue comenzado” o “fue profanado” (algunos rabinos interpretaron que se comenzó a invocar nombres de hombres como dioses). La traducción más aceptada es “comenzaron a invocar”. El verbo <em>kará</em> (קָרָא) “llamar, invocar, proclamar” implica una adoración formal y pública. Este versículo marca el origen de la religión revelada organizada, distinguiéndose de la religiosidad naturalista de Caín. Es el principio de la línea de pacto que conduce a Abraham y finalmente a Cristo.</p>
+    </div>
+    <a class="volver-indice" href="#indice">↑ Volver al índice</a>
+    <div class="separador">✦ ✦ ✦</div>
+
+    <!-- SECCIÓN CRISTOLÓGICA -->
+    <h2 class="subtitulo" id="resumen-cristo">Cristo en la sangre que habla mejor que Abel</h2>
+    <p>Génesis 4 es un capítulo lleno de prefiguraciones cristológicas. La muerte de Abel a manos de su hermano es un tipo del Justo rechazado y asesinado por los suyos (<span class="biblia-ref">Juan 1:11<span class="tooltip-text"><span class="tooltip-cita">Juan 1:11</span>A lo suyo vino, y los suyos no le recibieron.</span></span>). Caín representa a aquellos que confían en sus propias obras religiosas y odian a los que son aceptados por gracia mediante la fe. La sangre de Abel clamaba desde la tierra por venganza; la sangre de Cristo, rociada sobre el propiciatorio celestial, clama por redención. El autor de Hebreos establece el contraste definitivo: “la sangre rociada que habla mejor que la de Abel” (<span class="biblia-ref">Hebreos 12:24<span class="tooltip-text"><span class="tooltip-cita">Hebreos 12:24</span>a Jesús el Mediador del nuevo pacto, y a la sangre rociada que habla mejor que la de Abel.</span></span>). Mientras la sangre de Abel pedía justicia condenatoria, la sangre de Jesús proclama justicia justificadora para todo aquel que cree.</p>
+    <p>Además, Set es un tipo de Cristo como la “simiente” prometida que reemplaza al que fue muerto y continúa la línea de la redención. Eva reconoce que Set fue puesto por Dios en lugar de Abel. De manera análoga, Cristo resucitado es el “primogénito de entre los muertos” (<span class="biblia-ref">Colosenses 1:18<span class="tooltip-text"><span class="tooltip-cita">Colosenses 1:18</span>y él es la cabeza del cuerpo que es la iglesia, él que es el principio, el primogénito de entre los muertos, para que en todo tenga la preeminencia.</span></span>), la simiente que permanece para siempre. En Set y Enós vemos el comienzo de la invocación del nombre de Jehová, que apunta a la iglesia del Nuevo Pacto que invoca el nombre de Jesús como Señor (<span class="biblia-ref">Romanos 10:13<span class="tooltip-text"><span class="tooltip-cita">Romanos 10:13</span>porque todo aquel que invocare el nombre del Señor, será salvo.</span></span>).</p>
+    <a class="volver-indice" href="#indice">↑ Volver al índice</a>
+
+    <!-- PARA MEDITAR -->
+    <div class="caja-meditar" id="meditar">
+        <h3>Para Meditar</h3>
+        <ul>
+            <li>¿Ofrezco a Dios lo mejor de mi tiempo, talentos y recursos, o solo un acto religioso exterior como Caín?</li>
+            <li>¿Escucho la voz de Dios cuando me advierte que el pecado está a la puerta, o endurezco mi corazón?</li>
+            <li>¿Soy “guarda de mi hermano”? ¿Cómo respondo ante la injusticia y el sufrimiento de los inocentes en mi entorno?</li>
+            <li>¿Estoy construyendo una “ciudad” (carrera, reputación, legado) para mi propia gloria, o para invocar el nombre del Señor?</li>
+            <li>La sangre de Abel clama justicia; la de Cristo clama perdón. ¿En cuál de los dos clamores se apoya mi esperanza?</li>
+        </ul>
+    </div>
+
+    <!-- APLICACIÓN PRÁCTICA -->
+    <div class="caja-aplicacion">
+        <h3>Aplicación Práctica</h3>
+        <ul>
+            <li><strong>Vida devocional:</strong> Examina tus motivaciones al dar, servir o adorar. ¿Nacen de una fe genuina que honra a Dios como el primero y el mejor, o de la costumbre o el orgullo religioso?</li>
+            <li><strong>Iglesia local:</strong> La comunidad de fe debe ser un “Set”, un remanente que invoca el nombre del Señor en medio de una cultura que, como la de Lamec, glorifica la violencia y la autosuficiencia.</li>
+            <li><strong>Familia:</strong> La historia de Caín y Abel muestra cómo el pecado puede destruir los lazos más íntimos. Cultivemos el arrepentimiento y la reconciliación antes de que el enojo decaiga nuestro semblante.</li>
+            <li><strong>Testimonio:</strong> Así como Dios protegió a Caín con una señal, debemos reflejar la gracia común de Dios incluso hacia quienes nos persiguen, sabiendo que la venganza pertenece al Señor.</li>
+        </ul>
+    </div>
+
+    <!-- DOCTRINAS CLAVE -->
+    <div class="caja-doctrinas">
+        <h3>Doctrinas Clave del Capítulo</h3>
+        <ul>
+            <li><strong>Depravación total:</strong> La envidia, el homicidio y la jactancia de Lamec muestran que el pecado afecta cada facultad del ser humano, incluso en la segunda generación.</li>
+            <li><strong>Expiación y fe:</strong> Abel ofreció por fe un sacrificio más excelente, apuntando a la necesidad de un sustituto y a la justificación por fe.</li>
+            <li><strong>Gracia común:</strong> Dios protege a Caín con una señal y permite el desarrollo cultural aun en la línea rebelde, mostrando su paciencia y benevolencia general.</li>
+            <li><strong>Pacto de gracia:</strong> La línea de Set preserva la simiente prometida en Génesis 3:15, demostrando que Dios mantiene su pacto a través de un remanente elegido.</li>
+            <li><strong>Justicia retributiva:</strong> La sangre de Abel clama a Dios, estableciendo el principio de que el homicidio exige juicio divino, base para la ley contra el asesinato (<span class="biblia-ref">Gn 9:6<span class="tooltip-text"><span class="tooltip-cita">Génesis 9:6</span>El que derramare sangre de hombre, por el hombre su sangre será derramada; porque a imagen de Dios es hecho el hombre.</span></span>).</li>
+        </ul>
+    </div>
+
+    <!-- CIERRE IMPACTANTE -->
+    <div class="destacado-dramatico">
+        “La sangre de Abel grita desde el polvo: '¡Venganza!'. Pero desde una cruz fuera de los muros de Jerusalén, otra sangre clama más alto: '¡Perdónalos!'. Aquella sangre trajo maldición a Caín; ésta trae bendición eterna a todos los que, como Set, invocan el nombre del Señor.”
+    </div>
+
+    <a class="volver-indice" href="#indice" style="margin-top: 30px;">↑ Volver al índice</a>
+
+</div>
+<!-- FIN contenedor-blog -->
+
+<!-- APÉNDICE INFORMATIVO -->
+<div id="apendice">
+
+    <div class="separador">✦ ✦ ✦</div>
+
+    <h2 class="subtitulo" id="apendice-titulo" style="text-align: center; border-bottom: 3px solid #c9a227;">Apéndice Informativo: El mundo de Génesis 4</h2>
+    <p style="text-align: center; font-style: italic; color: #5a5a5a; margin-bottom: 30px;">Datos arqueológicos, lingüísticos e intertextuales para profundizar en el primer capítulo de la historia humana fuera del Edén.</p>
+
+    <div class="separador">✦ ✦ ✦</div>
+
+    <div id="apendice-arqueologia">
+      <h2 class="subtitulo">Apéndice I — Arqueología de las primeras ciudades</h2>
+      <p>La mención de que Caín “edificó una ciudad” (Gn 4:17) plantea preguntas sobre el desarrollo urbano temprano. La arqueología del Cercano Oriente ha identificado asentamientos neolíticos como Jericó (Tell es-Sultán), con una torre y muralla datadas alrededor del 8000 a.C., y Çatalhöyük en Anatolia (c. 7500 a.C.), un gran asentamiento sin calles donde las casas estaban apiñadas. Aunque no podemos afirmar que alguna de estas sea la ciudad de Enoc, demuestran que la vida urbana organizada existió milenios antes de Abraham. La “ciudad” de Caín probablemente era un asentamiento fortificado, un intento humano de crear seguridad y permanencia al margen de Dios, en contraste con la “ciudad que tiene fundamentos, cuyo arquitecto y constructor es Dios” (<span class="biblia-ref">Hebreos 11:10<span class="tooltip-text"><span class="tooltip-cita">Hebreos 11:10</span>porque esperaba la ciudad que tiene fundamentos, cuyo arquitecto y constructor es Dios.</span></span>).</p>
+      <a class="volver-indice" href="#indice">↑ Volver al índice</a>
+    </div>
+
+    <div class="separador">✦ ✦ ✦</div>
+
+    <div id="apendice-hebreo">
+      <h2 class="subtitulo">Apéndice II — Tesoros del hebreo en el capítulo 4</h2>
+      <p><strong>1. “Caín” (קַיִן, Qayin):</strong> Relacionado con <em>qaná</em> (adquirir) pero también con <em>qin'á</em> (celos, envidia). El nombre prefigura su pecado: los celos que lo llevaron al homicidio.</p>
+      <p><strong>2. “Abel” (הֶבֶל, Hével):</strong> La palabra traducida “vanidad” en Eclesiastés. Su mismo nombre profetiza la fugacidad de su vida y la futilidad de la existencia bajo el pecado.</p>
+      <p><strong>3. “Pecado” (חַטָּאת, jattá't) vs. “Ofrenda por el pecado”:</strong> En <span class="biblia-ref">Levítico 4:3<span class="tooltip-text"><span class="tooltip-cita">Levítico 4:3</span>si el sacerdote ungido pecare según el pecado del pueblo, ofrecerá a Jehová, por su pecado que habrá cometido, un becerro sin defecto para expiación.</span></span> la misma palabra designa la ofrenda expiatoria. La advertencia a Caín es doble: el pecado como poder y la provisión divina para expiarlo estaban “a la puerta”.</p>
+      <p><strong>4. “Errante y extranjero” (נָע וָנָד, na' vanád):</strong> Juego de palabras intraducible que evoca un movimiento continuo y sin destino. Es la condición del hombre sin Dios: peregrino sin patria celestial.</p>
+      <a class="volver-indice" href="#indice">↑ Volver al índice</a>
+    </div>
+
+    <div class="separador">✦ ✦ ✦</div>
+
+    <div id="apendice-ecos">
+      <h2 class="subtitulo">Apéndice III — Ecos intertextuales: Caín, Abel y Lamec en el Nuevo Testamento</h2>
+      <p><strong>Hebreos 11:4:</strong> “Por la fe Abel ofreció a Dios más excelente sacrificio que Caín…”. La fe de Abel no era un sentimiento vago, sino una confianza en la revelación de Dios que demandaba un sacrificio cruento, quizá desde la misma provisión de pieles en <span class="biblia-ref">Gn 3:21<span class="tooltip-text"><span class="tooltip-cita">Génesis 3:21</span>Y Jehová Dios hizo al hombre y a su mujer túnicas de pieles, y los vistió.</span></span>.</p>
+      <p><strong>1 Juan 3:12:</strong> “No como Caín, que era del maligno y mató a su hermano… Porque sus obras eran malas, y las de su hermano justas.” La afiliación espiritual se define por las obras, revelando si uno es hijo de Dios o del diablo.</p>
+      <p><strong>Judas 11:</strong> “¡Ay de ellos! porque han seguido el camino de Caín…”. El “camino de Caín” es la religión sin fe, los celos asesinos y el rechazo de la autoridad divina.</p>
+      <p><strong>Mateo 23:35:</strong> Jesús menciona “la sangre de Abel el justo” como el primer mártir de la historia redentora, cuyo clamor alcanza el juicio sobre la generación que rechazó al Mesías.</p>
+      <a class="volver-indice" href="#indice">↑ Volver al índice</a>
+    </div>
+
+    <div class="separador">✦ ✦ ✦</div>
+
+    <div id="apendice-geografia">
+      <h2 class="subtitulo">Apéndice IV — Geografía de Nod y el este del Edén</h2>
+      <p>El Edén es descrito en <span class="biblia-ref">Génesis 2:10-14<span class="tooltip-text"><span class="tooltip-cita">Génesis 2:10-14</span>Y salía de Edén un río para regar el huerto, y de allí se repartía en cuatro brazos. El nombre del uno era Pisón; éste es el que rodea toda la tierra de Havila, donde hay oro; y el oro de aquella tierra es bueno; hay allí también bedelio y ónice. El nombre del segundo río es Gihón; éste es el que rodea toda la tierra de Cus. Y el nombre del tercer río es Hidekel; éste es el que va al oriente de Asiria. Y el cuarto río es el Éufrates.</span></span> con cuatro ríos, dos de ellos identificables: Hidekel (Tigris) y Éufrates. Esto sitúa el Edén en la región de Mesopotamia o el Golfo Pérsico. “Al este del Edén” (v.16) indicaría la región montañosa de los Zagros (actual Irán) o más allá. La “tierra de Nod” no es localizable con precisión, pero su nombre (“vagabundeo”) es un juego de palabras que describe la condición de Caín. La geografía aquí es teológica: alejarse de la presencia del Señor es moverse simbólica y literalmente “hacia el este”, dirección opuesta al tabernáculo y al templo, cuya entrada miraba al oriente.</p>
+      <a class="volver-indice" href="#indice">↑ Volver al índice</a>
+    </div>
+
+    <div class="separador">✦ ✦ ✦</div>
+
+</div>
+<!-- FIN apéndice -->
+
+</body>
+</html>
