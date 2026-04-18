@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "data": {
+    "recursos": [
+      {
+        "tipo": "estudio",
+        "titulo": "Cuando la Promesa Espera y la Carne Actúa: El Drama de Agar, Sarai e Ismael",
+        "recurso_url": "",
+        "archivo_html": "/estudios/genesis/genesis16.html"
+      },
+      {
+        "tipo": "video",
+        "titulo": "Video Resumen: Los 7 Días",
+        "recurso_url": "dQw4w9WgXcQ",
+        "contenido_html": "<h1 class=\"titulo-entrada\">Video: Los 7 Días</h1><p>Recorrido visual de cada día de la creación.</p><div class=\"contenedor-video\"><img class=\"miniatura\" src=\"https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg\" alt=\"Video\"><button class=\"btn-play\"></button></div>"
+      },
+      {
+        "tipo": "sermon",
+        "titulo": "Sermón: Dios Creador y Sustentador",
+        "recurso_url": "",
+        "contenido_html": "<h1 class=\"titulo-entrada\">Dios Creador y Sustentador</h1><div class=\"destacado-dramatico\">\"Si Dios es el Creador de todo, nada en tu vida escapa a su soberanía.\"</div>"
+      },
+      {
+        "tipo": "audio",
+        "titulo": "Meditación: La Luz Original",
+        "recurso_url": "",
+        "contenido_html": "<h1 class=\"titulo-entrada\">Meditación: La Luz Original</h1><div class=\"caja-meditar\"><h3>Para Reflexionar</h3><p>La luz fue el primer regalo de Dios a la creación. Antes del sol, antes de las estrellas — la luz.</p></div>"
+      }
+    ]
+  }
+}
