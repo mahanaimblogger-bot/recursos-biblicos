@@ -6,7 +6,7 @@
       {"capitulo": "2", "total": 3, "tipos": ["estudio", "video", "sermon"]},
       {"capitulo": "3", "total": 4, "tipos": ["estudio", "video", "imagen", "audio"]},
       {"capitulo": "4", "total": 2, "tipos": ["estudio", "imagen"]},
-      {"capitulo": "16", "total": 2, "tipos": ["estudio", "imagen"]}
+      {"capitulo": "16", "total": 4, "tipos": ["estudio", "video", "sermon", "audio"]}
     ]
   }
 }
