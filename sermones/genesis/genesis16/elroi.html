@@ -7,378 +7,298 @@
   <style>
 
     /* ============================================================
-       ESTILOS BASE DEL BLOG (compartidos con estudios bíblicos)
+       BASE DEL BLOG
        ============================================================ */
     .contenedor-blog {
-        color: #333333;
+        color: #2a2a2a;
         font-family: Georgia, serif;
         font-size: 17px;
-        line-height: 1.8;
+        line-height: 1.85;
         text-align: justify;
         max-width: 800px;
         margin: 0 auto;
         padding: 20px;
     }
     h1.titulo-entrada {
-        border-bottom: 2px solid #c9a227;
-        color: #4a1515;
+        border-bottom: 3px solid #c9a227;
+        color: #1c2b3a;
         font-size: 30px;
-        padding-bottom: 10px;
+        padding-bottom: 12px;
         text-align: center;
         margin-top: 20px;
+        letter-spacing: -0.3px;
     }
     h2.subtitulo {
-        border-bottom: 1px solid #c9a227;
-        color: #4a1515;
-        margin-top: 40px;
-        margin-bottom: 15px;
+        color: #1c2b3a;
+        margin-top: 10px;
+        margin-bottom: 18px;
     }
     .cita-versiculo {
-        background-color: #fef9e7;
+        background-color: #f0ece0;
         border-left: 5px solid #c9a227;
         border-radius: 4px;
         margin: 25px 0;
-        padding: 20px;
+        padding: 22px 24px;
     }
-    .cita-versiculo h3 { color: #b7950b; margin-top: 0; font-size: 1.1em; }
-    .cita-versiculo p { font-size: 18px; font-style: italic; margin-bottom: 0; }
-
-    .separador { text-align: center; margin: 35px 0; color: #c9a227; font-size: 1.5em; letter-spacing: 8px; }
+    .cita-versiculo h3 { color: #8a6d00; margin-top: 0; font-size: 1em; letter-spacing: 0.5px; text-transform: uppercase; font-size: 0.85em; }
+    .cita-versiculo p { font-size: 1.1em; font-style: italic; margin-bottom: 0; color: #1c2b3a; line-height: 1.9; }
+    .separador { text-align: center; margin: 38px 0; color: #c9a227; font-size: 1.4em; letter-spacing: 10px; }
 
     /* TOOLTIPS */
-    .biblia-ref { position: relative; color: #4a1515; font-weight: bold; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; transition: color .2s; }
+    .biblia-ref { position: relative; color: #2e4a63; font-weight: bold; cursor: pointer; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; transition: color .2s; }
     .biblia-ref:hover { color: #c9a227; }
-    .biblia-ref .tooltip-text { visibility: hidden; opacity: 0; position: absolute; left: 50%; bottom: calc(100% + 10px); transform: translateX(-50%); width: 320px; max-width: 90vw; background: linear-gradient(135deg, #4a1515, #6e2c2c); color: #fff; padding: 15px 18px; border-radius: 8px; font-size: .9em; font-weight: normal; line-height: 1.5; text-align: left; font-style: italic; box-shadow: 0 8px 25px rgba(0,0,0,.3); z-index: 1000; transition: opacity .3s, visibility .3s; border: 2px solid #c9a227; }
-    .biblia-ref .tooltip-text::after { content: ''; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); border: 10px solid transparent; border-top-color: #6e2c2c; }
-    .biblia-ref .tooltip-cita { display: block; color: #c9a227; font-weight: bold; font-style: normal; margin-bottom: 8px; font-size: .85em; text-align: center; border-bottom: 1px solid rgba(201,162,39,0.4); padding-bottom: 8px; }
+    .biblia-ref .tooltip-text { visibility: hidden; opacity: 0; position: absolute; left: 50%; bottom: calc(100% + 10px); transform: translateX(-50%); width: 320px; max-width: 90vw; background: linear-gradient(135deg, #1c2b3a, #2e4a63); color: #e8d9a0; padding: 15px 18px; border-radius: 8px; font-size: .88em; font-weight: normal; line-height: 1.6; text-align: left; font-style: italic; box-shadow: 0 8px 25px rgba(0,0,0,.35); z-index: 1000; transition: opacity .3s, visibility .3s; border: 2px solid #c9a227; }
+    .biblia-ref .tooltip-text::after { content: ''; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); border: 10px solid transparent; border-top-color: #2e4a63; }
+    .biblia-ref .tooltip-cita { display: block; color: #c9a227; font-weight: bold; font-style: normal; margin-bottom: 8px; font-size: .85em; text-align: center; border-bottom: 1px solid rgba(201,162,39,0.35); padding-bottom: 8px; }
     .biblia-ref:hover .tooltip-text { visibility: visible; opacity: 1; }
 
     /* ÍNDICE */
     .indice-nav {
-        background: linear-gradient(135deg, #4a1515 0%, #6e2c2c 100%);
-        color: #ffffff;
-        padding: 25px 30px;
-        margin-bottom: 40px;
+        background: linear-gradient(160deg, #1c2b3a 0%, #2e4a63 100%);
+        color: #fff;
+        padding: 28px 32px;
+        margin-bottom: 42px;
         border-radius: 12px;
-        box-shadow: 0 10px 40px rgba(74,21,21,0.3);
+        box-shadow: 0 12px 40px rgba(28,43,58,0.28);
+        border: 1px solid rgba(201,162,39,0.2);
     }
-    .indice-nav h3 { color: #c9a227; margin-top: 0; margin-bottom: 18px; font-size: 1.3em; font-family: Georgia, serif; text-align: center; border-bottom: 1px solid rgba(201,162,39,0.4); padding-bottom: 12px; }
+    .indice-nav h3 { color: #c9a227; margin-top: 0; margin-bottom: 18px; font-size: 0.85em; letter-spacing: 2px; text-transform: uppercase; text-align: center; border-bottom: 1px solid rgba(201,162,39,0.3); padding-bottom: 14px; }
     .indice-nav .punto-principal { margin: 0; padding: 0; list-style: none; }
-    .indice-nav .punto-principal > li { margin-bottom: 4px; }
-    .indice-nav .punto-principal > li > a { color: #ffffff; text-decoration: none; display: block; padding: 8px 0 5px 0; border-bottom: 1px dotted rgba(255,255,255,0.2); transition: all 0.3s ease; font-size: 0.95em; }
+    .indice-nav .punto-principal > li { margin-bottom: 2px; }
+    .indice-nav .punto-principal > li > a { color: #e8d9a0; text-decoration: none; display: block; padding: 8px 0 5px 0; border-bottom: 1px dotted rgba(201,162,39,0.2); transition: all 0.25s ease; font-size: 0.93em; }
     .indice-nav .punto-principal > li > a:hover { color: #c9a227; padding-left: 10px; }
-    .indice-nav .ref-etiqueta { color: #c9a227; font-weight: bold; margin-right: 6px; font-size: 0.9em; }
+    .indice-nav .ref-etiqueta { color: #c9a227; font-weight: bold; margin-right: 7px; font-size: 0.85em; }
     .indice-nav .sub-notas { margin: 2px 0 8px 0; padding: 0; list-style: none; }
-    .indice-nav .sub-notas a { color: rgba(255,255,255,0.6); text-decoration: none; display: block; padding: 3px 0 3px 18px; font-size: 0.82em; transition: all 0.3s ease; }
+    .indice-nav .sub-notas a { color: rgba(232,217,160,0.55); text-decoration: none; display: block; padding: 3px 0 3px 18px; font-size: 0.8em; transition: all 0.25s ease; }
     .indice-nav .sub-notas a:hover { color: #c9a227; padding-left: 24px; }
-
-    .volver-indice { display: inline-block; text-align: right; color: #4a1515; text-decoration: none; font-size: 0.9em; margin-top: 35px; margin-bottom: 25px; font-weight: 600; font-family: Georgia, serif; border-top: 1px dotted #c9a227; padding-top: 12px; transition: all 0.3s ease; width: 100%; }
+    .volver-indice { display: block; text-align: right; color: #2e4a63; text-decoration: none; font-size: 0.88em; margin-top: 38px; margin-bottom: 20px; font-weight: 600; font-family: Georgia, serif; border-top: 1px dotted #c9a227; padding-top: 12px; transition: all 0.25s ease; width: 100%; }
     .volver-indice:hover { color: #c9a227; }
 
     /* ============================================================
-       ESTILOS EXCLUSIVOS DEL SERMÓN
+       ESTILOS EXCLUSIVOS DEL SERMÓN — PALETA PIZARRÓN SAGRADO
        ============================================================ */
 
-    /* ETIQUETA "SERMÓN" */
+    /* ETIQUETA */
     .etiqueta-sermon {
         display: inline-block;
-        background: #6e2c2c;
+        background: #1c2b3a;
         color: #c9a227;
-        font-size: 11px;
+        font-size: 10px;
         font-weight: bold;
-        letter-spacing: 2px;
+        letter-spacing: 2.5px;
         text-transform: uppercase;
-        padding: 4px 14px;
+        padding: 5px 16px;
         border-radius: 20px;
-        margin-bottom: 12px;
+        margin-bottom: 14px;
+        border: 1px solid rgba(201,162,39,0.3);
     }
 
     /* FRASE ANCLA */
     .frase-ancla {
-        background: linear-gradient(135deg, #3a0e0e, #6e2c2c);
-        color: #fff;
-        padding: 35px 40px;
+        background: #1c2b3a;
+        color: #e8d9a0;
+        padding: 38px 44px;
         border-radius: 10px;
-        margin: 30px 0;
+        margin: 32px 0;
         text-align: center;
-        font-size: 1.3em;
+        font-size: 1.25em;
         font-style: italic;
-        line-height: 1.9;
+        line-height: 2;
         border: 2px solid #c9a227;
-        box-shadow: 0 8px 35px rgba(74,21,21,0.35);
+        box-shadow: 0 10px 40px rgba(28,43,58,0.3);
         position: relative;
         overflow: hidden;
     }
     .frase-ancla::before {
         content: "\201C";
-        font-size: 8em;
-        color: rgba(201,162,39,0.08);
+        font-size: 9em;
+        color: rgba(201,162,39,0.07);
         position: absolute;
-        top: -20px;
-        left: 10px;
+        top: -15px;
+        left: 8px;
         font-family: Georgia, serif;
         line-height: 1;
         pointer-events: none;
     }
-    .frase-ancla strong {
-        color: #c9a227;
-        font-style: normal;
-    }
+    .frase-ancla strong { color: #c9a227; font-style: normal; display: block; margin-top: 6px; font-size: 1.05em; }
 
     /* BOSQUEJO */
     .bosquejo {
-        background: linear-gradient(135deg, #3a0e0e 0%, #5a1a1a 100%);
-        color: #fff;
-        padding: 28px 32px;
+        background: #1c2b3a;
+        color: #e8d9a0;
+        padding: 28px 34px;
         border-radius: 12px;
-        margin: 30px 0;
-        box-shadow: 0 8px 30px rgba(74,21,21,0.25);
+        margin: 32px 0;
+        border: 1px solid rgba(201,162,39,0.25);
+        box-shadow: 0 8px 30px rgba(28,43,58,0.2);
     }
-    .bosquejo h3 {
-        color: #c9a227;
-        margin-top: 0;
-        margin-bottom: 20px;
-        font-size: 1.15em;
-        text-align: center;
-        border-bottom: 1px solid rgba(201,162,39,0.35);
-        padding-bottom: 12px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        font-size: 0.95em;
-    }
-    .bosquejo ol {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        counter-reset: punt;
-    }
-    .bosquejo > ol > li {
-        counter-increment: punt;
-        margin-bottom: 14px;
-        padding-left: 0;
-    }
-    .bosquejo > ol > li > span.punto-num {
-        display: inline-block;
-        background: #c9a227;
-        color: #3a0e0e;
-        font-weight: bold;
-        font-size: 0.8em;
-        width: 22px;
-        height: 22px;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 22px;
-        margin-right: 8px;
-    }
-    .bosquejo > ol > li > strong {
-        font-size: 1em;
-        color: #fff;
-    }
-    .bosquejo ul {
-        list-style: none;
-        padding: 0;
-        margin: 6px 0 0 30px;
-    }
-    .bosquejo ul li {
-        font-size: 0.88em;
-        color: rgba(255,255,255,0.65);
-        padding: 2px 0;
-        padding-left: 14px;
-        position: relative;
-    }
-    .bosquejo ul li::before {
-        content: "—";
-        position: absolute;
-        left: 0;
-        color: #c9a227;
-    }
+    .bosquejo h3 { color: #c9a227; margin-top: 0; margin-bottom: 20px; font-size: 0.82em; letter-spacing: 2px; text-transform: uppercase; text-align: center; border-bottom: 1px solid rgba(201,162,39,0.3); padding-bottom: 14px; }
+    .bosquejo ol { margin: 0; padding: 0; list-style: none; }
+    .bosquejo > ol > li { margin-bottom: 13px; display: flex; align-items: flex-start; gap: 10px; }
+    .bosquejo .bnum { background: #c9a227; color: #1c2b3a; font-weight: bold; font-size: 0.78em; min-width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px; flex-shrink: 0; }
+    .bosquejo .btxt strong { font-size: 0.95em; color: #e8d9a0; }
+    .bosquejo .bsub { list-style: none; padding: 0; margin: 5px 0 0 0; }
+    .bosquejo .bsub li { font-size: 0.82em; color: rgba(232,217,160,0.55); padding: 2px 0 2px 14px; position: relative; line-height: 1.5; }
+    .bosquejo .bsub li::before { content: "—"; position: absolute; left: 0; color: rgba(201,162,39,0.5); }
 
-    /* ENCABEZADOS DE PUNTO DEL SERMÓN */
+    /* ENCABEZADO DE PUNTO */
     .punto-sermon {
-        background: linear-gradient(90deg, #6e2c2c, #8b3a3a);
-        color: #fff;
+        background: #1c2b3a;
+        color: #e8d9a0;
         padding: 13px 22px;
         border-radius: 6px;
-        margin: 40px 0 18px 0;
-        font-size: 1.1em;
+        margin: 42px 0 20px 0;
+        font-size: 1.05em;
         font-weight: bold;
-        letter-spacing: 0.3px;
         border-left: 5px solid #c9a227;
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 12px;
+        box-shadow: 0 4px 16px rgba(28,43,58,0.2);
     }
-    .punto-sermon .num {
-        background: #c9a227;
-        color: #3a0e0e;
-        font-size: 0.8em;
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-        flex-shrink: 0;
-    }
+    .punto-sermon .num { background: #c9a227; color: #1c2b3a; font-size: 0.78em; min-width: 24px; height: 24px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; }
 
-    /* MOVIMIENTO — etiqueta de sección narrativa */
+    /* ETIQUETA DE MOVIMIENTO */
     .movimiento-label {
         font-size: 10px;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 2px;
-        color: #8b3a3a;
+        color: #2e4a63;
         border-top: 2px solid #c9a227;
         display: inline-block;
-        padding-top: 6px;
-        margin-bottom: 6px;
+        padding-top: 7px;
+        margin-bottom: 4px;
     }
 
-    /* CAJAS DEL SERMÓN */
+    /* CAJAS */
     .caja-tension {
-        background: linear-gradient(135deg, #f5f0ff, #ede5ff);
-        border-left: 5px solid #6b3fa0;
+        background: #f0ece0;
+        border-left: 5px solid #2e4a63;
         border-radius: 0 8px 8px 0;
-        margin: 22px 0;
-        padding: 18px 22px;
+        margin: 24px 0;
+        padding: 20px 24px;
     }
-    .caja-tension h4 { color: #4a2080; margin: 0 0 10px 0; font-size: 1.05em; }
-    .caja-tension p { margin: 6px 0; font-size: 0.97em; }
+    .caja-tension h4 { color: #1c2b3a; margin: 0 0 10px 0; font-size: 1.02em; }
+    .caja-tension p { margin: 7px 0; font-size: 0.96em; color: #333; line-height: 1.75; }
 
     .caja-revelacion {
-        background: linear-gradient(135deg, #fffbf0, #fef5dc);
+        background: #f0ece0;
         border-left: 5px solid #c9a227;
         border-radius: 0 8px 8px 0;
-        margin: 22px 0;
-        padding: 18px 22px;
+        margin: 24px 0;
+        padding: 20px 24px;
     }
-    .caja-revelacion h4 { color: #8a6d00; margin: 0 0 10px 0; font-size: 1.05em; }
-    .caja-revelacion p { margin: 6px 0; font-size: 0.97em; }
+    .caja-revelacion h4 { color: #8a6d00; margin: 0 0 10px 0; font-size: 1.02em; }
+    .caja-revelacion p { margin: 7px 0; font-size: 0.96em; color: #333; line-height: 1.75; }
 
     .caja-proclamacion {
-        background: linear-gradient(135deg, #fdf2f2, #fae5e5);
-        border-left: 5px solid #8b3a3a;
-        border-radius: 0 8px 8px 0;
-        margin: 22px 0;
-        padding: 18px 22px;
+        background: #1c2b3a;
+        border-radius: 8px;
+        margin: 24px 0;
+        padding: 20px 26px;
+        border: 1px solid rgba(201,162,39,0.2);
     }
-    .caja-proclamacion h4 { color: #6e2c2c; margin: 0 0 10px 0; font-size: 1.05em; }
-    .caja-proclamacion p { margin: 6px 0; font-size: 0.97em; }
+    .caja-proclamacion h4 { color: #c9a227; margin: 0 0 10px 0; font-size: 1.02em; }
+    .caja-proclamacion p { margin: 7px 0; font-size: 0.95em; color: #ddd3b5; line-height: 1.75; }
+    .caja-proclamacion strong { color: #e8d9a0; }
 
     .caja-cristo {
-        background: linear-gradient(135deg, #f0faf5, #d8f0e8);
-        border: 2px solid #1a7a50;
-        border-radius: 8px;
-        margin: 30px 0;
-        padding: 25px;
+        background: #f0ece0;
+        border: 2px solid #2e4a63;
+        border-radius: 10px;
+        margin: 32px 0;
+        padding: 26px 28px;
         position: relative;
     }
-    .caja-cristo::before {
-        content: "✝";
-        font-size: 2em;
-        position: absolute;
-        top: -15px;
-        left: 25px;
-        background: #f0faf5;
-        padding: 0 10px;
-        color: #1a7a50;
+    .caja-cristo::before { content: "✝"; font-size: 1.6em; position: absolute; top: -14px; left: 24px; background: #f0ece0; padding: 0 10px; color: #2e4a63; }
+    .caja-cristo h3 { color: #1c2b3a; margin-top: 8px; margin-bottom: 14px; text-align: center; font-size: 1.1em; border-bottom: 1px solid rgba(46,74,99,0.2); padding-bottom: 10px; }
+    .caja-cristo p { margin: 9px 0; line-height: 1.8; }
+
+    .caja-linguistica {
+        background: #f0ece0;
+        border-left: 5px solid #8a6d00;
+        border-radius: 0 8px 8px 0;
+        margin: 24px 0;
+        padding: 20px 24px;
     }
-    .caja-cristo h3 { color: #0d5c3a; margin-top: 10px; margin-bottom: 15px; text-align: center; font-size: 1.15em; }
-    .caja-cristo p { margin: 8px 0; }
+    .caja-linguistica h4 { color: #8a6d00; margin: 0 0 10px 0; font-size: 1.02em; }
+    .caja-linguistica p { margin: 6px 0; font-size: 0.96em; color: #333; line-height: 1.75; }
+    .caja-linguistica .palabra-original { font-size: 1.2em; color: #1c2b3a; font-weight: bold; background: rgba(201,162,39,0.15); padding: 4px 12px; border-radius: 4px; display: inline-block; margin: 6px 0; }
 
     .caja-aplicacion-sermon {
-        background: linear-gradient(135deg, #fdf8ee, #faefd3);
+        background: #f0ece0;
         border: 2px solid #c9a227;
-        border-radius: 8px;
-        margin: 30px 0;
-        padding: 25px;
+        border-radius: 10px;
+        margin: 32px 0;
+        padding: 26px 28px;
         position: relative;
     }
-    .caja-aplicacion-sermon::before {
-        content: "⚡";
-        font-size: 1.8em;
-        position: absolute;
-        top: -15px;
-        left: 25px;
-        background: #fdf8ee;
-        padding: 0 10px;
-    }
-    .caja-aplicacion-sermon h3 { color: #7a5500; margin-top: 10px; margin-bottom: 15px; text-align: center; font-size: 1.15em; }
+    .caja-aplicacion-sermon::before { content: "⚡"; font-size: 1.6em; position: absolute; top: -14px; left: 24px; background: #f0ece0; padding: 0 10px; }
+    .caja-aplicacion-sermon h3 { color: #1c2b3a; margin-top: 8px; margin-bottom: 16px; text-align: center; font-size: 1.1em; border-bottom: 1px solid rgba(201,162,39,0.3); padding-bottom: 10px; }
     .caja-aplicacion-sermon ul { list-style: none; padding: 0; margin: 0; }
-    .caja-aplicacion-sermon li { padding: 10px 0 10px 28px; border-bottom: 1px dotted rgba(201,162,39,0.4); position: relative; line-height: 1.7; }
+    .caja-aplicacion-sermon li { padding: 11px 0 11px 28px; border-bottom: 1px dotted rgba(201,162,39,0.35); position: relative; line-height: 1.75; }
     .caja-aplicacion-sermon li:last-child { border-bottom: none; }
-    .caja-aplicacion-sermon li::before { content: "→"; position: absolute; left: 0; color: #c9a227; font-weight: bold; }
+    .caja-aplicacion-sermon li::before { content: "→"; position: absolute; left: 0; color: #c9a227; font-weight: bold; font-size: 1.1em; }
 
     /* CITA GRANDE */
     .cita-grande {
-        font-size: 1.35em;
+        font-size: 1.3em;
         font-style: italic;
-        color: #4a1515;
+        color: #1c2b3a;
         text-align: center;
-        padding: 28px 25px;
-        margin: 35px 0;
+        padding: 28px 28px;
+        margin: 36px 0;
         border-top: 2px solid #c9a227;
         border-bottom: 2px solid #c9a227;
-        line-height: 1.9;
-        background: rgba(201,162,39,0.04);
-    }
-    .cita-grande cite {
-        display: block;
-        font-size: 0.65em;
-        font-style: normal;
-        color: #8b3a3a;
-        margin-top: 10px;
-        font-weight: bold;
-        letter-spacing: 0.5px;
-    }
-
-    /* CAJA LINGÜÍSTICA */
-    .caja-linguistica {
-        background: linear-gradient(135deg, #fdf6e3, #f5ecd7);
-        border-left: 5px solid #b8860b;
+        line-height: 1.95;
+        background: #f0ece0;
         border-radius: 0 8px 8px 0;
-        margin: 22px 0;
-        padding: 18px 22px;
+        border-left: 5px solid #1c2b3a;
     }
-    .caja-linguistica h4 { color: #8b6914; margin: 0 0 10px 0; font-size: 1.05em; }
-    .caja-linguistica p { margin: 5px 0; font-size: .97em; }
-    .caja-linguistica .palabra-original {
-        font-size: 1.2em;
-        color: #4a1515;
-        font-weight: bold;
-        background: rgba(184,134,11,.12);
-        padding: 3px 10px;
-        border-radius: 4px;
-        display: inline-block;
-        margin: 5px 0;
-    }
+    .cita-grande cite { display: block; font-size: 0.62em; font-style: normal; color: #2e4a63; margin-top: 10px; font-weight: bold; letter-spacing: 0.5px; }
 
     /* DESTACADO FINAL */
     .destacado-final {
-        background: linear-gradient(135deg, #3a0e0e, #6e2c2c);
-        color: #fff;
-        padding: 30px 35px;
+        background: #1c2b3a;
+        color: #e8d9a0;
+        padding: 36px 42px;
         border-radius: 10px;
-        margin: 35px 0;
+        margin: 38px 0;
         text-align: center;
-        font-size: 1.15em;
+        font-size: 1.2em;
         font-style: italic;
-        line-height: 1.9;
+        line-height: 2;
         border: 2px solid #c9a227;
-        box-shadow: 0 6px 30px rgba(74,21,21,0.3);
+        box-shadow: 0 8px 35px rgba(28,43,58,0.3);
     }
-    .destacado-final strong { color: #c9a227; font-style: normal; }
+    .destacado-final strong { color: #c9a227; font-style: normal; display: block; margin-top: 8px; }
+
+    /* MEDITAR */
+    .caja-meditar {
+        background: #f0ece0;
+        border: 2px solid #2e4a63;
+        border-radius: 10px;
+        margin: 32px 0;
+        padding: 26px 28px;
+        position: relative;
+    }
+    .caja-meditar::before { content: "🙏"; font-size: 1.6em; position: absolute; top: -14px; left: 24px; background: #f0ece0; padding: 0 10px; }
+    .caja-meditar h3 { color: #1c2b3a; margin-top: 8px; margin-bottom: 14px; text-align: center; font-size: 1.1em; }
+    .caja-meditar ul { list-style: none; padding: 0; margin: 0; }
+    .caja-meditar li { padding: 9px 0 9px 28px; border-bottom: 1px dotted rgba(46,74,99,0.25); position: relative; line-height: 1.75; font-style: italic; }
+    .caja-meditar li:last-child { border-bottom: none; }
+    .caja-meditar li::before { content: "◆"; position: absolute; left: 0; color: #2e4a63; font-size: 0.7em; top: 13px; }
 
     @media (max-width: 768px) {
-        .contenedor-blog { padding: 15px; }
-        h1.titulo-entrada { font-size: 24px; }
-        .frase-ancla { font-size: 1.1em; padding: 25px 20px; }
-        .cita-grande { font-size: 1.1em; }
-        .biblia-ref .tooltip-text { position: fixed; bottom: 20px; left: 15px; right: 15px; width: auto; transform: none; max-width: none; }
-        .biblia-ref .tooltip-text::after { display: none; }
-        .bosquejo { padding: 20px; }
-        .punto-sermon { font-size: 1em; padding: 11px 16px; }
+      .contenedor-blog { padding: 15px; }
+      h1.titulo-entrada { font-size: 23px; }
+      .frase-ancla { font-size: 1.05em; padding: 26px 20px; }
+      .cita-grande { font-size: 1.05em; padding: 20px 16px; }
+      .bosquejo { padding: 20px 20px; }
+      .punto-sermon { font-size: 0.97em; padding: 11px 14px; }
+      .biblia-ref .tooltip-text { position: fixed; bottom: 16px; left: 12px; right: 12px; width: auto; transform: none; max-width: none; }
+      .biblia-ref .tooltip-text::after { display: none; }
     }
   </style>
 </head>
@@ -386,250 +306,247 @@
 
 <div class="contenedor-blog">
 
-  <div style="text-align:center; margin-bottom: 8px;">
-    <span class="etiqueta-sermon">✦ Sermón</span>
+  <div style="text-align:center; margin-bottom: 10px;">
+    <span class="etiqueta-sermon">✦ Sermón · Génesis 16</span>
   </div>
 
   <h1 class="titulo-entrada">La Desesperación de una Mujer Invisible... y sus Dioses Silenciosos</h1>
 
   <div class="cita-versiculo">
-    <h3>Génesis 16:6-13</h3>
-    <p>"Y la halló el ángel de Jehová junto a una fuente de agua en el desierto... Y ella llamó el nombre de Jehová que hablaba con ella: Tú eres <em>El-Roi</em>; porque dijo: ¿No he visto también aquí al que me ve?"</p>
+    <h3>Génesis 16:6–13 · RVR1960</h3>
+    <p>"Y la halló el ángel de Jehová junto a una fuente de agua en el desierto... Y llamó el nombre de Jehová que hablaba con ella: Tú eres <em>El-Roi</em>; porque dijo: ¿No he visto también aquí al que me ve?"</p>
   </div>
 
-  <!-- FRASE ANCLA -->
   <div class="frase-ancla">
     Cuando el mundo entero te da la espalda y tus dioses guardan silencio,<br>
-    hay uno que ya te encontró:<br>
-    <strong>El-Roi — el Dios que te ve.</strong>
+    hay uno que ya salió a buscarte.
+    <strong>Su nombre es El-Roi — el Dios que te ve.</strong>
   </div>
 
   <!-- ÍNDICE -->
   <div class="indice-nav" id="indice">
-    <h3>MAPA DEL SERMÓN</h3>
+    <h3>Mapa del Sermón</h3>
     <ol class="punto-principal">
       <li>
         <a href="#punto1"><span class="ref-etiqueta">I.</span> La mujer invisible — el peso de ser nadie</a>
         <ul class="sub-notas">
-          <li><a href="#punto1">— Quién era Agar y por qué importa</a></li>
-          <li><a href="#punto1">— Los dioses que no ven: el politeísmo egipcio ante la crisis</a></li>
+          <li><a href="#punto1">— Quién era Agar y por qué su historia importa</a></li>
+          <li><a href="#punto1">— Los dioses que no ven: la teología egipcia ante la crisis</a></li>
         </ul>
       </li>
       <li>
-        <a href="#punto2"><span class="ref-etiqueta">II.</span> El desierto — el lugar donde todo mentira queda expuesta</a>
+        <a href="#punto2"><span class="ref-etiqueta">II.</span> El desierto — donde toda mentira queda al descubierto</a>
         <ul class="sub-notas">
-          <li><a href="#punto2">— El desierto como espejo de la desesperación máxima</a></li>
-          <li><a href="#punto2">— La fuente: dónde Dios decide encontrarla</a></li>
+          <li><a href="#punto2">— El desierto como espacio de desesperación máxima</a></li>
+          <li><a href="#punto2">— La fuente: dónde Dios elige encontrarla</a></li>
         </ul>
       </li>
       <li>
         <a href="#punto3"><span class="ref-etiqueta">III.</span> La iniciativa divina — Él la buscó primero</a>
         <ul class="sub-notas">
-          <li><a href="#punto3">— El ángel de Jehová: quién viene y por qué cambia todo</a></li>
-          <li><a href="#punto3">— Nota lingüística: <em>El-Roi</em>, el nombre que Agar le da a Dios</a></li>
+          <li><a href="#punto3">— El ángel de Jehová: quién viene y qué cambia</a></li>
+          <li><a href="#punto3">— Nota lingüística: El-Roi, el nombre que Agar le puso a Dios</a></li>
         </ul>
       </li>
-      <li>
-        <a href="#punto4"><span class="ref-etiqueta">IV.</span> Cristo en la historia de Agar</a>
-      </li>
-      <li>
-        <a href="#llamado"><span class="ref-etiqueta">V.</span> Llamado final</a>
-      </li>
+      <li><a href="#punto4"><span class="ref-etiqueta">IV.</span> Cristo en la historia de Agar</a></li>
+      <li><a href="#llamado"><span class="ref-etiqueta">V.</span> Llamado final</a></li>
     </ol>
   </div>
 
   <div class="separador">✦ ✦ ✦</div>
 
-  <!-- ======================================================
-       MOVIMIENTO 1: TENSIÓN
-       ====================================================== -->
+  <!-- ============================================================
+       MOVIMIENTO 1 — TENSIÓN
+       ============================================================ -->
   <span class="movimiento-label">Primer movimiento · Tensión</span>
 
-  <h2 class="subtitulo" id="punto1">
-    <div class="punto-sermon"><span class="num">I</span> La mujer invisible — el peso de ser nadie</div>
-  </h2>
+  <div class="punto-sermon" id="punto1">
+    <span class="num">I</span> La mujer invisible — el peso de ser nadie
+  </div>
 
   <p>Imagina que no tienes nombre propio.</p>
 
-  <p>Bueno, sí tienes uno. Pero nadie lo usa para referirse a ti como persona. Eres "la esclava", "la sierva de Sarai", "la egipcia". Eres una herramienta que camina, una propiedad con pies. Tu historia no comienza con una elección: llegaste a la casa de Abraham como parte del equipaje que Faraón regaló cuando Sara era todavía joven y hermosa, allá en Egipto. No se te preguntó si querías ir. No se te consultó nada.</p>
+  <p>Bueno, sí lo tienes. Pero nadie lo usa para referirse a ti como persona. Eres "la esclava", "la sierva de Sarai", "la egipcia". Eres una herramienta que camina, una propiedad con pies. Tu historia no comienza con una elección tuya: llegaste a la casa de Abraham como parte del equipaje que Faraón regaló cuando Sara era joven y hermosa, allá en Egipto. No te preguntaron si querías ir. No te consultaron nada.</p>
 
   <p>Eso era Agar.</p>
 
   <div class="caja-tension">
-    <h4>🔍 El mundo que Agar traía por dentro</h4>
-    <p>Agar creció en Egipto. Y Egipto no era un lugar menor: era la civilización más imponente del mundo antiguo, con pirámides que rozaban el cielo, templos que hacían temblar al extranjero, y un panteón de dioses que lo explicaba todo.</p>
-    <p><strong>Ra</strong>, el dios del sol que gobernaba el día. <strong>Osiris</strong>, señor de la muerte y de lo que viene después. <strong>Isis</strong>, la madre de todas las madres, protectora de los débiles. <strong>Horus</strong>, el halcón del cielo. Miles de deidades para cada necesidad, cada miedo, cada momento de la vida.</p>
-    <p>Pero había una regla que todos conocían: <em>para que un dios te vea, tú debes buscarlo primero</em>. Necesitas ir a su templo. Necesitas al sacerdote. Necesitas la ofrenda correcta, el ritual apropiado, la fórmula exacta. La iniciativa siempre era tuya. El dios esperaba. Tú eras quien debía hacer el camino.</p>
+    <h4>El mundo que Agar llevaba por dentro</h4>
+    <p>Agar creció en Egipto. Y Egipto no era un lugar menor: era la civilización más imponente del mundo antiguo, con pirámides que rozaban el cielo, templos majestuosos y un panteón de dioses que lo explicaba todo. <strong>Ra</strong>, el dios del sol. <strong>Osiris</strong>, señor de la muerte y del más allá. <strong>Isis</strong>, la gran madre, protectora de los débiles. <strong>Horus</strong>, el halcón del cielo. Miles de deidades para cada necesidad, cada miedo, cada momento de la vida.</p>
+    <p>Pero había una regla que todos conocían y que nadie cuestionaba: <em>para que un dios te vea, tú debes buscarlo primero.</em> Necesitas ir a su templo. Necesitas al sacerdote. Necesitas la ofrenda correcta, el ritual apropiado, la fórmula exacta. La iniciativa siempre era tuya. El dios esperaba. Tú eras quien debía hacer el camino.</p>
+    <p>Agar tenía eso grabado en el alma. Era su teología, su cosmovisión, el lente con el que leía el mundo espiritual.</p>
   </div>
-
-  <p>Agar sabía todo eso. Lo tenía grabado en el alma. Era su teología, su cosmovisión, el lente con el que veía el mundo espiritual.</p>
 
   <p>Y entonces un día, Sarai tiene una idea.</p>
 
-  <p>Como los años pasan y el prometido hijo de Abraham no llega, Sarai toma el asunto en sus manos y le ofrece a su esposo lo que era una práctica culturalmente aceptable en el Cercano Oriente: "Entra a mi sierva; quizá tendré hijos por medio de ella" (<span class="biblia-ref">Génesis 16:2<span class="tooltip-text"><span class="tooltip-cita">Génesis 16:2</span>Y dijo Sarai a Abram: Ya ves que Jehová me ha hecho estéril; te ruego que te llegues a mi sierva; quizás tendré hijos de ella. Y atendió Abram al ruego de Sarai.</span></span>). Agar no es consultada. Agar no decide. Agar simplemente es.</p>
+  <p>Como los años pasan y el prometido hijo de Abraham no llega, Sarai toma el asunto en sus manos y le entrega su esclava: "Entra a mi sierva; quizá tendré hijos por medio de ella" (<span class="biblia-ref">Génesis 16:2<span class="tooltip-text"><span class="tooltip-cita">Génesis 16:2</span>Y dijo Sarai a Abram: Ya ves que Jehová me ha hecho estéril; te ruego que te llegues a mi sierva; quizás tendré hijos de ella. Y atendió Abram al ruego de Sarai.</span></span>). Agar no es consultada. No decide. Simplemente es usada.</p>
 
-  <p>Queda embarazada. Y algo se rompe en ella.</p>
+  <p>Queda embarazada. Y algo se quiebra.</p>
 
-  <p>El texto dice que Agar comenzó a mirar con desprecio a su señora. Era comprensible, casi inevitable: de repente tenía algo que Sarai no podía darle a Abraham. Por un instante, la invisible se sintió visible. Pero ese instante duró poco. Sarai la humilló con una dureza que el texto hebreo no suaviza: <span class="biblia-ref">Génesis 16:6<span class="tooltip-text"><span class="tooltip-cita">Génesis 16:6</span>Y Abram respondió a Sarai: He aquí, tu sierva está en tus manos; haz con ella lo que bien te parezca. Y como Sarai la afligía, ella huyó de su presencia.</span></span> la describe con el verbo <em>anah</em>, que significa "oprimir, humillar, someter con violencia". No fue un simple regaño. Fue una destrucción sistemática.</p>
+  <p>El texto dice que Agar comenzó a mirar con desprecio a su señora. Era comprensible: de repente tenía algo que Sarai no podía darle a Abraham. Por un instante, la invisible se sintió visible. Pero ese instante duró poco. Sarai la humilló con una dureza que el texto hebreo no suaviza: el verbo <em>anah</em> —traducido "afligir"— significa oprimir, someter, destruir sistemáticamente la dignidad de alguien (<span class="biblia-ref">Génesis 16:6<span class="tooltip-text"><span class="tooltip-cita">Génesis 16:6</span>Y Abram respondió a Sarai: He aquí, tu sierva está en tus manos; haz con ella lo que bien te parezca. Y como Sarai la afligía, ella huyó de su presencia.</span></span>). No fue un simple regaño.</p>
 
-  <p>Agar huyó.</p>
+  <p>Fue una destrucción.</p>
 
-  <p>Embarazada. Sola. Al desierto.</p>
+  <p>Agar huyó. Embarazada. Sola. Al desierto.</p>
 
   <div class="separador">✦ ✦ ✦</div>
 
-  <!-- ======================================================
-       MOVIMIENTO 2: REVELACIÓN
-       ====================================================== -->
+  <!-- ============================================================
+       MOVIMIENTO 2 — REVELACIÓN
+       ============================================================ -->
   <span class="movimiento-label">Segundo movimiento · Revelación</span>
 
-  <h2 class="subtitulo" id="punto2">
-    <div class="punto-sermon"><span class="num">II</span> El desierto — el lugar donde toda mentira queda expuesta</div>
-  </h2>
+  <div class="punto-sermon" id="punto2">
+    <span class="num">II</span> El desierto — donde toda mentira queda al descubierto
+  </div>
 
   <p>El desierto no es una metáfora bonita.</p>
 
-  <p>Para alguien en el Antiguo Oriente Medio, el desierto era sinónimo de muerte. Sin agua, el cuerpo humano colapsa en horas bajo el sol implacable. La arena no tiene fin. El calor no da tregua. No hay rostros conocidos, no hay sombra, no hay voz humana. El desierto es el lugar donde los nombres dejan de importar porque nadie está ahí para pronunciarlos.</p>
+  <p>Para alguien en el Antiguo Oriente Medio, el desierto era sinónimo de muerte. Sin agua, el cuerpo colapsa en horas bajo el sol implacable. La arena no tiene fin. No hay rostros conocidos, no hay sombra, no hay voz humana. El desierto es el lugar donde los nombres dejan de importar porque nadie está para pronunciarlos.</p>
 
-  <p>Agar está ahí. Con un hijo en el vientre que todavía no ha nacido. Con una vida que se está deshaciendo en sus manos. Y lo más devastador no es el sol ni la sed:</p>
-
-  <p><strong>Es que no tiene a quién llamar.</strong></p>
+  <p>Y precisamente ahí es donde el desierto hace su trabajo más cruel con Agar: le demuestra, con una claridad que ningún argumento podría igualar, que sus dioses no sirven aquí.</p>
 
   <div class="caja-proclamacion">
-    <h4>📣 La teología del desierto</h4>
-    <p>Sus dioses egipcios están a miles de kilómetros. No hay templos en el desierto. No hay sacerdotes. No hay ofrendas posibles. No hay ritual que funcione en medio de la arena. Según todo lo que Agar aprendió desde niña, sus dioses no pueden verla aquí porque ella no ha hecho el camino correcto para ser vista.</p>
-    <p>El desierto le está demostrando algo brutal: <em>los dioses que necesitan que tú los busques no sirven cuando ya no tienes fuerzas para buscar nada.</em></p>
+    <h4>La teología del desierto</h4>
+    <p>Sus dioses egipcios están a miles de kilómetros. <strong>No hay templos en el desierto.</strong> No hay sacerdotes. No hay ofrendas posibles. No hay ritual que funcione en medio de la arena. Según todo lo que Agar aprendió desde niña, sus dioses no pueden verla aquí porque ella no ha hecho el camino correcto para ser vista.</p>
+    <p>El desierto le está demostrando algo brutal y liberador al mismo tiempo: <em>los dioses que necesitan que tú los busques no sirven cuando ya no tienes fuerzas para buscar nada.</em></p>
   </div>
 
-  <p>Esto es lo que el texto no dice pero que está latiendo entre cada línea: Agar está en el punto límite. El punto donde la religión de toda una vida se queda sin respuestas. Donde las fórmulas no funcionan. Donde el esfuerzo humano llega a su fin.</p>
+  <p>Agar está en el punto límite. El punto donde la religión de toda una vida se queda sin respuestas. Donde las fórmulas no funcionan. Donde el esfuerzo humano llega a su fin y no queda nada.</p>
 
-  <p>Y es exactamente ahí donde ocurre algo que redefine todo.</p>
+  <p>Nada excepto una fuente.</p>
 
   <div class="cita-grande">
-    "Y la halló el ángel de Jehová junto a una fuente de agua en el desierto, junto a la fuente que está en el camino de Shur."
-    <cite>— Génesis 16:7 (RVR1960)</cite>
+    "Y la halló el ángel de Jehová junto a una fuente de agua en el desierto,<br>junto a la fuente que está en el camino de Shur."
+    <cite>— Génesis 16:7</cite>
   </div>
 
   <div class="caja-revelacion">
-    <h4>💡 El detalle que lo cambia todo: la fuente</h4>
-    <p>El ángel no la encuentra en cualquier punto del desierto. La encuentra <em>junto a una fuente de agua</em>. Esto no es un detalle geográfico accidental. Es una declaración teológica en sí misma.</p>
-    <p>El desierto es muerte. El agua es vida. Y Dios aparece precisamente donde la vida es posible, donde la provisión ya existe, donde la esperanza no ha muerto del todo.</p>
-    <p>Él no solo viene a consolarla con palabras. Viene al lugar donde puede darle lo que necesita para sobrevivir. <strong>El Dios que ve también es el Dios que provee.</strong> Es el manantial de agua viva en medio de la sequedad.</p>
+    <h4>El detalle que lo cambia todo: la fuente</h4>
+    <p>El ángel no la encuentra en cualquier punto perdido del desierto. La encuentra <em>junto a una fuente de agua</em>. Esto no es un dato geográfico accidental. Es una declaración teológica en sí misma.</p>
+    <p>El desierto es muerte. El agua es vida. Y Dios aparece precisamente donde la vida es posible, donde la provisión ya existe, donde la esperanza no ha muerto del todo. Él no solo viene a consolarla con palabras vacías: viene al lugar donde puede darle lo que necesita para sobrevivir. <strong>El Dios que ve también es el Dios que provee.</strong> Es el manantial de agua viva en medio de la sequedad total.</p>
   </div>
 
   <a class="volver-indice" href="#indice">↑ Volver al índice</a>
 
-  <!-- PUNTO 3 -->
-  <h2 class="subtitulo" id="punto3">
-    <div class="punto-sermon"><span class="num">III</span> La iniciativa divina — Él la buscó primero</div>
-  </h2>
-
-  <p>Fíjate en una cosa.</p>
-
-  <p>No es Agar buscando un templo. No es Agar invocando un nombre divino con la fórmula correcta. No es Agar haciendo una ofrenda o cumpliendo un ritual. Agar no está haciendo absolutamente nada teológico cuando el ángel aparece.</p>
-
-  <p>Está huyendo. Está asustada. Está rota.</p>
-
-  <p>Y sin embargo, el ángel de Jehová la busca a ella.</p>
-
-  <div class="caja-proclamacion">
-    <h4>📣 Esto contradice todo lo que Agar sabía sobre los dioses</h4>
-    <p>En la religión egipcia, la iniciativa es siempre tuya. Tú haces el camino al templo. Tú traes la ofrenda. Tú pronuncias el nombre correcto. El dios espera a que tú lo busques.</p>
-    <p>Pero el Dios de Abraham invierte completamente la lógica. <strong>Él no espera. Él busca. Él va. Él encuentra.</strong></p>
-    <p>Y lo más escandaloso: va a buscar a una esclava extranjera, embarazada, en fuga, que no es parte del pueblo del pacto. Agar no es israelita. No es "de los nuestros". Por todos los criterios religiosos del mundo antiguo, ella no debería merecer esta visita.</p>
+  <div class="punto-sermon" id="punto3">
+    <span class="num">III</span> La iniciativa divina — Él la buscó primero
   </div>
 
-  <p>El ángel la llama por su nombre. Ese pequeño gesto es enorme: <em>"Agar, sierva de Sarai"</em> (<span class="biblia-ref">Génesis 16:8<span class="tooltip-text"><span class="tooltip-cita">Génesis 16:8</span>Y le dijo: Agar, sierva de Sarai, ¿de dónde vienes tú, y a dónde vas? Y ella respondió: Huyo de delante de Sarai mi señora.</span></span>). Para un mundo que la trata como un objeto, Dios la llama por nombre. La ve como persona. Le hace una pregunta que ningún ser humano se había molestado en hacerle: <em>¿de dónde vienes y a dónde vas?</em></p>
+  <p>Fíjate en una cosa que el texto no dice pero que lo cambia todo.</p>
 
-  <p>No es que Dios no lo sepa. Es que quiere que ella lo diga. Quiere que hable. Quiere escucharla.</p>
+  <p>No es Agar buscando un templo. No es Agar invocando un nombre divino con la fórmula correcta. No es Agar haciendo una ofrenda ni cumpliendo un ritual. Agar no está haciendo absolutamente nada teológico cuando el ángel aparece.</p>
 
-  <p>Le da instrucciones, sí. Le pide que regrese, sí. Pero antes de cualquier mandato, hay una promesa extraordinaria: su hijo se llamará Ismael —que significa "Dios oye"— y tendrá una descendencia innumerable. A una esclava fugitiva, sin tierra, sin nombre, sin familia que la defienda, Dios le hace el mismo tipo de promesa que le hizo al mismísimo Abraham.</p>
+  <p>Está huyendo. Asustada. Rota.</p>
 
-  <p>Y Agar, frente a todo esto, hace algo que nadie en las Escrituras había hecho antes.</p>
+  <p>Y sin embargo, el ángel de Jehová la busca <em>a ella</em>.</p>
+
+  <div class="caja-proclamacion">
+    <h4>Esto contradice todo lo que Agar sabía sobre los dioses</h4>
+    <p>En la religión egipcia, la iniciativa es siempre tuya. Tú haces el camino al templo. Tú traes la ofrenda. El dios espera a que tú lo encuentres.</p>
+    <p>Pero el Dios de Abraham invierte completamente la lógica. <strong>Él no espera. Él busca. Él va. Él encuentra.</strong></p>
+    <p>Y lo más escandaloso: va a buscar a una esclava extranjera, embarazada, en fuga, que no es parte del pueblo del pacto. Agar no es israelita. No es "de los nuestros". Por todos los criterios religiosos del mundo antiguo, ella no debería merecer esta visita. Y sin embargo aquí está el mensajero de Dios, en el desierto, llamándola por su nombre.</p>
+  </div>
+
+  <p>Ese pequeño gesto —llamarla por su nombre— es enorme en su contexto. Para un mundo que la trata como objeto, Dios la llama como persona. Le hace una pregunta que ningún ser humano se había molestado en hacerle: <em>"Agar, sierva de Sarai, ¿de dónde vienes y a dónde vas?"</em> (<span class="biblia-ref">Génesis 16:8<span class="tooltip-text"><span class="tooltip-cita">Génesis 16:8</span>Y le dijo: Agar, sierva de Sarai, ¿de dónde vienes tú, y a dónde vas? Y ella respondió: Huyo de delante de Sarai mi señora.</span></span>).</p>
+
+  <p>No es que Dios no lo sepa. Es que quiere que ella lo diga. Quiere escucharla.</p>
+
+  <p>Le da instrucciones, le pide que regrese, y antes de cualquier mandato le entrega una promesa extraordinaria: su hijo se llamará Ismael —"Dios oye"— y tendrá una descendencia innumerable. A una esclava fugitiva, sin tierra y sin nadie que la defienda, Dios le hace el mismo tipo de promesa que le hizo al mismísimo Abraham.</p>
+
+  <p>Y Agar, frente a todo esto, hace algo que nadie en las Escrituras había hecho antes de ella.</p>
 
   <p>Le pone nombre a Dios.</p>
 
   <div class="caja-linguistica">
-    <h4>📜 Nota Lingüística: <em>El-Roi</em> — "El Dios que ve"</h4>
+    <h4>📜 Nota Lingüística — <em>El-Roi</em>: "El Dios que ve"</h4>
     <p><span class="palabra-original">אֵל רֳאִי — El-Roi</span></p>
     <p>Esta es la única vez en toda la Biblia en que un ser humano le da un nombre a Dios. No un patriarca. No un profeta. Una esclava extranjera en el desierto.</p>
-    <p><em>El</em> (אֵל) es simplemente "Dios", el término genérico para la divinidad. <em>Roi</em> (רֳאִי) viene del verbo hebreo <em>ra'ah</em> (רָאָה), que significa "ver, percibir, contemplar, atender". No es la mirada superficial de quien pasa por al lado. Es la mirada que penetra, que conoce, que se involucra.</p>
-    <p>La exclamación de Agar en el versículo 13 es un juego de palabras en hebreo: "¿No he visto aquí <em>al que me ve</em>?" Ella ha sido vista. Y al ser vista, ella puede ver. El encuentro con <em>El-Roi</em> transforma al que lo experimenta: de invisible a visto, de perdido a encontrado.</p>
-    <p>Y el lugar donde esto ocurre recibe un nombre: <em>Beer-lajai-roi</em> — "el pozo del Viviente que me ve" (<span class="biblia-ref">Génesis 16:14<span class="tooltip-text"><span class="tooltip-cita">Génesis 16:14</span>Por lo cual llamó al pozo: Beer-lajai-roi. He aquí está entre Cades y Bered.</span></span>). El encuentro con Dios transforma incluso la geografía.</p>
+    <p><em>El</em> (אֵל) es el término genérico para "Dios" en hebreo. <em>Roi</em> (רֳאִי) proviene del verbo <em>ra'ah</em> (רָאָה): "ver, percibir, contemplar, atender". No es la mirada superficial de quien pasa de largo. Es la mirada que penetra, que conoce, que se involucra activamente en la vida de quien es visto.</p>
+    <p>La exclamación de Agar es un juego de palabras en el hebreo original: <em>"¿No he visto aquí al que me ve?"</em> Ella ha sido vista. Y al ser vista, ella puede ver. El encuentro con <em>El-Roi</em> transforma al que lo experimenta: de invisible a visto, de perdido a encontrado.</p>
+    <p>Y el lugar donde esto ocurre recibe un nombre permanente: <em>Beer-lajai-roi</em>, "el pozo del Viviente que me ve" (<span class="biblia-ref">Génesis 16:14<span class="tooltip-text"><span class="tooltip-cita">Génesis 16:14</span>Por lo cual llamó al pozo: Beer-lajai-roi. He aquí está entre Cades y Bered.</span></span>). El encuentro con Dios transforma incluso la geografía.</p>
   </div>
 
   <div class="caja-revelacion">
-    <h4>💡 La lógica que Agar descubrió — y que cambia la tuya también</h4>
-    <p>Sus dioses egipcios necesitaban ser encontrados. El Dios de Israel <em>encuentra</em>. Sus dioses aguardaban en templos de piedra. El Dios de Abraham sale al desierto. Sus dioses respondían a las ofrendas correctas. El Dios verdadero responde a la vulnerabilidad total.</p>
-    <p>La gracia no es una recompensa por haber buscado bien. La gracia es ser encontrado cuando ya no puedes buscar.</p>
+    <h4>La lógica que Agar descubrió — y que cambia la tuya también</h4>
+    <p>Sus dioses egipcios necesitaban ser encontrados. El Dios de Israel <em>encuentra</em>. Sus dioses aguardaban en templos de piedra. El Dios de Abraham sale al desierto. Sus dioses respondían solo a las ofrendas correctas. El Dios verdadero responde a la vulnerabilidad total.</p>
+    <p><strong>La gracia no es una recompensa por haber buscado bien. La gracia es ser encontrado cuando ya no puedes buscar.</strong></p>
   </div>
 
   <a class="volver-indice" href="#indice">↑ Volver al índice</a>
   <div class="separador">✦ ✦ ✦</div>
 
-  <!-- ======================================================
+  <!-- ============================================================
        CRISTO EN EL TEXTO
-       ====================================================== -->
+       ============================================================ -->
   <div class="caja-cristo" id="punto4">
     <h3>Cristo en la historia de Agar</h3>
-    <p>Hay algo que el Nuevo Testamento nos obliga a ver en esta historia: el "ángel de Jehová" que aparece a Agar en el desierto no es un ángel ordinario. A lo largo del Antiguo Testamento, este ser misterioso habla en primera persona como Dios, recibe adoración, y hace cosas que solo Dios puede hacer. Muchos teólogos lo identifican como una teofanía — una aparición del Hijo de Dios antes de la encarnación.</p>
-    <p>Si eso es así, entonces el que salió al desierto a buscar a Agar fue el mismo que siglos después caminaría por Galilea buscando a los perdidos, llamando por nombre a Zaqueo desde un árbol, preguntando a una mujer samaritana junto a un pozo —otro pozo, otra mujer sola, otra historia de gracia inesperada (<span class="biblia-ref">Juan 4:7<span class="tooltip-text"><span class="tooltip-cita">Juan 4:7</span>Una mujer de Samaria vino a sacar agua; y Jesús le dijo: Dame de beber.</span></span>)— quién eres, qué necesitas, dónde te duele.</p>
-    <p>Jesús es el <em>El-Roi</em> hecho carne. El Dios que te ve, encarnado en un cuerpo que puede cansarse, tener sed, llorar frente a una tumba. Él no vino a esperar en el templo a que fueras con el ritual correcto. Vino a buscarte. Salió de la gloria para ir al desierto donde estás tú.</p>
-    <p>Y en la cruz, él mismo experimentó el abandono que Agar conoció: el silencio del cielo, la soledad total, el grito que nadie parece escuchar. <em>"Dios mío, Dios mío, ¿por qué me has abandonado?"</em> (<span class="biblia-ref">Mateo 27:46<span class="tooltip-text"><span class="tooltip-cita">Mateo 27:46</span>Cerca de la hora novena, Jesús clamó a gran voz, diciendo: Elí, Elí, ¿lama sabactani? Esto es: Dios mío, Dios mío, ¿por qué me has abandonado?</span></span>) Lo gritó él para que tú no tuvieras que gritarlo para siempre. Fue visto por Dios en la muerte para que tú seas visto por Dios en la vida.</p>
+    <p>El "ángel de Jehová" que aparece a Agar no es un ángel ordinario. A lo largo del Antiguo Testamento, este ser misterioso habla en primera persona como Dios, recibe adoración y hace lo que solo Dios puede hacer. La teología cristiana lo identifica como una teofanía: una aparición del Hijo de Dios antes de la encarnación.</p>
+    <p>Si eso es así, el que salió al desierto a buscar a Agar es el mismo que siglos después caminaría por Galilea buscando a los perdidos. El que llamaría por nombre a Zaqueo desde un árbol. El que se detendría junto a un pozo —otro pozo, otra mujer sola, otra historia de gracia inesperada (<span class="biblia-ref">Juan 4:7<span class="tooltip-text"><span class="tooltip-cita">Juan 4:7</span>Una mujer de Samaria vino a sacar agua; y Jesús le dijo: Dame de beber.</span></span>)— para preguntar: ¿quién eres, qué necesitas, dónde te duele?</p>
+    <p>Jesús es el <em>El-Roi</em> hecho carne. El Dios que ve, encarnado en un cuerpo que puede cansarse, tener sed, llorar frente a una tumba. No vino a esperar en el templo a que llegaras con el ritual correcto. Vino a buscarte. Salió de la gloria para ir al desierto donde estás tú.</p>
+    <p>Y en la cruz experimentó el mismo silencio que Agar conoció: el abandono total, el grito que parece no llegar a ningún lado. <em>"Dios mío, Dios mío, ¿por qué me has abandonado?"</em> (<span class="biblia-ref">Mateo 27:46<span class="tooltip-text"><span class="tooltip-cita">Mateo 27:46</span>Cerca de la hora novena, Jesús clamó a gran voz, diciendo: Elí, Elí, ¿lama sabactani? Esto es: Dios mío, Dios mío, ¿por qué me has abandonado?</span></span>). Él gritó eso para que tú no tuvieras que gritarlo para siempre. Fue invisible ante Dios en la cruz para que tú seas visto por Dios para siempre. La sangre de Cristo habla algo mejor que la sangre de Abel: no clama por justicia contra el culpable, sino por misericordia sobre el que no la merece (<span class="biblia-ref">Hebreos 12:24<span class="tooltip-text"><span class="tooltip-cita">Hebreos 12:24</span>a Jesús el Mediador del nuevo pacto, y a la sangre rociada que habla mejor que la de Abel.</span></span>).</p>
   </div>
 
   <div class="separador">✦ ✦ ✦</div>
 
-  <!-- ======================================================
-       MOVIMIENTO 3: APLICACIÓN EXPLOSIVA
-       ====================================================== -->
+  <!-- ============================================================
+       MOVIMIENTO 3 — APLICACIÓN
+       ============================================================ -->
   <span class="movimiento-label">Tercer movimiento · Aplicación</span>
 
   <div class="caja-aplicacion-sermon">
     <h3>Si estás en el desierto hoy</h3>
     <ul>
-      <li><strong>Tu situación no te ha hecho invisible ante Dios.</strong> Agar no hizo nada correcto para merecer esa visita. Estaba huyendo, asustada, sin fe consciente. Y Dios la encontró. Lo que tú estás viviendo hoy —la crisis, la vergüenza, el fracaso, el abandono— no es una barrera entre tú y Dios. Es el exacto tipo de lugar donde él tiene el hábito de aparecer.</li>
-      <li><strong>No necesitas el ritual correcto para ser visto.</strong> Si durante años construiste tu relación con Dios sobre el desempeño —las oraciones perfectas, la asistencia perfecta, la conducta perfecta— y ahora no tienes energía para nada de eso, escucha esto: <em>El-Roi</em> ya te vio antes de que abrieras este artículo. Su mirada no depende de la tuya.</li>
+      <li><strong>Tu situación no te ha hecho invisible ante Dios.</strong> Agar no hizo nada correcto para merecer esa visita. Estaba huyendo, asustada, sin fe consciente. Y Dios la encontró. Lo que estás viviendo hoy —la crisis, la vergüenza, el fracaso, el abandono— no es una barrera entre tú y Dios. Es el exacto tipo de lugar donde él tiene el hábito de aparecer.</li>
+      <li><strong>No necesitas el ritual correcto para ser visto.</strong> Si construiste tu relación con Dios sobre el desempeño —la oración perfecta, la conducta perfecta, la asistencia perfecta— y ahora no tienes energía para nada de eso, escucha esto: <em>El-Roi</em> ya te vio antes de que abrieras esta página. Su mirada no depende de la tuya.</li>
       <li><strong>La fuente ya está ahí.</strong> Agar no llegó al agua por su propio mérito. Fue llevada. Pero el agua estaba. Dios ya fue delante de ti. La provisión que necesitas para sobrevivir este momento ya existe. La pregunta no es si Dios puede. La pregunta es si vas a dejar de correr lo suficiente como para verla.</li>
-      <li><strong>Dios te hace preguntas porque quiere escucharte.</strong> "¿De dónde vienes y a dónde vas?" No es una trampa. Es una invitación. Él ya sabe la respuesta. Quiere que tú la digas. Cuéntaselo hoy — sin liturgia, sin fórmula, sin el vocabulario correcto. Solo dile la verdad de donde estás.</li>
+      <li><strong>Dios te pregunta porque quiere escucharte.</strong> "¿De dónde vienes y a dónde vas?" No es una trampa. Es una invitación. Él ya sabe la respuesta. Quiere que tú la digas. Cuéntaselo hoy — sin liturgia, sin fórmula, sin el vocabulario correcto. Solo dile la verdad de dónde estás.</li>
+    </ul>
+  </div>
+
+  <div class="caja-meditar">
+    <h3>Para meditar</h3>
+    <ul>
+      <li>¿Hay en mi vida algún "dios silencioso" —una persona, un logro, una seguridad— al que le pido que me vea y que nunca responde?</li>
+      <li>¿Qué desierto estoy atravesando hoy donde siento que nadie me ve?</li>
+      <li>¿Puedo creer que El-Roi ya me encontró, incluso antes de que yo lo buscara?</li>
+      <li>¿Cuál es la "fuente junto al camino" que Dios ya puso delante de mí y que todavía no he visto?</li>
     </ul>
   </div>
 
   <div class="separador">✦ ✦ ✦</div>
 
-  <!-- ======================================================
+  <!-- ============================================================
        LLAMADO FINAL
-       ====================================================== -->
-  <h2 class="subtitulo" id="llamado">El nombre que cambia todo</h2>
+       ============================================================ -->
+  <h2 class="subtitulo" id="llamado" style="color:#1c2b3a; border-bottom: 1px solid #c9a227; padding-bottom: 8px;">El nombre que cambia todo</h2>
 
   <p>Hay un detalle que no podemos dejar pasar.</p>
 
-  <p>Agar volvió. El texto lo dice sin drama: regresó a la casa de Abraham. Regresó a la situación difícil, al mismo hogar donde había sido humillada, a la misma Sarai. Las circunstancias no cambiaron de un día para otro.</p>
+  <p>Agar volvió. El texto lo dice sin drama: regresó a la casa de Abraham. Regresó a la misma situación difícil, al mismo hogar donde había sido humillada, a la misma Sarai. Las circunstancias no cambiaron de un día para otro.</p>
 
   <p>Pero ella volvió siendo otra persona.</p>
 
-  <p>Porque volvió sabiendo un nombre que nadie le había enseñado. Un nombre que había descubierto en el peor momento de su vida, en el lugar más desolado de la tierra, sin templos ni sacerdotes ni rituales: <em>El-Roi</em>. El Dios que me ve.</p>
+  <p>Porque volvió sabiendo un nombre que nadie le había enseñado. Un nombre descubierto en el peor momento de su vida, en el lugar más desolado de la tierra, sin templos ni sacerdotes ni rituales de por medio: <em>El-Roi</em>. El Dios que me ve.</p>
 
   <p>No son las circunstancias las que cambian primero. Es el conocimiento de quién te acompaña en ellas.</p>
 
-  <p>Tus dioses silenciosos —los que dependen de tu esfuerzo para verte, los que esperan en templos de apariencia y desempeño, los que solo funcionan cuando tú tienes fuerzas para buscarlos— no tienen nada que ofrecerte en el desierto.</p>
+  <p>Tus dioses silenciosos —los que dependen de tu esfuerzo para verte, los que esperan en templos de apariencia y desempeño, los que solo funcionan cuando tienes fuerzas para buscarlos— no tienen nada que ofrecerte en el desierto.</p>
 
   <p>Pero <em>El-Roi</em> ya salió a buscarte.</p>
 
-  <!-- DESTACADO FINAL / FRASE ANCLA EN ECO -->
-  <div class="destacado-final" id="llamado-final">
+  <p>Y desde que te vio, no ha dejado de mirarte.</p>
+
+  <div class="destacado-final">
     Cuando el mundo entero te da la espalda y tus dioses guardan silencio,<br>
-    hay uno que ya te encontró.<br><br>
-    <strong>Su nombre es El-Roi.</strong><br>
-    <strong>El Dios que te ve.</strong><br><br>
-    Y desde que te vio, no ha dejado de mirarte.
+    hay uno que ya salió a buscarte.
+    <strong>Su nombre es El-Roi — el Dios que te ve.<br>Y desde que te vio, no ha dejado de mirarte.</strong>
   </div>
 
   <a class="volver-indice" href="#indice">↑ Volver al índice</a>
   <div class="separador">✦ ✦ ✦</div>
 
 </div>
-<!-- FIN contenedor-blog -->
 
 </body>
 </html>
