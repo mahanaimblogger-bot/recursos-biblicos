@@ -1,0 +1,248 @@
+{
+  "success": true,
+  "data": {
+    "libro": "Génesis",
+    "capitulo": 16,
+    "recursos": [
+
+      {
+        "tipo": "estudio",
+        "titulo": "Estudio Bíblico: Agar y la promesa de Dios",
+        "contenido_html": "<h1 class='titulo-entrada'>Génesis 16 — Agar y la promesa de Dios</h1><p>Contenido del estudio aquí...</p>"
+      },
+
+      {
+        "tipo": "sermon",
+        "titulo": "La fe que no puede esperar",
+        "predicador": "Pastor Juan Pérez",
+        "fecha": "15/04/2024",
+        "serie": "Patriarcas de la Fe",
+        "recurso_url": "https://TU-SERVIDOR.com/audio/genesis16-sermon.mp3",
+        "contenido_html": "<p>Notas del sermón opcionales aquí...</p>"
+      },
+
+      {
+        "tipo": "video",
+        "titulo": "Resumen animado de Génesis 16",
+        "recurso_url": "dQw4w9WgXcQ"
+      },
+
+      {
+        "tipo": "audio",
+        "titulo": "Reflexión: El Dios que ve",
+        "autor": "Hna. María González",
+        "fecha": "20/04/2024",
+        "duracion": "18 min",
+        "recurso_url": "https://TU-SERVIDOR.com/audio/genesis16-reflexion.mp3",
+        "contenido_html": "<p>Transcripción opcional de la reflexión...</p>"
+      },
+
+      {
+        "tipo": "imagen",
+        "titulo": "Ilustración: El desierto de Sur",
+        "recurso_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Negev_desert_Avdat.jpg/1280px-Negev_desert_Avdat.jpg",
+        "contenido_html": "<p>El desierto de Sur, zona donde Agar fue hallada por el ángel del Señor (Gn 16:7).</p>"
+      },
+
+      {
+        "tipo": "diapositiva",
+        "titulo": "Diapositivas: Clase sobre Génesis 16",
+        "recurso_url": "https://docs.google.com/presentation/d/TU-ID-DE-PRESENTACION/embed?start=false&loop=false&delayms=3000"
+      },
+
+      {
+        "tipo": "pdf",
+        "titulo": "Apuntes de Génesis 16",
+        "recurso_url": "https://TU-SERVIDOR.com/pdfs/genesis16-apuntes.pdf",
+        "contenido_html": "Resumen de los puntos principales del capítulo 16, ideal para imprimir y llevar al grupo de estudio."
+      },
+
+      {
+        "tipo": "mapa",
+        "titulo": "Mapa: Ruta de Agar hacia Egipto",
+        "recurso_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453936.123!2d32.0!3d30.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAwJzAwLjAiTiAzMsKwMDAnMDAuMCJF!5e0!3m2!1ses!2sar!4v1234567890",
+        "contenido_html": "<p>Agar huyó de Sarai en dirección a Egipto, su tierra natal. El ángel del Señor la encontró junto a un manantial en el camino a Sur (Gn 16:7).</p>"
+      },
+
+      {
+        "tipo": "cronologia",
+        "titulo": "Línea de tiempo: Cronología de Abram y Sarai",
+        "contenido_html": "<div style='position:relative;padding-left:30px;border-left:3px solid #d4ac0d;margin:10px 0'><div style='margin-bottom:28px;position:relative'><div style='position:absolute;left:-41px;top:2px;width:18px;height:18px;background:#d4ac0d;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 2px #d4ac0d'></div><strong style='color:#1a5276'>Año 0 — Llamado de Abram</strong><p style='margin:4px 0 0;color:#555;font-size:.95em'>Dios llama a Abram en Ur de los Caldeos (Gn 12:1)</p></div><div style='margin-bottom:28px;position:relative'><div style='position:absolute;left:-41px;top:2px;width:18px;height:18px;background:#d4ac0d;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 2px #d4ac0d'></div><strong style='color:#1a5276'>Año 10 — Llegada a Canaán</strong><p style='margin:4px 0 0;color:#555;font-size:.95em'>Abram tiene 85 años, Sarai sigue sin hijos (Gn 16:3)</p></div><div style='margin-bottom:28px;position:relative'><div style='position:absolute;left:-41px;top:2px;width:18px;height:18px;background:#c0392b;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 2px #c0392b'></div><strong style='color:#bf360c'>Año 10 — Nace Ismael (Gn 16)</strong><p style='margin:4px 0 0;color:#555;font-size:.95em'>Sarai da a Agar como concubina. Nace Ismael, hijo de Abram y Agar.</p></div><div style='margin-bottom:28px;position:relative'><div style='position:absolute;left:-41px;top:2px;width:18px;height:18px;background:#1b5e20;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 2px #1b5e20'></div><strong style='color:#1b5e20'>Año 24 — Nace Isaac (Gn 21)</strong><p style='margin:4px 0 0;color:#555;font-size:.95em'>Abram (ahora Abraham) tiene 100 años. Sarai (Sara) da a luz a Isaac, el hijo de la promesa.</p></div></div>"
+      },
+
+      {
+        "tipo": "personaje",
+        "titulo": "Ficha de Personaje: Agar la Egipcia",
+        "contenido_html": "<div style='display:flex;flex-wrap:wrap;gap:20px;margin-bottom:20px'><div style='flex:1;min-width:220px;background:#f0f4f8;border-radius:8px;padding:18px'><h3 style='color:#1a5276;margin:0 0 12px;border-bottom:1px solid #d0dce8;padding-bottom:8px'>📋 Datos biográficos</h3><p><strong>Nombre:</strong> Agar (הָגָר — <em>hugar</em>, «huida»)</p><p><strong>Origen:</strong> Egipcia, sierva de Sarai</p><p><strong>Rol:</strong> Concubina de Abram</p><p><strong>Hijo:</strong> Ismael (padre de 12 príncipes)</p><p><strong>Apariciones:</strong> Gn 16; 21:8-21</p></div><div style='flex:1;min-width:220px;background:#fef9e7;border-radius:8px;padding:18px;border-left:4px solid #d4ac0d'><h3 style='color:#b7950b;margin:0 0 12px;border-bottom:1px solid #e8d8a0;padding-bottom:8px'>✨ Hitos espirituales</h3><ul style='list-style:none;padding:0'><li style='margin-bottom:8px'>👁️ Única persona en la Biblia que pone nombre a Dios: <strong>El-Roi</strong> («El Dios que me ve»)</li><li style='margin-bottom:8px'>🕊️ Recibió una promesa directa del ángel del Señor</li><li style='margin-bottom:8px'>🌿 Tipo de la esclavitud vs. la libertad (Gá 4:21-31)</li></ul></div></div><div class='caja-linguistica'><h4>Significado del nombre</h4><p>El nombre <span class='palabra-original'>הָגָר</span> (<em>Hagar</em>) proviene del hebreo y significa «fuga» o «abandonada». Irónicamente, fue precisamente cuando huyó que Dios la encontró.</p></div><div class='caja-profetica' style='margin-top:16px'><h4>📖 Relevancia teológica</h4><p>Pablo usa a Agar como alegoría del pacto del Sinaí (la Ley) en contraste con Sara, símbolo del pacto de la gracia <strong>(Gálatas 4:24-26)</strong>. Su historia anticipa la tensión entre la obra humana y la fe en la promesa divina.</p></div>"
+      },
+
+      {
+        "tipo": "glosario",
+        "titulo": "Glosario de términos: Génesis 16",
+        "contenido_html": "<div style='display:flex;flex-direction:column;gap:14px'><div class='apendice-nota'><h4>🔤 Sierva / Esclava (<span style='direction:rtl;display:inline-block'>שִׁפְחָה</span> — <em>shifjá</em>)</h4><p>Término hebreo para la esclava doméstica de estatus inferior. Distinto de <em>amá</em> (concubina-esclava con más derechos). Agar comenzó como <em>shifjá</em> de Sarai (v.1).</p></div><div class='apendice-nota'><h4>🔤 El-Roi (<span style='direction:rtl;display:inline-block'>אֵל רֳאִי</span>)</h4><p>Nombre divino que Agar da a Dios: «El Dios que me ve» (v.13). Único caso en la Biblia en que una persona —y además una mujer extranjera— pone nombre a Dios. Expresa la experiencia de ser vista y conocida por Dios en la aflicción.</p></div><div class='apendice-nota'><h4>🔤 Beer-lahai-roi (<span style='direction:rtl;display:inline-block'>בְּאֵר לַחַי רֹאִי</span>)</h4><p>«Pozo del Viviente que me ve» (v.14). Lugar donde el ángel encontró a Agar. Este sitio vuelve a mencionarse en Gn 24:62 y 25:11, asociado luego a Isaac.</p></div><div class='apendice-nota'><h4>🔤 Ismael (<span style='direction:rtl;display:inline-block'>יִשְׁמָעֵאל</span>)</h4><p>«Dios escucha» o «Dios oirá» (v.11). Nombre profético dado por el ángel antes del nacimiento. Su nombre es una promesa: Dios había escuchado la aflicción de Agar.</p></div><div class='apendice-nota'><h4>🔤 Ángel del Señor (<span style='direction:rtl;display:inline-block'>מַלְאַךְ יְהוָה</span> — <em>malaj Adonai</em>)</h4><p>Primera aparición de esta figura en la Biblia. Muchos teólogos lo identifican como una <em>teofanía</em> (aparición de Dios mismo), dado que habla en primera persona divina y Agar lo identifica con Dios (v.13).</p></div></div>"
+      },
+
+      {
+        "tipo": "himno",
+        "titulo": "El Dios que me ve",
+        "numero_himno": "142",
+        "compositor": "Himno tradicional",
+        "fecha": "s. XIX",
+        "recurso_url": "https://TU-SERVIDOR.com/audio/el-dios-que-me-ve.mp3",
+        "contenido_html": "<p style='text-align:center;margin-bottom:20px'><strong>Estrofa 1</strong></p><p style='text-align:center'>En el desierto sola y olvidada,<br>sin fuerza, sin amparo y sin hogar,<br>Agar alzó sus ojos al cielo<br>y escuchó la voz del Eterno hablar.</p><br><p style='text-align:center'><strong>Coro</strong></p><p style='text-align:center'><em>El Dios que me ve, el Dios que me ve,<br>en medio del valle Él está;<br>cuando nadie me mira ni nadie me oye,<br>el Dios que me ve siempre está.</em></p><br><p style='text-align:center'><strong>Estrofa 2</strong></p><p style='text-align:center'>Tú que hoy caminas solo y sin consuelo,<br>cargando una pena que no ves cesar,<br>recuerda que hay un Dios que te contempla<br>y en amor eterno te quiere guardar.</p>"
+      },
+
+      {
+        "tipo": "enlace",
+        "titulo": "Comentario de Matthew Henry — Génesis 16",
+        "recurso_url": "https://www.bibliatodo.com/comentarios-biblicos/matthew-henry/genesis-16",
+        "contenido_html": "Comentario clásico y completo de Matthew Henry sobre este capítulo, disponible en español en BibliaTodo.com"
+      },
+
+      {
+        "tipo": "quiz",
+        "titulo": "¿Cuánto entendiste de Génesis 16?",
+        "preguntas": [
+          {
+            "pregunta": "¿Cómo se llamaba la sierva egipcia de Sarai?",
+            "opciones": [
+              { "texto": "Rebeca",  "correcta": false },
+              { "texto": "Agar",    "correcta": true  },
+              { "texto": "Zilpa",   "correcta": false },
+              { "texto": "Bilha",   "correcta": false }
+            ]
+          },
+          {
+            "pregunta": "¿Cuántos años tenía Abram cuando nació Ismael?",
+            "opciones": [
+              { "texto": "75 años", "correcta": false },
+              { "texto": "99 años", "correcta": false },
+              { "texto": "86 años", "correcta": true  },
+              { "texto": "100 años","correcta": false }
+            ]
+          },
+          {
+            "pregunta": "¿Qué nombre le dio Agar a Dios luego de su encuentro?",
+            "opciones": [
+              { "texto": "El-Shaddai",  "correcta": false },
+              { "texto": "Yahveh-Jireh","correcta": false },
+              { "texto": "El-Elyon",    "correcta": false },
+              { "texto": "El-Roi",      "correcta": true  }
+            ]
+          },
+          {
+            "pregunta": "¿Qué significa el nombre Ismael?",
+            "opciones": [
+              { "texto": "Dios escucha",  "correcta": true  },
+              { "texto": "Dios salva",    "correcta": false },
+              { "texto": "Dios ve",       "correcta": false },
+              { "texto": "Dios provee",   "correcta": false }
+            ]
+          },
+          {
+            "pregunta": "¿Dónde encontró el ángel del Señor a Agar?",
+            "opciones": [
+              { "texto": "En el río Nilo",          "correcta": false },
+              { "texto": "En un manantial del desierto camino a Sur", "correcta": true },
+              { "texto": "En Hebrón",               "correcta": false },
+              { "texto": "En la tienda de Abram",   "correcta": false }
+            ]
+          }
+        ]
+      },
+
+      {
+        "tipo": "devocional",
+        "titulo": "El Dios que ve tu desierto",
+        "fecha": "Lunes — Semana 3",
+        "versiculo_ref": "Génesis 16:13",
+        "versiculo_texto": "Entonces ella llamó el nombre del SEÑOR que le hablaba: Tú eres el Dios que me ve; porque dijo: ¿No he visto yo también aquí al que me ve?",
+        "contenido_html": "<p>Agar no era la heroína de la historia. Era una sierva, una extranjera, una mujer que huyó al desierto sintiéndose invisible. Sin embargo, fue ella quien recibió una de las visitas más íntimas de Dios en todo el libro del Génesis.</p><p style='margin-top:14px'>El ángel no la llamó por su condición ni por su error. La llamó por su nombre: <strong>«Agar, sierva de Sarai»</strong> (v.8). Dios conocía exactamente quién era ella, de dónde venía y a dónde iba.</p><p style='margin-top:14px'>Hay momentos en la vida en que nos sentimos exactamente como Agar: solos en nuestro propio desierto, invisibles para quienes nos rodean, huyendo de algo o de alguien. El mensaje de este capítulo es que <em>Dios te ve exactamente ahí</em>.</p>",
+        "aplicacion_html": "Pensá en un área de tu vida donde te sentís invisible o no visto/a. Hoy, en oración, decile a Dios: «Tú eres El-Roi, el Dios que me ve». Y escuchá su respuesta."
+      },
+
+      {
+        "tipo": "hoja",
+        "titulo": "Hoja de trabajo: Génesis 16",
+        "recurso_url": "https://TU-SERVIDOR.com/pdfs/genesis16-hoja-trabajo.pdf",
+        "contenido_html": "<h3 style='color:#6c3483;margin-bottom:16px'>📝 Vista previa de actividades</h3><ol style='margin-left:20px;line-height:2.2;color:#444'><li>¿Por qué Sarai le dio Agar a Abram? ¿Qué nos dice eso sobre su fe?</li><li>Completá: Agar llamó a Dios <strong>_____________</strong> porque dijo «<em>_____________</em>»</li><li>Buscá en el diccionario bíblico qué significa <strong>Beer-lahai-roi</strong> y dibujá el lugar.</li><li>¿En qué momentos de tu vida sentiste que Dios «no te veía»? ¿Qué cambió?</li><li>Relacioná Génesis 16 con Gálatas 4:22-26. ¿Qué enseña Pablo usando esta historia?</li></ol><p style='margin-top:20px;color:#888;font-size:.9em'>📥 Descargá el PDF para la versión completa con espacios para escribir.</p>"
+      },
+
+      {
+        "tipo": "testimonio",
+        "titulo": "Testimonio: Cuando Dios me encontró en mi desierto",
+        "autor": "Ana Rodríguez",
+        "fecha": "Reunión de mujeres — Junio 2024",
+        "recurso_tipo": "audio",
+        "recurso_url": "https://TU-SERVIDOR.com/audio/testimonio-ana-genesis16.mp3",
+        "contenido_html": "<p>Ana comparte cómo este capítulo cambió su perspectiva durante una etapa de soledad y abandono. Un relato de cómo Dios la «vio» en el momento más oscuro.</p>"
+      },
+
+      {
+        "tipo": "exegesis",
+        "titulo": "Comentario exegético: Génesis 16",
+        "paneles": [
+          {
+            "titulo": "Contexto histórico",
+            "html": "<div class='caja-contexto'><h3>Contexto del Antiguo Cercano Oriente</h3><p>La práctica de dar una sierva como esposa secundaria cuando la esposa era estéril era <strong>legalmente normal</strong> en el siglo XIX a.C. Los <em>Códigos de Hammurabi y Nuzi</em> documentan esta costumbre: si la esposa principal no tenía hijos, podía dar su esclava al marido, y el hijo nacido sería considerado legítimo.</p><ul style='list-style:square;margin:12px 0 0 20px'><li>Código de Hammurabi §146: la esclava que da hijos no puede ser vendida después</li><li>Tablillas de Nuzi: contratos matrimoniales que incluyen esta cláusula</li><li>El error no fue seguir la costumbre, sino <em>adelantarse a la promesa de Dios</em></li></ul></div>"
+          },
+          {
+            "titulo": "Análisis lingüístico",
+            "html": "<div class='caja-linguistica'><h4>v.2 — «Quizás seré edificada por ella»</h4><p>El verbo hebreo <span class='palabra-original'>אִבָּנֶה</span> (<em>ibbané</em>) viene de la raíz <span class='palabra-original'>בנה</span> (<em>baná</em>, «construir»), pero también es la raíz de <span class='palabra-original'>בֵּן</span> (<em>ben</em>, «hijo»). Sarai usa un juego de palabras: «seré construida» = «tendré hijos». La misma raíz aparece en Rut 4:11.</p></div><div class='caja-linguistica' style='margin-top:14px'><h4>v.13 — «El Dios que me ve» (El-Roi)</h4><p>Agar usa la raíz <span class='palabra-original'>רָאָה</span> (<em>ra'á</em>, «ver»). No es solo observación pasiva, sino el «ver» divino que implica conocimiento, cuidado e intervención. El mismo término de Gn 22:14 (Yahveh-Jireh: «el Señor verá/proveerá»).</p></div>"
+          },
+          {
+            "titulo": "Teología del pasaje",
+            "html": "<div class='caja-profetica'><h4>La primera teofanía del ángel del Señor</h4><p>Génesis 16 contiene la <strong>primera aparición del «ángel del SEÑOR»</strong> (<em>malaj Yahveh</em>) en toda la Biblia. El ángel habla en primera persona divina («yo multiplicaré», v.10), y Agar lo identifica con Dios mismo (v.13). Muchos padres de la Iglesia (Justino Mártir, Agustín) vieron aquí una <em>cristofanía</em> pre-encarnacional.</p></div><div class='caja-simbolismo' style='margin-top:14px'><h4>Ismael: ¿bendición o conflicto?</h4><p>Dios no rechaza a Ismael. La promesa dada a Agar es genuina y amplia (v.10-12). Sin embargo, Ismael es descrito como «asno salvaje» (<em>pere adam</em>): libre, independiente, en conflicto. El texto no lo condena, simplemente describe su destino como nación.</p></div>"
+          },
+          {
+            "titulo": "Aplicación pastoral",
+            "html": "<div class='caja-meditar'><h3>Para reflexionar en grupo</h3><ol style='margin-left:20px;line-height:2'><li>¿Cuándo en tu vida tomaste «soluciones de Sarai» para problemas que Dios ya tenía en Sus manos?</li><li>Agar fue victimizada por la situación, pero también enorgulleció (v.4). ¿Cómo equilibramos empatía y responsabilidad personal?</li><li>El ángel le dice «vuelve y sométete» (v.9). ¿Cómo entendemos ese mandato en contextos de conflicto real?</li><li>¿Qué «desiertos» personales han sido, en retrospectiva, encuentros con El-Roi?</li></ol></div>"
+          }
+        ]
+      },
+
+      {
+        "tipo": "plan",
+        "titulo": "Plan de lectura: La fe de los patriarcas (7 días)",
+        "dias": [
+          {
+            "titulo": "El llamado que todo lo cambia",
+            "pasaje": "Génesis 12:1-9",
+            "nota": "¿Qué dejó Abram? ¿Qué te pide Dios dejar a vos?"
+          },
+          {
+            "titulo": "La promesa y la duda",
+            "pasaje": "Génesis 15:1-6",
+            "nota": "La fe de Abram fue contada por justicia. ¿Qué te cuesta creer hoy?"
+          },
+          {
+            "titulo": "Cuando tomamos el control",
+            "pasaje": "Génesis 16:1-16",
+            "nota": "El capítulo de hoy. El Dios que ve también te ve a vos."
+          },
+          {
+            "titulo": "El pacto renovado",
+            "pasaje": "Génesis 17:1-8",
+            "nota": "Dios cambia el nombre de Abram. ¿Qué identidad nueva te ha dado Dios?"
+          },
+          {
+            "titulo": "La risa de Sara",
+            "pasaje": "Génesis 18:1-15",
+            "nota": "«¿Hay algo imposible para Dios?» ¿Qué situación en tu vida necesita esta pregunta?"
+          },
+          {
+            "titulo": "El hijo de la promesa",
+            "pasaje": "Génesis 21:1-7",
+            "nota": "La espera terminó. ¿En qué área de tu vida estás esperando que Dios cumpla?"
+          },
+          {
+            "titulo": "Dios proveerá",
+            "pasaje": "Génesis 22:1-18",
+            "nota": "Yahveh-Jireh: el Dios que provee. El punto más alto de la fe de Abraham."
+          }
+        ]
+      }
+
+    ]
+  }
+}
