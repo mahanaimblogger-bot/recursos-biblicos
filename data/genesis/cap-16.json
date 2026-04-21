@@ -14,6 +14,12 @@
         "recurso_url": "KrGyFflT82M",
         "contenido_html": "<h1 class=\"titulo-entrada\">Video: El-Roi El Dios que ve</h1><p>El angel de Jehova se aparece por primera vez en las escrituras y se muestra a una esclava egipcia mostrando que la salvacion es para todos y que El no hace acepcion de personas "
       },
+            {
+        "tipo": "audio",
+        "titulo": "El Dios que ve a los invisibles",
+        "recurso_url": "",
+        "contenido_html": "<h1 class=\"titulo-entrada\">El Dios que ve a los invisibles</h1><iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https://soundcloud.com/mahanaim-239649999/el_dios_que_ve_a_los_invisible\"></iframe><div class=\"caja-meditar\"><h3>Para Reflexionar</h3><p>El Angel de Jehova aparece por primera vez en la escritura, y lo hace a una sierva egipcia.</p></div>"
+      }
       {
         "tipo": "sermon",
         "titulo": "La Desesperación de una Mujer Invisible... y sus Dioses Silenciosos",
@@ -21,10 +27,7 @@
          "archivo_html": "/estudios/sermones/genesis/genesis16/elroi.html"
       },
       {
-        "tipo": "audio",
-        "titulo": "El Dios que ve a los invisibles",
-        "recurso_url": "https://soundcloud.com/mahanaim-239649999/el_dios_que_ve_a_los_invisible?si=b2e3378dcec045a580523682b2dcfec9&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-        "contenido_html": "<h1 class=\"titulo-entrada\">El Dios que ve a los invisibles</h1><div class=\"caja-meditar\"><h3>Para Reflexionar</h3><p>El Angel de Jehova aparece por primera vez en la escritura, y lo hace a una sierva egipcia.</p></div>"
+       
       }
     ]
   }
