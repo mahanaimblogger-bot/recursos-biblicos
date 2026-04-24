@@ -1,1 +1,10 @@
-hgh
+{
+  "success": true,
+  "data": {
+    "recursos": [
+      {
+        "tipo": "estudio",
+        "titulo": "Cuando la Promesa Espera y la Carne Actúa: El Drama de Agar, Sarai e Ismael",
+        "recurso_url": "",
+        "archivo_html": "/estudios/genesis/genesis16.html"
+      },
