@@ -16,6 +16,89 @@
       {
   "tipo": "cronologia",
   "titulo": "Línea de tiempo: Génesis 17",
+  "linea_capitulo": {
+    "titulo": "Eventos del Capítulo 17",
+    "eventos": [
+      {
+        "posicion": 1,
+        "titulo": "Aparición de Jehová a Abram",
+        "descripcion": "Dios se revela a Abram a los 99 años y le ordena andar delante de El y ser perfecto",
+        "versiculos": "1-2"
+      },
+      {
+        "posicion": 2,
+        "titulo": "Pacto y multiplicación de naciones",
+        "descripcion": "Promesa de hacer de Abram padre de muchas naciones y cambio de nombre",
+        "versiculos": "3-6"
+      },
+      {
+        "posicion": 3,
+        "titulo": "Pacto de circuncisión",
+        "descripcion": "Seña perpetua en la carne para varones y extranjeros en su casa",
+        "versiculos": "7-14"
+      },
+      {
+        "posicion": 4,
+        "titulo": "Promesa de hijo con Sarai",
+        "descripcion": "Cambio de nombre a Sarai y anuncio de Isaac como hijo del pacto",
+        "versiculos": "15-19"
+      },
+      {
+        "posicion": 5,
+        "titulo": "Ruego por Ismael",
+        "descripcion": "Abram intercede por Ismael y Dios le bendice con fructificación y naciones",
+        "versiculos": "20-22"
+      },
+      {
+        "posicion": 6,
+        "titulo": "Corte del pacto con todos los varones",
+        "descripcion": "Abram y toda su casa guardan la circuncisión al instante",
+        "versiculos": "23-27"
+      }
+    ]
+  },
+  "linea_libro": {
+    "titulo": "Panorama de Génesis",
+    "capitulo_marcado": 17,
+    "total_capitulos": 50,
+    "eventos": [
+      {
+        "capitulo_inicio": 1,
+        "capitulo_fin": 5,
+        "titulo": "Creación y caída",
+        "descripcion": "Origen del cosmos, Edén, caída y primeras promesas"
+      },
+      {
+        "capitulo_inicio": 6,
+        "capitulo_fin": 11,
+        "titulo": "Arca y dispersión",
+        "descripcion": "Juicio por aguas, arca de Noé y torre de Babel"
+      },
+      {
+        "capitulo_inicio": 12,
+        "capitulo_fin": 25,
+        "titulo": "Llamado a Abram y pactos",
+        "descripcion": "Elección de Abraham, promesas y nacimiento de Isaac"
+      },
+      {
+        "capitulo_inicio": 26,
+        "capitulo_fin": 36,
+        "titulo": "Isaac, Jacob y Esaú",
+        "descripcion": "Historia de Isaac, Jacob y sus familias"
+      },
+      {
+        "capitulo_inicio": 37,
+        "capitulo_fin": 50,
+        "titulo": "José y el fin de Génesis",
+        "descripcion": "José en Egipto, preservación y muerte de Jacob"
+      }
+    ]
+  },
+  "contenido_html": "<div class='contenedor-blog'><h2 class='titulo-entrada'>Línea de tiempo: Génesis 17</h2><section class='timeline-vertical'><h3>Eventos del Capítulo 17</h3><div class='paso-tiempo'><div class='punto-dorado'></div><div class='cuerpo-paso'><strong>1 - Aparición de Jehová a Abram</strong><p class='cita-versiculo'>Versículos 1-2</p><p>Dios se revela a Abram a los 99 años y le ordena andar delante de El y ser perfecto</p></div></div><div class='paso-tiempo'><div class='punto-dorado'></div><div class='cuerpo-paso'><strong>2 - Pacto y multiplicación de naciones</strong><p class='cita-versiculo'>Versículos 3-6</p><p>Promesa de hacer de Abram padre de muchas naciones y cambio de nombre</p></div></div><div class='paso-tiempo'><div class='punto-dorado'></div><div class='cuerpo-paso'><strong>3 - Pacto de circuncisión</strong><p class='cita-versiculo'>Versículos 7-14</p><p>Seña perpetua en la carne para varones y extranjeros en su casa</p></div></div><div class='paso-tiempo'><div class='punto-dorado'></div><div class='cuerpo-paso'><strong>4 - Promesa de hijo con Sarai</strong><p class='cita-versiculo'>Versículos 15-19</p><p>Cambio de nombre a Sarai y anuncio de Isaac como hijo del pacto</p></div></div><div class='paso-tiempo'><div class='punto-dorado'></div><div class='cuerpo-paso'><strong>5 - Ruego por Ismael</strong><p class='cita-versiculo'>Versículos 20-22</p><p>Abram intercede por Ismael y Dios le bendice con fructificación y naciones</p></div></div><div class='paso-tiempo'><div class='punto-dorado'></div><div class='cuerpo-paso'><strong>6 - Corte del pacto con todos los varones</strong><p class='cita-versiculo'>Versículos 23-27</p><p>Abram y toda su casa guardan la circuncisión al instante</p></div></div></section><section class='timeline-libro'><h3>Panorama de Génesis</h3><div class='barra-libro'><div class='segmento-libro' style='left:0%;width:10%;'>Creación y caída<br/>Cap 1-5</div><div class='segmento-libro' style='left:10%;width:10%;'>Arca y dispersión<br/>Cap 6-11</div><div class='segmento-libro activo' style='left:20%;width:12%;'>Llamado a Abram y pactos<br/>Cap 12-25</div><div class='segmento-libro' style='left:32%;width:12%;'>Isaac, Jacob y Esaú<br/>Cap 26-36</div><div class='segmento-libro' style='left:44%;width:12%;'>José y el fin de Génesis<br/>Cap 37-50</div><div class='marcador-capitulo' style='left:22%;'>Cap 17</div></div><div class='caja-linguistica'><p>Clave lingüística: En Génesis 17 aparece el nombre divino Jehová (YHWH) asociado al pacto y la seña de circuncisión, resaltando fidelidad y carácter santo.</p></div><div class='apendice-nota'><p>Nota: El capítulo 17 marca el centro del llamado abrahámico en Génesis, sellando identidad, descendencia y tierra por fe antes del nacimiento de Isaac.</p></div></div></section>"
+},
+      {
+  "tipo": "cronologia",
+  "titulo": "Línea de tiempo: Génesis 17",
   "contenido_html": "<div style='font-family: Georgia, serif; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 40px 20px; border-radius: 16px; min-height: 600px;'><h2 style='text-align: center; color: #f0c040; font-size: 1.6em; margin-bottom: 8px; text-shadow: 0 0 10px rgba(240,192,64,0.5);'>⏳ Línea de Tiempo</h2><h3 style='text-align: center; color: #e8d5a3; font-size: 1.1em; margin-bottom: 40px; font-weight: normal; letter-spacing: 1px;'>Génesis Capítulo 17</h3><div style='position: relative; max-width: 680px; margin: 0 auto;'><div style='position: absolute; left: 28px; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, #f0c040, #c8962a, #f0c040); border-radius: 2px;'></div><div style='position: relative; margin-bottom: 36px; padding-left: 72px;'><div style='position: absolute; left: 14px; top: 8px; width: 30px; height: 30px; background: radial-gradient(circle, #fff8c0, #f0c040); border-radius: 50%; border: 3px solid #c8962a; box-shadow: 0 0 14px rgba(240,192,64,0.8); display: flex; align-items: center; justify-content: center;'><span style='font-size: 0.75em;'>✦</span></div><div style='background: rgba(255,255,255,0.06); border: 1px solid rgba(240,192,64,0.3); border-left: 4px solid #f0c040; border-radius: 10px; padding: 16px 18px;'><span style='display: inline-block; background: #f0c040; color: #1a1a2e; font-size: 0.7em; font-weight: bold; padding: 2px 10px; border-radius: 12px; margin-bottom: 8px; letter-spacing: 1px;'>VERSÍCULOS 1–2</span><h4 style='color: #f0c040; margin: 0 0 6px 0; font-size: 1.05em;'>Dios se aparece a Abram</h4><p style='color: #d4c5a0; margin: 0; font-size: 0.92em; line-height: 1.6;'>Abram tiene <strong style='color: #f0c040;'>99 años</strong>. Dios se le aparece como <em>El Shaddai</em> (Dios Todopoderoso) y le ordena caminar en integridad delante de Él. Renueva Su promesa de multiplicar a Abram en gran manera.</p></div></div><div style='position: relative; margin-bottom: 36px; padding-left: 72px;'><div style='position: absolute; left: 14px; top: 8px; width: 30px; height: 30px; background: radial-gradient(circle, #fff8c0, #f0c040); border-radius: 50%; border: 3px solid #c8962a; box-shadow: 0 0 14px rgba(240,192,64,0.8);'></div><div style='background: rgba(255,255,255,0.06); border: 1px solid rgba(240,192,64,0.3); border-left: 4px solid #e8a020; border-radius: 10px; padding: 16px 18px;'><span style='display: inline-block; background: #e8a020; color: #1a1a2e; font-size: 0.7em; font-weight: bold; padding: 2px 10px; border-radius: 12px; margin-bottom: 8px; letter-spacing: 1px;'>VERSÍCULOS 3–8</span><h4 style='color: #e8c060; margin: 0 0 6px 0; font-size: 1.05em;'>El Pacto Eterno y el Cambio de Nombre</h4><p style='color: #d4c5a0; margin: 0; font-size: 0.92em; line-height: 1.6;'>Abram cae sobre su rostro. Dios establece Su pacto eterno: <strong style='color: #f0c040;'>Abram</strong> pasa a llamarse <strong style='color: #f0c040;'>Abraham</strong> (\"padre de multitudes\"). Será padre de muchas naciones y reyes saldrán de él. La tierra de Canaán será posesión eterna de su descendencia.</p></div></div><div style='position: relative; margin-bottom: 36px; padding-left: 72px;'><div style='position: absolute; left: 14px; top: 8px; width: 30px; height: 30px; background: radial-gradient(circle, #fff8c0, #f0c040); border-radius: 50%; border: 3px solid #c8962a; box-shadow: 0 0 14px rgba(240,192,64,0.8);'></div><div style='background: rgba(255,255,255,0.06); border: 1px solid rgba(240,192,64,0.3); border-left: 4px solid #f0c040; border-radius: 10px; padding: 16px 18px;'><span style='display: inline-block; background: #f0c040; color: #1a1a2e; font-size: 0.7em; font-weight: bold; padding: 2px 10px; border-radius: 12px; margin-bottom: 8px; letter-spacing: 1px;'>VERSÍCULOS 9–14</span><h4 style='color: #f0c040; margin: 0 0 6px 0; font-size: 1.05em;'>La Señal del Pacto: La Circuncisión</h4><p style='color: #d4c5a0; margin: 0; font-size: 0.92em; line-height: 1.6;'>Dios instituye la <strong style='color: #f0c040;'>circuncisión</strong> como señal perpetua del pacto. Todo varón —incluyendo esclavos y extranjeros— deberá ser circuncidado al octavo día de nacido. Quien no lo sea, quedará excluido del pueblo.</p></div></div><div style='position: relative; margin-bottom: 36px; padding-left: 72px;'><div style='position: absolute; left: 14px; top: 8px; width: 30px; height: 30px; background: radial-gradient(circle, #fff8c0, #f0c040); border-radius: 50%; border: 3px solid #c8962a; box-shadow: 0 0 14px rgba(240,192,64,0.8);'></div><div style='background: rgba(255,255,255,0.06); border: 1px solid rgba(240,192,64,0.3); border-left: 4px solid #e8a020; border-radius: 10px; padding: 16px 18px;'><span style='display: inline-block; background: #e8a020; color: #1a1a2e; font-size: 0.7em; font-weight: bold; padding: 2px 10px; border-radius: 12px; margin-bottom: 8px; letter-spacing: 1px;'>VERSÍCULOS 15–21</span><h4 style='color: #e8c060; margin: 0 0 6px 0; font-size: 1.05em;'>Sara y el Anuncio de Isaac</h4><p style='color: #d4c5a0; margin: 0; font-size: 0.92em; line-height: 1.6;'><strong style='color: #f0c040;'>Sarai</strong> recibe el nuevo nombre de <strong style='color: #f0c040;'>Sara</strong>. Dios promete que ella, a sus <strong style='color: #f0c040;'>90 años</strong>, dará a luz un hijo. Abraham se ríe asombrado. Dios confirma que el hijo se llamará <strong style='color: #f0c040;'>Isaac</strong> y que con él se establecerá el pacto. También bendice a Ismael con doce príncipes.</p></div></div><div style='position: relative; margin-bottom: 36px; padding-left: 72px;'><div style='position: absolute; left: 14px; top: 8px; width: 30px; height: 30px; background: radial-gradient(circle, #fff8c0, #f0c040); border-radius: 50%; border: 3px solid #c8962a; box-shadow: 0 0 14px rgba(240,192,64,0.8);'></div><div style='background: rgba(255,255,255,0.06); border: 1px solid rgba(240,192,64,0.3); border-left: 4px solid #f0c040; border-radius: 10px; padding: 16px 18px;'><span style='display: inline-block; background: #f0c040; color: #1a1a2e; font-size: 0.7em; font-weight: bold; padding: 2px 10px; border-radius: 12px; margin-bottom: 8px; letter-spacing: 1px;'>VERSÍCULO 22</span><h4 style='color: #f0c040; margin: 0 0 6px 0; font-size: 1.05em;'>Dios Termina de Hablar</h4><p style='color: #d4c5a0; margin: 0; font-size: 0.92em; line-height: 1.6;'>Al concluir el diálogo, Dios <strong style='color: #f0c040;'>sube de junto a Abraham</strong>. La revelación divina llega a su fin, dejando a Abraham con mandatos claros y promesas renovadas.</p></div></div><div style='position: relative; margin-bottom: 36px; padding-left: 72px;'><div style='position: absolute; left: 14px; top: 8px; width: 30px; height: 30px; background: radial-gradient(circle, #fff8c0, #f0c040); border-radius: 50%; border: 3px solid #c8962a; box-shadow: 0 0 14px rgba(240,192,64,0.8);'></div><div style='background: rgba(255,255,255,0.06); border: 1px solid rgba(240,192,64,0.3); border-left: 4px solid #c8962a; border-radius: 10px; padding: 16px 18px;'><span style='display: inline-block; background: #c8962a; color: #1a1a2e; font-size: 0.7em; font-weight: bold; padding: 2px 10px; border-radius: 12px; margin-bottom: 8px; letter-spacing: 1px;'>VERSÍCULOS 23–27</span><h4 style='color: #e8c060; margin: 0 0 6px 0; font-size: 1.05em;'>Obediencia Inmediata: La Circuncisión se Cumple</h4><p style='color: #d4c5a0; margin: 0; font-size: 0.92em; line-height: 1.6;'>El <strong style='color: #f0c040;'>mismo día</strong> que Dios habló, Abraham circuncida a su hijo Ismael (13 años), a todos los varones de su casa y a sí mismo (99 años). La fe de Abraham se expresa en obediencia total e inmediata al mandato divino.</p></div></div></div><div style='text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(240,192,64,0.2);'><p style='color: rgba(212,197,160,0.6); font-size: 0.78em; font-style: italic;'>\\\"Yo soy el Dios Todopoderoso; anda delante de mí y sé perfecto.\\\" — Génesis 17:1</p></div></div>"
 }
     ]
