@@ -21,6 +21,222 @@
         "contenido_html": "<h1 class=\"titulo-entrada\">El Dios que ve a los invisibles</h1><iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameborder=\"no\" src=\"https://w.soundcloud.com/player/?url=https://soundcloud.com/mahanaim-239649999/el_dios_que_ve_a_los_invisible\"></iframe><div class=\"caja-meditar\"><h3>Para Reflexionar</h3><p>El Angel de Jehova aparece por primera vez en la escritura, y lo hace a una sierva egipcia.</p></div>"
       },
       {
+  "tipo": "quiz",
+  "titulo": "CUESTIONARIO DE GENESIS 16",
+  "preguntas": [
+    {
+      "pregunta": "¿Qué problema tenía Sarai que la llevó a sugerir a Abram que tomara a su sierva Agar como esposa?",
+      "opciones": [
+        {
+          "texto": "Era demasiado vieja para tener hijos",
+          "correcta": false
+        },
+        {
+          "texto": "No podía tener hijos",
+          "correcta": true
+        },
+        {
+          "texto": "Tenía miedo de morir sin herederos",
+          "correcta": false
+        },
+        {
+          "texto": "No quería tener hijos con Abram",
+          "correcta": false
+        }
+      ]
+    },
+    {
+      "pregunta": "¿Cómo se llamaba la sierva de Sarai que se le dio a Abram como esposa?",
+      "opciones": [
+        {
+          "texto": "Zilpá",
+          "correcta": false
+        },
+        {
+          "texto": "Lea",
+          "correcta": false
+        },
+        {
+          "texto": "Agar",
+          "correcta": true
+        },
+        {
+          "texto": "Raquel",
+          "correcta": false
+        }
+      ]
+    },
+    {
+      "pregunta": "¿Qué ocurrió después de que Agar concibió de Abram?",
+      "opciones": [
+        {
+          "texto": "Fue feliz con su situación",
+          "correcta": false
+        },
+        {
+          "texto": "Comenzó a despreciar a su señora",
+          "correcta": true
+        },
+        {
+          "texto": "Fue expulsada de la casa",
+          "correcta": false
+        },
+        {
+          "texto": "Volvió a Egipto",
+          "correcta": false
+        }
+      ]
+    },
+    {
+      "pregunta": "¿Cómo reaccionó Sarai cuando Agar comenzó a despreciarla?",
+      "opciones": [
+        {
+          "texto": "La castigó severamente",
+          "correcta": false
+        },
+        {
+          "texto": "La trató con más amabilidad",
+          "correcta": false
+        },
+        {
+          "texto": "La maltrató y la humilló",
+          "correcta": true
+        },
+        {
+          "texto": "La ignoró completamente",
+          "correcta": false
+        }
+      ]
+    },
+    {
+      "pregunta": "¿Qué hizo Agar después de ser maltratada por Sarai?",
+      "opciones": [
+        {
+          "texto": "Decidió volver a Egipto",
+          "correcta": false
+        },
+        {
+          "texto": "Escapó al desierto",
+          "correcta": true
+        },
+        {
+          "texto": "Se enfrentó a Sarai",
+          "correcta": false
+        },
+        {
+          "texto": "Se arrepintió y pidió perdón",
+          "correcta": false
+        }
+      ]
+    },
+    {
+      "pregunta": "¿Quién se encontró con Agar en el desierto y le habló?",
+      "opciones": [
+        {
+          "texto": "Abram",
+          "correcta": false
+        },
+        {
+          "texto": "Un ángel del Señor",
+          "correcta": true
+        },
+        {
+          "texto": "Sarai",
+          "correcta": false
+        },
+        {
+          "texto": "Faraón de Egipto",
+          "correcta": false
+        }
+      ]
+    },
+    {
+      "pregunta": "¿Qué nombre le dio el ángel al hijo que Agar estaba por tener?",
+      "opciones": [
+        {
+          "texto": "Isaac",
+          "correcta": false
+        },
+        {
+          "texto": "Jacob",
+          "correcta": false
+        },
+        {
+          "texto": "Ismael",
+          "correcta": true
+        },
+        {
+          "texto": "Esaú",
+          "correcta": false
+        }
+      ]
+    },
+    {
+      "pregunta": "¿Qué significado tiene el nombre Ismael según el texto?",
+      "opciones": [
+        {
+          "texto": "Dios ha escuchado",
+          "correcta": false
+        },
+        {
+          "texto": "Dios ha visto",
+          "correcta": false
+        },
+        {
+          "texto": "Dios ha oído su aflicción",
+          "correcta": true
+        },
+        {
+          "texto": "Dios ha bendecido",
+          "correcta": false
+        }
+      ]
+    },
+    {
+      "pregunta": "¿Qué promesa hizo el ángel sobre el futuro de Ismael?",
+      "opciones": [
+        {
+          "texto": "Sería rey de muchos pueblos",
+          "correcta": true
+        },
+        {
+          "texto": "Sería el padre de una nación poderosa",
+          "correcta": false
+        },
+        {
+          "texto": "Viviría una vida larga y feliz",
+          "correcta": false
+        },
+        {
+          "texto": "Sería el heredero de Abram",
+          "correcta": false
+        }
+      ]
+    },
+    {
+      "pregunta": "¿Qué hizo Agar después de escuchar las palabras del ángel?",
+      "opciones": [
+        {
+          "texto": "Volvió inmediatamente a Sarai",
+          "correcta": false
+        },
+        {
+          "texto": "Se quedó en el desierto",
+          "correcta": false
+        },
+        {
+          "texto": "Nombró al Señor que se le había aparecido",
+          "correcta": true
+        },
+        {
+          "texto": "Dio a luz a Ismael",
+          "correcta": false
+        }
+      ]
+    }
+  ]
+},
+      {
         "tipo": "sermon",
         "titulo": "La Desesperación de una Mujer Invisible... y sus Dioses Silenciosos",
         "recurso_url": "",
