@@ -14,6 +14,11 @@
         "recurso_url": "dQw4w9WgXcQ",
         "contenido_html": "<h1 class=\"titulo-entrada\">Video: Los 7 Días</h1><p>Recorrido visual de cada día de la creación.</p><div class=\"contenedor-video\"><img class=\"miniatura\" src=\"https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg\" alt=\"Video\"><button class=\"btn-play\"></button></div>"
       },
+            {
+        "tipo": "estudio",
+        "titulo": "Génesis 20",
+        "recurso_url": "https://ngvfllkbdnmezikxxyzd.supabase.co/storage/v1/object/public/estudios/genesis20.html"
+      },
       {
         "tipo": "sermon",
         "titulo": "Sermón: Dios Creador y Sustentador",
