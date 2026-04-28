@@ -3,7 +3,7 @@
   "data": {
     "capitulos": [
       { "capitulo": "1", "total": 4, "tipos": ["estudio", "video", "sermon", "audio"] },
-      { "capitulo": "2", "total": 4, "tipos": ["estudio", "estudio" "video", "sermon"] },
+      { "capitulo": "2", "total": 4, "tipos": ["estudio", "estudio", "video", "sermon"] },
       { "capitulo": "3", "total": 4, "tipos": ["estudio", "video", "imagen", "audio"] },
       { "capitulo": "4", "total": 2, "tipos": ["estudio", "imagen"] },
       { "capitulo": "9", "total": 19, "tipos": ["estudio", "sermon", "video", "audio", "imagen", "diapositiva", "pdf", "mapa", "cronologia", "personaje", "glosario", "himno", "enlace", "quiz", "devocional", "hoja", "testimonio", "exegesis", "plan"] },
