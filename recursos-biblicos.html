@@ -819,7 +819,11 @@ BSA.openResource = function(idx) {
 
     /* ── Archivo HTML externo ── */
     if (item.archivo_html) {
-      fetch(GITHUB_BASE + item.archivo_html)
+      fetch(
+  item.archivo_html.startsWith('http')
+    ? item.archivo_html
+    : GITHUB_BASE + item.archivo_html
+)
         .then(function(r) {
           if (!r.ok) throw new Error('No se pudo cargar el HTML');
           return r.text();
