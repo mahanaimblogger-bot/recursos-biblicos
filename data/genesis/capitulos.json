@@ -9,6 +9,7 @@
       { "capitulo": "9", "total": 19, "tipos": ["estudio", "sermon", "video", "audio", "imagen", "diapositiva", "pdf", "mapa", "cronologia", "personaje", "glosario", "himno", "enlace", "quiz", "devocional", "hoja", "testimonio", "exegesis", "plan"] },
       { "capitulo": "16", "total": 4, "tipos": ["estudio", "video", "sermon", "audio","quiz"] },
       { "capitulo": "17", "total": 3, "tipos": ["estudio", "personaje", "cronologia"] }
+      { "capitulo": "18", "total": 1, "tipos": ["estudio"] }
     ]
   }
 }
